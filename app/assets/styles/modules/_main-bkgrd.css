@@ -1,0 +1,40 @@
+@font-face {
+font-family: PoetsenOne;
+src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
+}
+
+.bkgrd-main {
+
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    color: #9E8ABE;
+    text-align: center;
+    margin: 0;
+    /*padding-top: 20%;*/
+    font-size: 9.5rem;
+    font-family: PoetsenOne;
+
+    @media only screen and (max-width: 750px){
+      font-size: 7rem;
+      position: auto;
+    }
+
+    @media only screen and (max-width: 500px){
+      font-size: 5rem;
+      position: auto;
+    }    
+  }
+
+}
+
+/*$mainPink: #ffc6df;
+$mainGreen: #119a48;
+$mainPurple: #9E8ABE;*/
