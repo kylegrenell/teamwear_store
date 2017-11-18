@@ -21,7 +21,7 @@ body {
 .bkgrd-main {
   background-size: 110%;
   height: 100vh;
-  background-image: url(../img/squint3.png);
+  background-image: url(../images/squint3.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
