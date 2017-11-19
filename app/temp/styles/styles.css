@@ -532,6 +532,12 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
     }
 
-/*$mainPink: #ffc6df;
-$mainGreen: #119a48;
-$mainPurple: #9E8ABE;*/
+.btn {
+  background-color: #9E8ABE;
+  color: #FFF;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+  float: right;
+  /*text-align: center;*/
+}

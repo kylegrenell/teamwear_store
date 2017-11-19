@@ -1,0 +1,9 @@
+.btn {
+  background-color: $mainPurple;
+  color: #FFF;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+  float: right;
+  /*text-align: center;*/
+}
