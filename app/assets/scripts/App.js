@@ -1,3 +1,3 @@
 var $ = require('jquery');
 
-console.log('testing');
+alert('abc 123');
