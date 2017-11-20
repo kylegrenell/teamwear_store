@@ -5,8 +5,30 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
 
+  background-image: url(../../assets/images/tiesmall.png);
+  height: 80vh; 
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &-2{
+    height:80vh;
+  }
+
+  &-3 {
+  background-image: url(../../assets/images/squint3.png);
+  height: 80vh; 
+    /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: contain;*/
+  }
+
   &__text-content {
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -15,7 +37,8 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
 
   &__title {
-    color: #9E8ABE;
+    /*display:none;*/
+    color: $mainPink;
     text-align: center;
     margin: 0;
     /*padding-top: 20%;*/
@@ -31,6 +54,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
       font-size: 5rem;
       position: auto;
     }    
+ 
   }
 
 }

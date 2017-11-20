@@ -479,26 +479,61 @@ ul li {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  /*max-width: 100%;*/
+  /*height: auto;*/
   z-index:1;
-  /*  max-width: 100%;
+    max-width: 100%;
     height: auto;
-    /*background-size: 100%;*/
+    /*background-size: 100%;
     /*height: 100vh;*/
-    /*background-image: url(../../assets/images/squint3.png);*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: right top;*/
-    /*background-attachment: fixed;*/
+    
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }
+
+.header {
+
+  height: 5vh;
+}
+
+.header__bottom{
+    height: 5vh;
+  }
 
 @font-face {
 font-family: PoetsenOne;
 src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 }
 
+.bkgrd-main {
+
+  background-image: url(../../assets/images/tiesmall.png);
+  height: 80vh; 
+  /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.bkgrd-main-2{
+    height:80vh;
+  }
+
+.bkgrd-main-3 {
+  background-image: url(../../assets/images/squint3.png);
+  height: 80vh; 
+    /* parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: contain;*/
+  }
+
 .bkgrd-main__text-content {
-    position: absolute;
+    position: fixed;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -508,12 +543,14 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
 
 .bkgrd-main__title {
-    color: #9E8ABE;
+    /*display:none;*/
+    color: #ffc6df;
     text-align: center;
     margin: 0;
     /*padding-top: 20%;*/
     font-size: 9.5rem;
     font-family: PoetsenOne;    
+ 
   }
 
 @media only screen and (max-width: 750px){
@@ -521,6 +558,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .bkgrd-main__title {
       font-size: 7rem;
       position: auto    
+ 
   }
     }
 
@@ -529,6 +567,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .bkgrd-main__title {
       font-size: 5rem;
       position: auto    
+ 
   }
     }
 
@@ -538,6 +577,19 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
-  float: right;
-  /*text-align: center;*/
+  text-align: center;
+}
+
+#btn-sale{
+  margin-top: 20px;
+}
+
+.instagram-wrapper {
+  margin: 30px 20px 30px 20px;
+  height:80vh;
+  text-align: center;
+}
+
+.lightwidget-widget {
+  width: 70%;
 }
