@@ -5,16 +5,55 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
 
-  background-image: url(../../assets/images/tiesmall.png);
-  height: 80vh; 
-  /* parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
+  background-image: url(../../assets/images/TIE_1280.png);
+  height: 250px;
+  max-width: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center top;
+
+  @mixin atSmall {
+    background-image: url(../../assets/images/TIE_1680.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: left top;
+    height: 300px;
+  }
+
+  @mixin atMedium {
+    background-image: url(../../assets/images/TIE_1680.png);
+    background-size: contain;
+    background-attachment: fixed;
+    height: 400px; 
+    background-position: center top;
+
+  }
+
+  @mixin atLarge {
+    background-position: center;
+    background-image: url(../../assets/images/TIE_1920.png);
+    background-size: cover;
+    height: 100vh; 
+    background-attachment: scroll;
+  }
 
   &-2{
-    height:80vh;
+
+    background-color: blue;
+    height: 50vh;
+
+    @mixin atSmall {
+      height:60vh;
+    }
+
+    @mixin atMedium {
+      height:80vh;
+    }
+
+    @mixin atMedium {
+      height:80vh;
+    }
+
   }
 
   &-3 {
@@ -25,34 +64,32 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   background-position: center;
   background-repeat: no-repeat;
   /*background-size: contain;*/
-  }
 
-  &__text-content {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    text-align: center;
   }
 
   &__title {
+    position: fixed;
+    top: 12%;
+    left: 0;
+    width: 100%;
     /*display:none;*/
     color: $mainPink;
     text-align: center;
     margin: 0;
-    /*padding-top: 20%;*/
     font-size: 4rem;
     font-family: PoetsenOne;
 
     @mixin atSmall {
+      top: 15%;
       font-size: 6rem;
-      position: auto;
+      position: fixed;
     }
 
     @mixin atMedium{
+      top: 38%;
       font-size: 8rem;
       position: auto;
+      /*transform: translateY(-20%);*/
     }    
  
     @mixin atLarge{

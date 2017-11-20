@@ -1,9 +1,35 @@
-.instagram-wrapper {
-  margin: 30px 20px 30px 20px;
-  height:80vh;
-  text-align: center;
-}
 
 .lightwidget-widget {
-  width: 70%;
+  width: 100%;
+
+  @mixin atSmall {
+   width: 90%;
+  }
+
+  @mixin atMedium {
+    width: 80%;
+  }
+
+  @mixin atLarge {
+    width:70%;
+  }
+}
+
+.instagram-wrapper {
+    margin: 30px 20px 30px 20px;
+    text-align: center;
+    height: 30vh;
+
+    @mixin atSmall {
+      height:40vh;
+    }
+
+    @mixin atMedium {
+      height:60vh;
+    }
+
+    @mixin atLarge {
+      height:80vh;
+    }
+
 }

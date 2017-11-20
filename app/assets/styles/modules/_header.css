@@ -1,5 +1,7 @@
 .header {
 
+  max-width: 100%;
+  position: fixed;
   height: 5vh;
 
   &__bottom{

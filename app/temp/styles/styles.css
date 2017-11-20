@@ -466,7 +466,7 @@ ul {
           justify-content: center;
   list-style-type: none;
   padding: 0;
-  /*width: 100%;*/
+  max-width: 100%;
 }
 
 ul li {
@@ -492,8 +492,15 @@ img {
     background-attachment: fixed;
 }
 
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
 .header {
 
+  max-width: 100%;
+  position: fixed;
   height: 5vh;
 }
 
@@ -508,18 +515,80 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
 
-  background-image: url(../../assets/images/tiesmall.png);
-  height: 80vh; 
-  /* parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
+  background-image: url(../../assets/images/TIE_1280.png);
+  height: 250px;
+  max-width: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center top;
 
 }
 
+@media(min-width: 530px){
+
+.bkgrd-main {
+    background-image: url(../../assets/images/TIE_1680.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: left top;
+    height: 300px
+
+}
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-main {
+    background-image: url(../../assets/images/TIE_1680.png);
+    background-size: contain;
+    background-attachment: fixed;
+    height: 400px; 
+    background-position: center top
+
+}
+  }
+
+@media(min-width: 1200px){
+
+.bkgrd-main {
+    background-position: center;
+    background-image: url(../../assets/images/TIE_1920.png);
+    background-size: cover;
+    height: 100vh; 
+    background-attachment: scroll
+
+}
+  }
+
 .bkgrd-main-2{
-    height:80vh;
+
+    background-color: blue;
+    height: 50vh;
+
+  }
+
+@media(min-width: 530px){
+
+.bkgrd-main-2{
+      height:60vh
+
+  }
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-main-2{
+      height:80vh
+
+  }
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-main-2{
+      height:80vh
+
+  }
   }
 
 .bkgrd-main-3 {
@@ -530,24 +599,18 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   background-position: center;
   background-repeat: no-repeat;
   /*background-size: contain;*/
-  }
 
-.bkgrd-main__text-content {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 0;
-    width: 100%;
-    text-align: center;
   }
 
 .bkgrd-main__title {
+    position: fixed;
+    top: 12%;
+    left: 0;
+    width: 100%;
     /*display:none;*/
     color: #ffc6df;
     text-align: center;
     margin: 0;
-    /*padding-top: 20%;*/
     font-size: 4rem;
     font-family: PoetsenOne;    
 
@@ -556,17 +619,20 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 @media(min-width: 530px){
 
 .bkgrd-main__title {
+      top: 15%;
       font-size: 6rem;
-      position: auto    
+      position: fixed    
 
   }
   }
 
-@media(min-width: 800px){
+@media(min-width: 680px){
 
 .bkgrd-main__title {
+      top: 38%;
       font-size: 8rem;
-      position: auto    
+      position: auto
+      /*transform: translateY(-20%);*/    
 
   }
   }
@@ -593,12 +659,58 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   margin-top: 20px;
 }
 
-.instagram-wrapper {
-  margin: 30px 20px 30px 20px;
-  height:80vh;
-  text-align: center;
+.lightwidget-widget {
+  width: 100%;
 }
 
+@media(min-width: 530px){
+
 .lightwidget-widget {
-  width: 70%;
+   width: 90%
 }
+  }
+
+@media(min-width: 680px){
+
+.lightwidget-widget {
+    width: 80%
+}
+  }
+
+@media(min-width: 1200px){
+
+.lightwidget-widget {
+    width:70%
+}
+  }
+
+.instagram-wrapper {
+    margin: 30px 20px 30px 20px;
+    text-align: center;
+    height: 30vh;
+
+}
+
+@media(min-width: 530px){
+
+.instagram-wrapper {
+      height:40vh
+
+}
+  }
+
+@media(min-width: 680px){
+
+.instagram-wrapper {
+      height:60vh
+
+}
+  }
+
+@media(min-width: 1200px){
+
+.instagram-wrapper {
+      height:80vh
+
+}
+  }
