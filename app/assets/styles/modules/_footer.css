@@ -1,0 +1,8 @@
+.footer {
+  display: inline-block;
+  width: 100%;
+  background-color: $mainPurple;
+  color: #FFF;
+  text-decoration: none;
+  padding: 3px 3px;
+}

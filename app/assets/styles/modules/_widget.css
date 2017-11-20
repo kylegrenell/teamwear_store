@@ -1,35 +1,27 @@
+iframe {
+cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !important;
+}
 
 .lightwidget-widget {
   width: 100%;
 
   @mixin atSmall {
    width: 90%;
+   height:40vh;
   }
 
   @mixin atMedium {
     width: 80%;
+    height:60vh;
   }
 
   @mixin atLarge {
     width:70%;
+    height:75vh;
   }
 }
 
 .instagram-wrapper {
-    margin: 30px 20px 30px 20px;
+    padding: 30px 10px 30px 10px;
     text-align: center;
-    height: 30vh;
-
-    @mixin atSmall {
-      height:40vh;
-    }
-
-    @mixin atMedium {
-      height:60vh;
-    }
-
-    @mixin atLarge {
-      height:80vh;
-    }
-
 }

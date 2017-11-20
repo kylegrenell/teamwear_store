@@ -1,6 +1,6 @@
-@font-face {
-font-family: PoetsenOne;
-src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
+#collection-main {
+  color: $mainGreen;
+  text-align: center;
 }
 
 .bkgrd-main {
@@ -39,7 +39,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
   &-2{
 
-    background-color: blue;
+    /*background-color: blue;*/
     height: 50vh;
 
     @mixin atSmall {
@@ -50,22 +50,30 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
       height:80vh;
     }
 
-    @mixin atMedium {
-      height:80vh;
-    }
-
   }
 
   &-3 {
   background-image: url(../../assets/images/squint3.png);
-  height: 80vh; 
-    /* parallax scrolling effect */
+  height: 50vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  /*background-size: contain;*/
+  background-size: cover;
 
+  @mixin atSmall {
+    height:60vh;
   }
+
+  @mixin atMedium {
+    height:80vh;
+    background-size: auto;
+  }
+
+  @mixin atLarge {
+    background-size: auto;
+  }
+
+}
 
   &__title {
     position: fixed;
@@ -81,13 +89,13 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
     @mixin atSmall {
       top: 15%;
-      font-size: 6rem;
+      font-size: 5rem;
       position: fixed;
     }
 
     @mixin atMedium{
       top: 38%;
-      font-size: 8rem;
+      font-size: 7rem;
       position: auto;
       /*transform: translateY(-20%);*/
     }    
@@ -96,6 +104,13 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
       font-size: 10rem;
       position: auto;
     }    
+
+  }
+
+  &__text-content {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
   }
 

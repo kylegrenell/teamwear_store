@@ -3,7 +3,9 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_wrapper";
+@import "base/_font";
 @import "modules/_header";
 @import "modules/_main-bkgrd";
 @import "modules/_btn";
 @import "modules/_widget";
+@import "modules/_footer";
