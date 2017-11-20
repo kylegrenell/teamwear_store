@@ -42,19 +42,24 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
     text-align: center;
     margin: 0;
     /*padding-top: 20%;*/
-    font-size: 9.5rem;
+    font-size: 4rem;
     font-family: PoetsenOne;
 
-    @media only screen and (max-width: 750px){
-      font-size: 7rem;
+    @mixin atSmall {
+      font-size: 6rem;
       position: auto;
     }
 
-    @media only screen and (max-width: 500px){
-      font-size: 5rem;
+    @mixin atMedium{
+      font-size: 8rem;
       position: auto;
     }    
  
+    @mixin atLarge{
+      font-size: 10rem;
+      position: auto;
+    }    
+
   }
 
 }

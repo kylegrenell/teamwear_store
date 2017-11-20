@@ -548,28 +548,37 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
     text-align: center;
     margin: 0;
     /*padding-top: 20%;*/
-    font-size: 9.5rem;
+    font-size: 4rem;
     font-family: PoetsenOne;    
- 
+
   }
 
-@media only screen and (max-width: 750px){
+@media(min-width: 530px){
 
 .bkgrd-main__title {
-      font-size: 7rem;
+      font-size: 6rem;
       position: auto    
- 
-  }
-    }
 
-@media only screen and (max-width: 500px){
+  }
+  }
+
+@media(min-width: 800px){
 
 .bkgrd-main__title {
-      font-size: 5rem;
+      font-size: 8rem;
       position: auto    
- 
+
   }
-    }
+  }
+
+@media(min-width: 1200px){
+
+.bkgrd-main__title {
+      font-size: 10rem;
+      position: auto    
+
+  }
+  }
 
 .btn {
   background-color: #9E8ABE;
