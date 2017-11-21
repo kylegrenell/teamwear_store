@@ -106,9 +106,6 @@ var MobileMenu = function () {
   function MobileMenu() {
     _classCallCheck(this, MobileMenu);
 
-    // $('.header__menu-icon').click(function(){
-    //   console.log('testing click event');
-    // });
     this.menuIcon = (0, _jquery2.default)(".header__menu-icon");
     this.menuContent = (0, _jquery2.default)(".header__menu-content");
     this.events();
@@ -123,7 +120,7 @@ var MobileMenu = function () {
     key: "toggleTheMenu",
     value: function toggleTheMenu() {
       this.menuContent.toggleClass("header__menu-content--is-visible");
-      // no . required for passing the modifier class
+      this.menuIcon.toggleClass("header__menu-icon--close-x");
     }
   }]);
 
