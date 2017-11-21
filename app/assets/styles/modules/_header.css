@@ -1,13 +1,17 @@
 .header {
-  background-color: rgba($mainPurple, .65);
   text-decoration: none;
   position: fixed;
   width: 100%;
   color: #FFF;
-  z-index: 2;
+  z-index: 10;
+  background-color: rgba($mainPurple, .95);
 
   @mixin atSmall {
     padding: 1px 0 1px 0;
+  }
+
+  @mixin atMedium {
+    background-color: rgba($mainPurple, .75);
   }
 
   &__menu-icon {
@@ -20,6 +24,58 @@
 
     @mixin atMedium {
       display: none;
+    }
+  }
+
+  &__menu-content {
+    display: none;
+    /*padding-top: 190px;*/
+
+    @mixin atMedium {
+      /*padding-top: 0;*/
+      display: block;
+    }
+
+    &--is-visible {
+      /*transition: all .5s ease-out;*/
+      display: block;
+/*      text-align: center;
+      height: 200px;
+      width: 100%;*/
+
+/*      @mixin atSmall {
+        height: 260px;
+      }*/
+
+
+/*      ul {
+        display: table;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 50px;
+        font-size: 1.2rem;
+
+        @mixin atSmall {
+          padding-top: 70px;
+        }
+
+        @mixin atMedium {
+        padding-top: 0; 
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0px;
+        font-size: 1rem;
+        }      
+      }*/
+
+      /*li {
+        padding: 8px;
+
+        @mixin atSmall {
+          padding: 12px;
+        }
+      }*/
     }
   }
 

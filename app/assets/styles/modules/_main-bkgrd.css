@@ -80,7 +80,7 @@
     top: 12%;
     left: 0;
     width: 100%;
-    /*display:none;*/
+    display:none;
     color: $mainPink;
     text-align: center;
     margin: 0;

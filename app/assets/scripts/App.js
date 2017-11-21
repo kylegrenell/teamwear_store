@@ -1,3 +1,5 @@
-var $ = require('jquery');
+import MobileMenu from './modules/MobileMenu';
+// import MainLogo from './modules/MainLogo';
 
-alert('abc 123');
+var mobileMenu = new MobileMenu();
+// var mainLogo = new MainLogo();

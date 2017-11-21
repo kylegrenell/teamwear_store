@@ -497,12 +497,12 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 }
 
 .header {
-  background-color: rgba(158,138,190, .65);
   text-decoration: none;
   position: fixed;
   width: 100%;
   color: #FFF;
-  z-index: 2;
+  z-index: 10;
+  background-color: rgba(158,138,190, .95);
 
 }
 
@@ -510,6 +510,14 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .header {
     padding: 1px 0 1px 0
+
+}
+  }
+
+@media(min-width: 680px){
+
+.header {
+    background-color: rgba(158,138,190, .75)
 
 }
   }
@@ -529,6 +537,62 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
       display: none
   }
   }
+
+.header__menu-content {
+    display: none;
+  }
+
+/*padding-top: 190px;*/
+
+@media(min-width: 680px){
+
+.header__menu-content {
+      /*padding-top: 0;*/
+      display: block
+  }
+  }
+
+.header__menu-content--is-visible {
+      /*transition: all .5s ease-out;*/
+      display: block;
+/*      text-align: center;
+      height: 200px;
+      width: 100%;*/
+
+/*      @mixin atSmall {
+        height: 260px;
+      }*/
+
+
+/*      ul {
+        display: table;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 50px;
+        font-size: 1.2rem;
+
+        @mixin atSmall {
+          padding-top: 70px;
+        }
+
+        @mixin atMedium {
+        padding-top: 0; 
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0px;
+        font-size: 1rem;
+        }      
+      }*/
+
+      /*li {
+        padding: 8px;
+
+        @mixin atSmall {
+          padding: 12px;
+        }
+      }*/
+    }
 
 #collection-main {
   color: #119a48;
@@ -645,7 +709,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
     top: 12%;
     left: 0;
     width: 100%;
-    /*display:none;*/
+    display:none;
     color: #ffc6df;
     text-align: center;
     margin: 0;
