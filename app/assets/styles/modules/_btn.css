@@ -32,7 +32,7 @@ button {
     }
 
     @mixin atMedium {
-      padding-top: 360px;
+      padding-top: 380px;
     }
 
     @mixin atLarge {
