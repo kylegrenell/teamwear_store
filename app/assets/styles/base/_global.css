@@ -1,3 +1,8 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -24,8 +29,8 @@ ul li {
   text-decoration: none;
 }
 
-a, a:hover {
+a {
   text-decoration: none;
   color: #FFF;
-  cursor: url(http://i916.photobucket.com/albums/ad9/sugarycandy/cursors/pinksparklyarrow2.gif), progress !important;
+  cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;
 }

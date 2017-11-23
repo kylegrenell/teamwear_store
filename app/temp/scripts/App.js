@@ -76,10 +76,10 @@ var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import MainLogo from './modules/MainLogo';
+// import RevealOnScroll from './modules/RevealOnScroll';
 
 var mobileMenu = new _MobileMenu2.default();
-// var mainLogo = new MainLogo();
+// var revealOnScroll = new RevealOnScroll();
 
 /***/ }),
 /* 1 */

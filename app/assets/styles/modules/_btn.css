@@ -1,12 +1,42 @@
-.btn {
-  background-color: $mainPurple;
-  color: #FFF;
-  text-decoration: none;
-  padding: .75rem 1.2rem;
-  display: inline-block;
-  text-align: center;
+button {
+  margin:auto;
+  display:block;
 }
 
-#btn-sale{
-  margin-top: 20px;
-}
+button {
+    padding:16px 32px;
+    font-size:16px;
+    font-weight:100;
+    color:#fff;
+    background-color: $mainPurple;
+    border:0;
+    border-radius:5px;   
+  }
+
+  button:hover{
+    background-color: $darkPurple;
+  }
+
+  .btn-shop-now {
+    text-decoration: none;
+    padding-top: 200px;
+    display: block;
+    text-align: center;
+
+    @mixin atSmallest {
+      padding-top: 260px;
+    }
+
+    @mixin atSmall {
+      padding-top: 300px;
+    }
+
+    @mixin atMedium {
+      padding-top: 360px;
+    }
+
+    @mixin atLarge {
+      padding-top: 480px;
+    }
+
+  }

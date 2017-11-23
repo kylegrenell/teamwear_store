@@ -1,8 +1,11 @@
 .footer {
-  display: inline-block;
   width: 100%;
-  background-color: $mainPurple;
-  color: #FFF;
+  height: 300px;
+  background-color: #FFF;
   text-decoration: none;
   padding: 3px 3px;
+
+  a, a:hover {
+    color: $mainPurple !important;
+  }
 }

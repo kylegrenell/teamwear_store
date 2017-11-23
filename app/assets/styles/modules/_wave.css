@@ -1,0 +1,89 @@
+.wave-purple{
+  background-color: $mainPurple;
+  /*height: 20px;*/
+  position: relative;
+}
+.wave-purple::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, $mainPurple 13px);
+}
+.wave-purple::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, $mainPurple 12px, transparent 13px);
+}
+
+.wave-white {
+  background-color: $mainPurple;
+  /*height: 20px;*/
+  position: relative;
+}
+.wave-white::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+.wave-white::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+.wave-green{
+  background-color: $mainGreen;
+  /*height: 20px;*/
+  position: relative;
+}
+.wave-green::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, $mainGreen 13px);
+}
+.wave-green::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, $mainGreen 12px, transparent 13px);
+}

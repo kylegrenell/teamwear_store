@@ -1,55 +1,68 @@
-#collection-main {
-  color: $mainGreen;
-  text-align: center;
-}
-
 .bkgrd-main {
 
-  background-image: url(../../assets/images/TIE_1280.png);
-  height: 250px;
-  max-width: 100%;
-  background-size: cover;
+  background-image: url(../../assets/images/squintmain2.png);
+  height: 350px;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-size: cover;
+  background-position: center; 
+
+  @mixin atSmallest {
+    /*350*/
+    background-image: url(../../assets/images/squintmain2.png);
+    height: 400px;
+  }
 
   @mixin atSmall {
-    background-image: url(../../assets/images/TIE_1680.png);
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: left top;
-    height: 300px;
+    /*500*/
+    background-image: url(../../assets/images/squintmain2.png);
+    height: 450px;
   }
 
   @mixin atMedium {
-    background-image: url(../../assets/images/TIE_1680.png);
-    background-size: contain;
-    background-attachment: fixed;
-    height: 400px; 
-    background-position: center top;
-
+    /*680*/
+    background-image: url(../../assets/images/squintmain2.png);
+/*    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
+    height: 600px; 
   }
 
   @mixin atLarge {
+    /*1000*/
     background-position: center;
-    background-image: url(../../assets/images/TIE_1920.png);
+    background-image: url(../../assets/images/squintmain2.png);
     background-size: cover;
     height: 100vh; 
-    background-attachment: scroll;
+    /*background-attachment: scroll;*/
+    background-attachment: fixed;
   }
 
-  &-2{
-
-    /*background-color: blue;*/
-    height: 50vh;
+  &-text {
+    padding: 15px 30px;
+    text-align: center;
+    z-index: 5;
+    color: #fff;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: .95rem;
+    font-weight: 500;
+    opacity: .8;
 
     @mixin atSmall {
-      height:60vh;
+      font-size: 1rem;
     }
 
     @mixin atMedium {
-      height:80vh;
+      font-size: 1.1rem;
     }
 
+  }
+
+  &-2{
+    background-color: $mainPurple;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   &-3 {
@@ -76,42 +89,41 @@
 }
 
   &__title {
-    position: fixed;
-    top: 12%;
+    position: absolute;
+    top: 17%;
     left: 0;
     width: 100%;
-    display:none;
     color: $mainPink;
     text-align: center;
     margin: 0;
     font-size: 4rem;
     font-family: PoetsenOne;
+    z-index:2;
+
+    @mixin atSmallest {
+      top: 20%;
+      font-size: 5rem;
+    }
 
     @mixin atSmall {
-      top: 15%;
+      top: 25%;
       font-size: 5rem;
-      position: fixed;
     }
 
     @mixin atMedium{
-      top: 38%;
+      top: 30%;
       font-size: 7rem;
-      position: auto;
-      /*transform: translateY(-20%);*/
     }    
  
     @mixin atLarge{
       font-size: 10rem;
-      position: auto;
     }    
 
   }
 
   &__text-content {
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
+    /*text-overflow: ellipsis;*/
   }
 
 }

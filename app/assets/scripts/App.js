@@ -1,5 +1,5 @@
 import MobileMenu from './modules/MobileMenu';
-// import MainLogo from './modules/MainLogo';
+// import RevealOnScroll from './modules/RevealOnScroll';
 
 var mobileMenu = new MobileMenu();
-// var mainLogo = new MainLogo();
+// var revealOnScroll = new RevealOnScroll();

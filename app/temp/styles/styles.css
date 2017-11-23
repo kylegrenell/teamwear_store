@@ -450,6 +450,11 @@ template {
   display: none;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -480,10 +485,10 @@ ul li {
   text-decoration: none;
 }
 
-a, a:hover {
+a {
   text-decoration: none;
   color: #FFF;
-  cursor: url(http://i916.photobucket.com/albums/ad9/sugarycandy/cursors/pinksparklyarrow2.gif), progress !important;
+  cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;
 }
 
 .wrapper {
@@ -498,15 +503,17 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .header {
   text-decoration: none;
-  position: fixed;
+  position: absolute;
   width: 100%;
   color: #FFF;
   z-index: 10;
-  background-color: rgba(158,138,190, .95);
+  background-color: rgba(156,138,193, .75);
 
 }
 
-@media(min-width: 530px){
+/*display: flex;*/
+
+@media(min-width: 520px){
 
 .header {
     padding: 1px 0 1px 0
@@ -517,9 +524,31 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 @media(min-width: 680px){
 
 .header {
-    background-color: rgba(158,138,190, .75)
+    background-color: transparent;
+    width: 250px;
+    padding: 5px 5px;
+    left: 55px
 
 }
+  }
+
+.header a:hover {  
+    color: #119a48;
+  }
+
+@media(min-width: 680px){
+
+.header a {
+    color: #9c8ac1
+  }
+  }
+
+.header__shop a {
+    color: #fff;
+  }
+
+.header__shop a:hover{
+    color: #119a48;
   }
 
 .header__menu-icon {
@@ -654,30 +683,43 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
       }*/
     }
 
-#collection-main {
-  color: #119a48;
-  text-align: center;
+.reveal-item {
+  opacity: 1;
+  -webkit-transition: opacity 1.5s ease-out;
+  transition: opacity 1.5s ease-out;
+
 }
+
+.reveal-item--is-visible {
+    opacity: 0;
+  }
 
 .bkgrd-main {
 
-  background-image: url(../../assets/images/TIE_1280.png);
-  height: 250px;
-  max-width: 100%;
-  background-size: cover;
+  background-image: url(../../assets/images/squintmain2.png);
+  height: 350px;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-size: cover;
+  background-position: center;
 
 }
 
-@media(min-width: 530px){
+@media(min-width: 350px){
 
 .bkgrd-main {
-    background-image: url(../../assets/images/TIE_1680.png);
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: left top;
-    height: 300px
+    /*350*/
+    background-image: url(../../assets/images/squintmain2.png);
+    height: 400px
+
+}
+  }
+
+@media(min-width: 520px){
+
+.bkgrd-main {
+    /*500*/
+    background-image: url(../../assets/images/squintmain2.png);
+    height: 450px
 
 }
   }
@@ -685,48 +727,64 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 @media(min-width: 680px){
 
 .bkgrd-main {
-    background-image: url(../../assets/images/TIE_1680.png);
-    background-size: contain;
-    background-attachment: fixed;
-    height: 400px; 
-    background-position: center top
+    /*680*/
+    background-image: url(../../assets/images/squintmain2.png);
+/*    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
+    height: 600px
 
 }
   }
 
-@media(min-width: 1200px){
+@media(min-width: 1000px){
 
 .bkgrd-main {
+    /*1000*/
     background-position: center;
-    background-image: url(../../assets/images/TIE_1920.png);
+    background-image: url(../../assets/images/squintmain2.png);
     background-size: cover;
     height: 100vh; 
-    background-attachment: scroll
+    /*background-attachment: scroll;*/
+    background-attachment: fixed
 
 }
   }
 
-.bkgrd-main-2{
-
-    /*background-color: blue;*/
-    height: 50vh;
+.bkgrd-main-text {
+    padding: 15px 30px;
+    text-align: center;
+    z-index: 5;
+    color: #fff;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: .95rem;
+    font-weight: 500;
+    opacity: .8;
 
   }
 
-@media(min-width: 530px){
+@media(min-width: 520px){
 
-.bkgrd-main-2{
-      height:60vh
+.bkgrd-main-text {
+      font-size: 1rem
 
   }
   }
 
 @media(min-width: 680px){
 
-.bkgrd-main-2{
-      height:80vh
+.bkgrd-main-text {
+      font-size: 1.1rem
 
   }
+  }
+
+.bkgrd-main-2{
+    background-color: #9c8ac1;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
 .bkgrd-main-3 {
@@ -739,7 +797,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 }
 
-@media(min-width: 530px){
+@media(min-width: 520px){
 
 .bkgrd-main-3 {
     height:60vh
@@ -756,7 +814,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 }
   }
 
-@media(min-width: 1200px){
+@media(min-width: 1000px){
 
 .bkgrd-main-3 {
     background-size: auto
@@ -765,25 +823,33 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
 
 .bkgrd-main__title {
-    position: fixed;
-    top: 12%;
+    position: absolute;
+    top: 17%;
     left: 0;
     width: 100%;
-    display:none;
     color: #ffc6df;
     text-align: center;
     margin: 0;
     font-size: 4rem;
-    font-family: PoetsenOne;    
+    font-family: PoetsenOne;
+    z-index:2;    
 
   }
 
-@media(min-width: 530px){
+@media(min-width: 350px){
 
 .bkgrd-main__title {
-      top: 15%;
-      font-size: 5rem;
-      position: fixed    
+      top: 20%;
+      font-size: 5rem    
+
+  }
+  }
+
+@media(min-width: 520px){
+
+.bkgrd-main__title {
+      top: 25%;
+      font-size: 5rem    
 
   }
   }
@@ -791,42 +857,199 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 @media(min-width: 680px){
 
 .bkgrd-main__title {
-      top: 38%;
-      font-size: 7rem;
-      position: auto
-      /*transform: translateY(-20%);*/    
+      top: 30%;
+      font-size: 7rem    
 
   }
   }
 
-@media(min-width: 1200px){
+@media(min-width: 1000px){
 
 .bkgrd-main__title {
-      font-size: 10rem;
-      position: auto    
+      font-size: 10rem    
 
   }
   }
 
 .bkgrd-main__text-content {
     overflow: hidden;
+    /*text-overflow: ellipsis;*/
+  }
+
+.bkgrd-shop {
+
+  background-image: url(../../assets/images/TIE_1280.png);
+  background-color: #9c8ac1;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+
+@media(min-width: 350px){
+
+.bkgrd-shop {
+    background-image: url(../../assets/images/TIE_1280.png);
+    background-size: contain
+
+}
+  }
+
+@media(min-width: 520px){
+
+.bkgrd-shop {
+    background-image: url(../../assets/images/TIE_1280.png);
+    background-size: contain;
+    height: 450px
+
+}
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-shop {
+    background-image: url(../../assets/images/TIE_1680.png);
+    background-size: contain;
+    background-position: 25% 25%;
+    background-attachment: scroll;
+    height: 500px
+
+}
+  }
+
+@media(min-width: 1000px){
+
+.bkgrd-shop {
+    background-position: center;
+    background-image: url(../../assets/images/TIE_1920.png);
+    background-size: cover;
+    height: 600px; 
+    background-attachment: scroll
+    /*background-attachment: fixed;*/
+
+}
+  }
+
+.bkgrd-shop-2{
+
+    /*background-color: blue;*/
+    /*height: 50vh;
+
+    @mixin atSmall {
+      height:60vh;
+    }
+
+    @mixin atMedium {
+      height:80vh;
+    }*/
+
+  }
+
+.bkgrd-shop-3 {
+  background-image: url(../../assets/images/squint3.png);
+  height: 50vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+@media(min-width: 520px){
+
+.bkgrd-shop-3 {
+    height:60vh
+
+}
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-shop-3 {
+    height:80vh;
+    background-size: auto
+
+}
+  }
+
+@media(min-width: 1000px){
+
+.bkgrd-shop-3 {
+    background-size: auto
+
+}
+  }
+
+.bkgrd-shop__text-content {
+    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 
   }
 
-.btn {
-  background-color: #9E8ABE;
-  color: #FFF;
-  text-decoration: none;
-  padding: .75rem 1.2rem;
-  display: inline-block;
-  text-align: center;
+#my-store-12708124 {
+  background-color: #9c8ac1;
 }
 
-#btn-sale{
-  margin-top: 20px;
+button {
+  margin:auto;
+  display:block;
 }
+
+button {
+    padding:16px 32px;
+    font-size:16px;
+    font-weight:100;
+    color:#fff;
+    background-color: #9c8ac1;
+    border:0;
+    border-radius:5px;   
+  }
+
+button:hover{
+    background-color: #7258a6;
+  }
+
+.btn-shop-now {
+    text-decoration: none;
+    padding-top: 200px;
+    display: block;
+    text-align: center;
+
+  }
+
+@media(min-width: 350px){
+
+.btn-shop-now {
+      padding-top: 260px
+
+  }
+  }
+
+@media(min-width: 520px){
+
+.btn-shop-now {
+      padding-top: 300px
+
+  }
+  }
+
+@media(min-width: 680px){
+
+.btn-shop-now {
+      padding-top: 360px
+
+  }
+  }
+
+@media(min-width: 1000px){
+
+.btn-shop-now {
+      padding-top: 480px
+
+  }
+  }
 
 iframe {
 cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !important;
@@ -834,13 +1057,15 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 
 .lightwidget-widget {
   width: 100%;
+
 }
 
-@media(min-width: 530px){
+@media(min-width: 520px){
 
 .lightwidget-widget {
    width: 90%;
    height:40vh
+
 }
   }
 
@@ -849,27 +1074,151 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 .lightwidget-widget {
     width: 80%;
     height:60vh
+
 }
   }
 
-@media(min-width: 1200px){
+@media(min-width: 1000px){
 
 .lightwidget-widget {
     width:70%;
     height:75vh
+
 }
   }
 
 .instagram-wrapper {
-    padding: 30px 10px 30px 10px;
+    padding: 10px 10px 30px 10px;
     text-align: center;
+    background-color: #119a48;
 }
 
+.instagram-follow {
+  font-family: PoetsenOne;
+  font-size: 25px;
+  color: #fff;
+
+}
+
+@media(min-width: 680px){
+
+.instagram-follow {
+    font-size: 30px
+
+}
+  }
+
+.instagram-follow a {
+  padding-bottom: .07em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(250,250,250,.3);
+  }
+
 .footer {
-  display: inline-block;
   width: 100%;
-  background-color: #9E8ABE;
-  color: #FFF;
+  height: 300px;
+  background-color: #FFF;
   text-decoration: none;
   padding: 3px 3px;
+}
+
+.footer a, .footer a:hover {
+    color: #9c8ac1 !important;
+  }
+
+.wave-purple{
+  background-color: #9c8ac1;
+  /*height: 20px;*/
+  position: relative;
+}
+
+.wave-purple::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, #9c8ac1 13px);
+}
+
+.wave-purple::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, #9c8ac1 12px, transparent 13px);
+}
+
+.wave-white {
+  background-color: #9c8ac1;
+  /*height: 20px;*/
+  position: relative;
+}
+
+.wave-white::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+.wave-white::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+.wave-green{
+  background-color: #119a48;
+  /*height: 20px;*/
+  position: relative;
+}
+
+.wave-green::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, #119a48 13px);
+}
+
+.wave-green::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, #119a48 12px, transparent 13px);
 }
