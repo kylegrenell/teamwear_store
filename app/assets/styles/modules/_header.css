@@ -153,3 +153,7 @@
   }
 
 }
+
+div > ul > li > a > img {
+  content: "test";
+}

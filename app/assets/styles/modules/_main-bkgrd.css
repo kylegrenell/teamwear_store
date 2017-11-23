@@ -60,9 +60,18 @@
 
   &-2{
     background-color: $mainPurple;
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 25px;
     padding-bottom: 25px;
+
+
+    @mixin atSmallest {
+      /*height:60vh;*/
+    }
+
+    @mixin atMedium {
+      /*height:80vh;*/
+    }
   }
 
   &-3 {
