@@ -4,39 +4,49 @@ button {
 }
 
 button {
+  padding:16px 16px;
+  font-size:12px;
+  font-weight:100;
+  color:#fff;
+  background-color: $mainPurple;
+  border:0;
+  border-radius:5px;
+
+  @mixin atSmall {
+    padding:16px 22px;
+    font-size:14px;
+  }
+
+  @mixin atMedium {
     padding:16px 32px;
     font-size:16px;
-    font-weight:100;
-    color:#fff;
-    background-color: $mainPurple;
-    border:0;
-    border-radius:5px;   
+  }    
+
+}
+
+button:hover{
+  background-color: $darkPurple;
+}
+
+.btn-shop-now {
+  text-decoration: none;
+  padding-top: 200px;
+  display: block;
+  text-align: center;
+
+  @mixin atSmallest {
+    padding-top: 260px;
   }
 
-  button:hover{
-    background-color: $darkPurple;
+  @mixin atSmall {
+    padding-top: 290px;
   }
 
-  .btn-shop-now {
-    text-decoration: none;
-    padding-top: 200px;
-    display: block;
-    text-align: center;
-
-    @mixin atSmallest {
-      padding-top: 260px;
-    }
-
-    @mixin atSmall {
-      padding-top: 300px;
-    }
-
-    @mixin atMedium {
-      padding-top: 380px;
-    }
-
-    @mixin atLarge {
-      padding-top: 480px;
-    }
-
+  @mixin atMedium {
+    padding-top: 380px;
   }
+
+  @mixin atLarge {
+    padding-top: 450px;
+  }
+}
