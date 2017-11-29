@@ -10,8 +10,10 @@
 @import "modules/_shop-bkgrd";
 @import "modules/_looks-bkgrd";
 @import "modules/_looks-take-it-easy";
+@import "modules/_looks-squint-grad";
 @import "modules/_btn";
 @import "modules/_grid";
+@import "modules/_grid-squint-grad";
 @import "modules/_widget";
 @import "modules/_footer";
 @import "modules/_wave";
