@@ -1,7 +1,7 @@
 .bkgrd-looks {
 
   /*background-image: url(../../assets/images/TIE_1280.png);*/
-  background-color: #fff;
+  background-color: $mainPink;
   height: 40%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -61,54 +61,53 @@
 
   &-2{
     background-color: $mainPurple;
+    height: 30%;
     background-image: url(../../assets/images/TIE_1920.png);
-    height: 60%;
-/*    padding-top: 25px;
-    padding-bottom: 25px;*/
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-size: contain;
 
     @mixin atSmallest {
-      /*height:60vh;*/
+      height: 40%;
+      background-size: contain;
     }
 
     @mixin atMedium {
-      /*height:80vh;*/
+      background-size: contain;
+      height: 75%;
     }
   }
 
   &-3 {
-  background-image: url(../../assets/images/squintmain2.png);
-  height: 50vh; 
-  background-attachment: fixed;
+    background-color: $mainPink;
+  background-image: url(../../assets/images/squint_grad/8.jpg);
+  height: 30%; 
+  /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  @mixin atSmall {
-    height:60vh;
+  @mixin atSmallest {
+    height: 50%;
+    background-size: cover;
   }
-
   @mixin atMedium {
-    height:80vh;
-    background-size: auto;
+    height: 60%;
+    background-size: cover;
   }
 
   @mixin atLarge {
-    background-size: auto;
-    height: 60%;
+    height: 75%;
   }
 
 }
 
 &__title-shop {
   position: absolute;
-  top: 110px;
+  top: 30%;
   left: 0;
   width: 100%;
-  color: $mainPink;
+  color: #fff;
   text-align: center;
   margin: 0;
   font-size: 2.5rem;
@@ -116,22 +115,21 @@
   z-index:2;
 
   @mixin atSmallest {
-    top: 130px;
     font-size: 3.3rem;
   }
 
   @mixin atSmall {
-    top: 110px;
+    top: 28%;
     font-size: 4.5rem;
   }
 
   @mixin atMedium{
-    top: 110px;
+    top: 26%;
     font-size: 6rem;
   }    
 
   @mixin atLarge{
-    top: 100px;
+    top: 30%;
     font-size: 7rem;
   }    
 
