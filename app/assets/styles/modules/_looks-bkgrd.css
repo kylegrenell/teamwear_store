@@ -62,7 +62,7 @@
   &-2{
     background-color: $mainPurple;
     background-image: url(../../assets/images/TIE_1920.png);
-    height: 30%;
+    height: 60%;
 /*    padding-top: 25px;
     padding-bottom: 25px;*/
     background-position: center;
@@ -98,7 +98,7 @@
 
   @mixin atLarge {
     background-size: auto;
-    height: 70%;
+    height: 60%;
   }
 
 }
