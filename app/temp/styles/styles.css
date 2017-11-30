@@ -990,7 +990,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
   }
 
-.bkgrd-looks__title-shop {
+.bkgrd-looks__title-shop a {
   position: absolute;
   top: 130px;
   left: 0;
@@ -1007,7 +1007,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 @media(min-width: 350px){
 
-.bkgrd-looks__title-shop {
+.bkgrd-looks__title-shop a {
     font-size: 2.5rem      
 
 }
@@ -1015,7 +1015,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 @media(min-width: 520px){
 
-.bkgrd-looks__title-shop {     
+.bkgrd-looks__title-shop a {     
     font-size: 3rem      
 
 }
@@ -1023,7 +1023,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 @media(min-width: 680px){
 
-.bkgrd-looks__title-shop {
+.bkgrd-looks__title-shop a {
     font-size: 4rem;
     top: 140px      
 
@@ -1032,7 +1032,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 @media(min-width: 1000px){
 
-.bkgrd-looks__title-shop {
+.bkgrd-looks__title-shop a {
     top: 150px      
 
 }
@@ -1103,6 +1103,41 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
     /*margin-left: -2px;*/
     /*margin-top: -2px;*/
   }
+
+@-webkit-keyframes wiggle{
+  0% {
+    -webkit-transform:rotate(3deg);
+            transform:rotate(3deg);
+  }
+  50% {
+    -webkit-transform:rotate(-3deg);
+            transform:rotate(-3deg);
+  }
+  100%{
+    -webkit-transform:rotate(3deg);
+            transform:rotate(3deg);
+  }
+}
+
+@keyframes wiggle{
+  0% {
+    -webkit-transform:rotate(3deg);
+            transform:rotate(3deg);
+  }
+  50% {
+    -webkit-transform:rotate(-3deg);
+            transform:rotate(-3deg);
+  }
+  100%{
+    -webkit-transform:rotate(3deg);
+            transform:rotate(3deg);
+  }
+}
+
+a.wiggle-me:hover{
+  -webkit-animation:wiggle .5s 10;
+          animation:wiggle .5s 10;
+}
 
 .bkgrd-looks-tie {
 
