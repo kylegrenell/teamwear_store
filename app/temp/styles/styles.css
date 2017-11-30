@@ -989,33 +989,13 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .bkgrd-looks {
 
   /*background-image: url(../../assets/images/TIE_1280.png);*/
-  background-color: #ffc6df;
+  background-color: #fff;
   height: 40%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 
 }
-
-@media(min-width: 350px){
-
-.bkgrd-looks {
-    /*350*/
-    /*background-image: url(../../assets/images/TIE_1280.png);*/
-/*    height: 400px;*/
-
-}
-  }
-
-@media(min-width: 520px){
-
-.bkgrd-looks {
-    /*500*/
-    /*background-image: url(../../assets/images/TIE_1280.png);*/
-    /*height: 450px;*/
-
-}
-  }
 
 @media(min-width: 680px){
 
@@ -1045,95 +1025,48 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
 
 .bkgrd-looks-text {
-    padding: 15px 30px;
     text-align: center;
     z-index: 5;
-    color: #fff;
-    word-wrap: break-word;
-    overflow: hidden;
-    font-size: .95rem;
+    color: red;
     font-weight: 500;
     opacity: .8;
-
+    font-size: 1.7rem;
+    font-family: PoetsenOne;
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding-top: 60px;
   }
 
 @media(min-width: 520px){
 
 .bkgrd-looks-text {
-      font-size: 1rem
-
+      font-size: 2rem;
+      padding-top: 50px
   }
   }
 
 @media(min-width: 680px){
 
 .bkgrd-looks-text {
-      font-size: 1.1rem
-
+      font-size: 2.5rem;
+      padding-top: 50px
   }
-  }
-
-.bkgrd-looks-2{
-    background-color: #9c8ac1;
-    height: 30%;
-    background-image: url(../../assets/images/TIE_1920.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-size: contain;
-  }
-
-@media(min-width: 350px){
-
-.bkgrd-looks-2{
-      height: 40%;
-      background-size: contain
-  }
-  }
-
-@media(min-width: 680px){
-
-.bkgrd-looks-2{
-      background-size: contain;
-      height: 75%
-  }
-  }
-
-.bkgrd-looks-3 {
-    background-color: #ffc6df;
-  background-image: url(../../assets/images/squint_grad/8.jpg);
-  height: 30%; 
-  /*background-attachment: fixed;*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-@media(min-width: 350px){
-
-.bkgrd-looks-3 {
-    height: 50%;
-    background-size: cover
-
-}
-  }
-
-@media(min-width: 680px){
-
-.bkgrd-looks-3 {
-    height: 60%;
-    background-size: cover
-
-}
   }
 
 @media(min-width: 1000px){
 
-.bkgrd-looks-3 {
-    height: 75%
+.bkgrd-looks-text {
+      font-size: 3rem;
+      padding-top: 50px
+  }
+  }
 
-}
+.bkgrd-looks__instructions {
+    text-align: center;
+    color: #9c8ac1;
+    font-size: 1.2rem;
   }
 
 .bkgrd-looks__title-shop {
@@ -1141,7 +1074,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   top: 30%;
   left: 0;
   width: 100%;
-  color: #fff;
+  color: #ffc6df;
   text-align: center;
   margin: 0;
   font-size: 2.5rem;
@@ -1188,6 +1121,67 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .bkgrd-looks__text-content {
     overflow: hidden;
     /*text-overflow: ellipsis;*/
+  }
+
+.collections {
+  max-width: 800px;
+  padding-bottom: 20px;
+}
+
+@media(min-width: 520px){
+
+.collections {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10)
+}
+  }
+
+@media(min-width: 350px){
+
+.collections-1 {
+    grid-column: 1 / 13;
+    grid-row: 1 / 5
+  }
+  }
+
+@media(min-width: 680px){
+
+.collections-1 {
+    grid-row: 1 / 5
+  }
+  }
+
+@media(min-width: 350px){
+
+.collections-2 {
+    grid-column: 1 / 13;
+    grid-row: 5 / 9
+  }
+  }
+
+@media(min-width: 680px){
+
+.collections-2 {
+    grid-row: 5 / 9
+  }
+  }
+
+.collections img {
+    margin-bottom: 15px;
+    width: 100%;
+    border: 2px solid #119a48;
+  }
+
+.collections img:hover {
+    -webkit-box-shadow: #119a48 7px 7px 0;
+            box-shadow: #119a48 7px 7px 0; 
+    opacity: .8;
+    /*border: 2px solid #119a48;*/
+    /*margin-left: -2px;*/
+    /*margin-top: -2px;*/
   }
 
 .bkgrd-looks-tie {
@@ -2584,6 +2578,7 @@ form input[name=subscribe] {
 
 .wave-pink::after{
   content: "";
+  overflow:hidden;
   position: absolute;
   left: 0;
   bottom: 0;
