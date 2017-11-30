@@ -22,25 +22,23 @@
   }
 }
 
-.wrapper-text {
-  padding-top: 80px;
-  height: 70%;
-  text-align: center;
-  background-color: $mainPink;
-  overflow: hidden;
+.wrapper-text-contact {
+  padding-top: 20px;
+    padding-bottom: 10px;
+    height: auto;
+    text-align: center;
+    background-color: $mainPink;
+    overflow: hidden;
 
-  @mixin atSmallest {
-    padding-top: 90px;
-  }
-  @mixin atSmall {
-    padding-top: 100px;
-  }
-  @mixin atMedium {
-    padding-top: 120px;
-  }
-  @mixin atLarge{
-    padding-top: 170px;
-  }
+    @mixin atSmallest {
+      /*padding-top: 90px;*/
+    }
+    @mixin atSmall {
+      padding-top: 40px;
+    }
+    @mixin atLarge{
+      padding-top: 100px;
+    }
 
   & p {
     font-size: .9rem;
