@@ -939,6 +939,30 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
     text-overflow: ellipsis;
   }
 
+.squint-logo {
+  text-align: center;
+  padding: 25px;
+}
+
+@media(min-width: 520px){
+
+.squint-logo {
+    padding: 10px
+}
+  }
+
+.squint-logo-image {
+    height: 230px;
+    display: inline-block;
+  }
+
+@media(min-width: 350px){
+
+.squint-logo-image {
+      height: 270px
+  }
+  }
+
 /*#my-store-12708124 {
   background-color: $mainPurple;
 }*/
@@ -1417,7 +1441,7 @@ a.wiggle-me:hover{
 }
 
 .bkgrd-sizing {
-  background-color: #fff;
+  background-color: #9c8ac1;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1625,7 +1649,7 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-shipping {
-  background-color: #fff;
+  background-color: #9c8ac1;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1749,7 +1773,7 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-returns {
-  background-color: #fff;
+  background-color: #9c8ac1;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2492,7 +2516,7 @@ button:hover{
   }
 
 #gallery-wrapper-grad {
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     margin-top: 15px !important;
 
 }

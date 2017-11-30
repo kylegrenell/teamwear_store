@@ -32,6 +32,24 @@
 
 }
 
+.squint-logo {
+  text-align: center;
+  padding: 25px;
+
+  @mixin atSmall {
+    padding: 10px;
+  }
+
+  &-image {
+    height: 230px;
+    display: inline-block;
+
+    @mixin atSmallest {
+      height: 270px;
+    }
+  }
+}
+
 /*#my-store-12708124 {
   background-color: $mainPurple;
 }*/
