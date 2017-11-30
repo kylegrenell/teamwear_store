@@ -636,14 +636,15 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .header__menu-content {
     display: none;
-    font-size: .85rem;
-    padding: none;
+    font-size: .9rem;
+
   }
 
 @media(min-width: 350px){
 
 .header__menu-content {
       font-size: 1rem
+
   }
   }
 
@@ -651,12 +652,24 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .header__menu-content {
       display: block
+
   }
   }
 
 .header__menu-content--is-visible {
       display: block;
     }
+
+.header__menu-content--is-visible ul li {
+        padding: 18px 4px 5px 4px;
+      }
+
+@media(min-width: 350px){
+
+.header__menu-content--is-visible ul li {
+          padding: 12px 5px 5px 5px
+      }
+  }
 
 .dropdown-content {
     display: none;
