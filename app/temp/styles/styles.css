@@ -675,14 +675,14 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 }
 
 .reveal-item {
-  opacity: 1;
-  -webkit-transition: opacity 1.5s ease-out;
-  transition: opacity 1.5s ease-out;
+  opacity: 0;
+  -webkit-transition: opacity 2.5s ease-out;
+  transition: opacity 2.5s ease-out;
 
 }
 
 .reveal-item--is-visible {
-    opacity: 0;
+    opacity: 1;
   }
 
 .bkgrd-main {
@@ -1574,7 +1574,7 @@ div.youtube-video-wrap:hover {
   }
 
 .wrapper-text-contact {
-  padding-top: 20px;
+    padding-top: 20px;
     padding-bottom: 10px;
     height: auto;
     text-align: center;
@@ -1593,13 +1593,6 @@ div.youtube-video-wrap:hover {
 
 .wrapper-text-contact {
       padding-top: 40px
-}
-  }
-
-@media(min-width: 1000px){
-
-.wrapper-text-contact {
-      padding-top: 100px
 }
   }
 
