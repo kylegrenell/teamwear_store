@@ -81,6 +81,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mobileMenu = new _MobileMenu2.default();
 // var revealOnScroll = new RevealOnScroll();
 
+console.log("Psst, if you're seeing this, check back from time to time for secret discounts... This is our 'Easter Egg' section :) ");
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
