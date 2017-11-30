@@ -1,0 +1,158 @@
+div.youtube-video-wrap {
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 640px;
+  border: 2px solid $mainGreen;
+   &:hover {
+    box-shadow: $mainGreen 7px 7px 0; 
+    opacity: .9;
+   }
+}
+
+.video-content {
+
+  position:relative;
+  padding-bottom:56.25%;;
+  /*padding-top:10px;*/
+  height:0;
+  overflow:hidden;
+
+  & iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+}
+
+.bkgrd-main-squint-club {
+
+  /*background-image: url(../../assets/images/squintmain1.png);*/
+  background-color: $mainPurple;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  height: 80px;
+
+  @mixin atSmallest {
+    /*350*/
+
+  }
+
+  @mixin atSmall {
+    /*500*/
+
+  }
+
+  @mixin atMedium {
+    height: 100px;
+    /*680*/
+/*    background-size: cover;
+    background-position: center;*/ 
+  }
+
+  @mixin atLarge {
+    /*1000
+    background-position: center;
+    background-size: cover;
+    /*background-attachment: scroll;*/
+    /*background-attachment: fixed;*/
+  }
+
+  &-text {
+    padding: 15px 30px;
+    text-align: center;
+    z-index: 5;
+    color: $mainPurple;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: .95rem;
+    font-weight: 500;
+/*    opacity: .8;*/
+
+    @mixin atSmall {
+      font-size: 1rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.1rem;
+    }
+
+  }
+
+  &-2{
+    background-color: $mainPink;
+    /*height: 100%;*/
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+
+    @mixin atSmallest {
+      /*height:60vh;*/
+    }
+
+    @mixin atMedium {
+      /*height:80vh;*/
+    }
+  }
+
+  &-3 {
+  background-image: url(../../assets/images/squint3.png);
+  height: 50vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @mixin atSmall {
+    height:60vh;
+  }
+
+  @mixin atMedium {
+    height:80vh;
+    background-size: auto;
+  }
+
+  @mixin atLarge {
+    background-size: auto;
+  }
+
+}
+
+  &__title {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    color: $mainPurple;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    font-family: PoetsenOne;
+    z-index:2;
+
+    @mixin atSmallest {
+      font-size: 2.5rem;
+    }
+
+    @mixin atSmall {     
+      font-size: 3rem;
+    }
+
+    @mixin atMedium{
+      font-size: 4rem;
+    }    
+ 
+    @mixin atLarge{
+
+    }    
+
+  }
+
+  &__text-content {
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+  }
+
+}
