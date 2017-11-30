@@ -59,6 +59,7 @@
 
   @mixin atSmallest {
     font-size: 2.5rem;
+    top: 130px;
   }
 
   @mixin atSmall {     
@@ -69,10 +70,6 @@
     font-size: 4rem;
     top: 140px;
   }    
-  
-  @mixin atLarge{
-    top: 150px;
-  }      
 
 }
 
@@ -84,39 +81,13 @@
 }
 
 .collections {
-  max-width: 800px;
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 640px;
   padding-bottom: 20px;
 
-  @mixin atSmall {
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10);
-  }
-
-  &-1 {
-
-    @mixin atSmallest {
-    grid-column: 1 / 13;
-    grid-row: 1 / 5;
-    }
-    @mixin atMedium {
-    grid-row: 1 / 5;
-    }
-  }
-
-  &-2 {
-    @mixin atSmallest {
-    grid-column: 1 / 13;
-    grid-row: 5 / 9;
-    }
-    @mixin atMedium {
-    grid-row: 5 / 9;
-    }
-  }
-
   & img {
+    display: inline-block;
     margin-bottom: 15px;
     width: 100%;
     border: 2px solid $mainGreen;

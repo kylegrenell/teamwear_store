@@ -87,7 +87,7 @@ div.youtube-video-wrap {
 
 }
 
-  &__title {
+  &__title a {
     position: absolute;
     top: 130px;
     left: 0;
@@ -98,6 +98,7 @@ div.youtube-video-wrap {
     font-size: 2rem;
     font-family: PoetsenOne;
     z-index:2;
+    display: inline-block;
 
     @mixin atSmallest {
       font-size: 2.5rem;
@@ -109,11 +110,7 @@ div.youtube-video-wrap {
 
     @mixin atMedium{
       font-size: 4rem;
-    }    
- 
-    @mixin atLarge{
-
-    }    
+    }       
 
   }
 
@@ -122,4 +119,32 @@ div.youtube-video-wrap {
     /*text-overflow: ellipsis;*/
   }
 
+}
+
+@-ms-keyframes wiggle {
+  0%{
+    -ms-transform:rotate(3deg);
+  }
+  50% {
+    -ms-transform:rotate(-3deg);
+  }
+  100%{
+    -ms-transform:rotate(3deg);
+  }
+}
+
+@keyframes wiggle{
+  0% {
+    transform:rotate(3deg);
+  }
+  50% {
+    transform:rotate(-3deg);
+  }
+  100%{
+    transform:rotate(3deg);
+  }
+}
+
+a.wiggle-me:hover{
+  animation:wiggle .5s 10;
 }

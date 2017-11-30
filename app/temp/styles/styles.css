@@ -637,6 +637,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .header__menu-content {
     display: none;
     font-size: .85rem;
+    padding: none;
   }
 
 @media(min-width: 350px){
@@ -1001,14 +1002,15 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   font-size: 2rem;
   font-family: PoetsenOne;
   z-index:2;
-  display: inline-block;      
+  display: inline-block;    
 
 }
 
 @media(min-width: 350px){
 
 .bkgrd-looks__title-shop a {
-    font-size: 2.5rem      
+    font-size: 2.5rem;
+    top: 130px    
 
 }
   }
@@ -1016,7 +1018,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 @media(min-width: 520px){
 
 .bkgrd-looks__title-shop a {     
-    font-size: 3rem      
+    font-size: 3rem    
 
 }
   }
@@ -1025,15 +1027,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-looks__title-shop a {
     font-size: 4rem;
-    top: 140px      
-
-}
-  }
-
-@media(min-width: 1000px){
-
-.bkgrd-looks__title-shop a {
-    top: 150px      
+    top: 140px    
 
 }
   }
@@ -1044,52 +1038,14 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
 
 .collections {
-  max-width: 800px;
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 640px;
   padding-bottom: 20px;
 }
 
-@media(min-width: 520px){
-
-.collections {
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10)
-}
-  }
-
-@media(min-width: 350px){
-
-.collections-1 {
-    grid-column: 1 / 13;
-    grid-row: 1 / 5
-  }
-  }
-
-@media(min-width: 680px){
-
-.collections-1 {
-    grid-row: 1 / 5
-  }
-  }
-
-@media(min-width: 350px){
-
-.collections-2 {
-    grid-column: 1 / 13;
-    grid-row: 5 / 9
-  }
-  }
-
-@media(min-width: 680px){
-
-.collections-2 {
-    grid-row: 5 / 9
-  }
-  }
-
 .collections img {
+    display: inline-block;
     margin-bottom: 15px;
     width: 100%;
     border: 2px solid #119a48;
@@ -1383,7 +1339,7 @@ div.youtube-video-wrap:hover {
 }
   }
 
-.bkgrd-main-squint-club__title {
+.bkgrd-main-squint-club__title a {
     position: absolute;
     top: 130px;
     left: 0;
@@ -1393,41 +1349,59 @@ div.youtube-video-wrap:hover {
     margin: 0;
     font-size: 2rem;
     font-family: PoetsenOne;
-    z-index:2;    
+    z-index:2;
+    display: inline-block;       
 
   }
 
 @media(min-width: 350px){
 
-.bkgrd-main-squint-club__title {
-      font-size: 2.5rem    
+.bkgrd-main-squint-club__title a {
+      font-size: 2.5rem       
 
   }
   }
 
 @media(min-width: 520px){
 
-.bkgrd-main-squint-club__title {     
-      font-size: 3rem    
+.bkgrd-main-squint-club__title a {     
+      font-size: 3rem       
 
   }
   }
 
 @media(min-width: 680px){
 
-.bkgrd-main-squint-club__title {
-      font-size: 4rem    
+.bkgrd-main-squint-club__title a {
+      font-size: 4rem       
 
   }
-  }
-
-@media(min-width: 1000px){
   }
 
 .bkgrd-main-squint-club__text-content {
     overflow: hidden;
     /*text-overflow: ellipsis;*/
   }
+
+@keyframes wiggle{
+  0% {
+    -webkit-transform:rotate(3deg);
+            transform:rotate(3deg);
+  }
+  50% {
+    -webkit-transform:rotate(-3deg);
+            transform:rotate(-3deg);
+  }
+  100%{
+    -webkit-transform:rotate(3deg);
+            transform:rotate(3deg);
+  }
+}
+
+a.wiggle-me:hover{
+  -webkit-animation:wiggle .5s 10;
+          animation:wiggle .5s 10;
+}
 
 .bkgrd-sizing {
   background-color: #fff;
