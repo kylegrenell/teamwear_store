@@ -1,5 +1,5 @@
 .bkgrd-returns {
-  background-color: #fff;
+  background-color: $mainPurple;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
