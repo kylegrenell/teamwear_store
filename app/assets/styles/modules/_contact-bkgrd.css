@@ -1,0 +1,82 @@
+.bkgrd-contact {
+  background-color: #fff;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; 
+
+  @mixin atMedium {
+    height: 100px;
+    background-size: contain;
+    background-position: 25% 25%;
+    background-attachment: scroll;
+  }
+
+  @mixin atLarge {
+    background-position: center;
+    /*background-image: url(../../assets/images/TIE_1920.png);*/
+    background-size: cover;
+    /*height: 600px; */
+    background-attachment: scroll;
+    /*background-attachment: fixed;*/
+  }
+}
+
+.wrapper-text {
+  padding-top: 80px;
+  height: 70%;
+  text-align: center;
+  background-color: $mainPink;
+  overflow: hidden;
+
+  @mixin atSmallest {
+    padding-top: 90px;
+  }
+  @mixin atSmall {
+    padding-top: 100px;
+  }
+  @mixin atMedium {
+    padding-top: 120px;
+  }
+  @mixin atLarge{
+    padding-top: 170px;
+  }
+
+  & p {
+    font-size: .9rem;
+    width: 90%;
+    display: inline-block;
+    line-height: 1.5rem;
+
+    @mixin atSmallest {
+      font-size: 1.1rem;
+      width: 88%;
+    }
+    @mixin atSmall {
+      width: 80%;
+    }
+    @mixin atMedium {
+      width: 70%;
+    }
+  }
+}
+
+.email-contact a {
+  display: inline-block;
+  font-family: PoetsenOne;
+  font-size: 1.1rem;
+  color: #fff;
+  padding-bottom: .07em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(250,250,250,.3);
+  @mixin atSmallest {
+    font-size: 1.3rem;
+  }
+  @mixin atSmall {
+    font-size: 1.7rem;
+  }
+  @mixin atMedium {
+    font-size: 2rem;
+  }
+}
