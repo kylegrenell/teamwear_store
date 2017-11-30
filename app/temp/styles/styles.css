@@ -510,16 +510,6 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 }
 
-/*display: flex;*/
-
-@media(min-width: 520px){
-
-.header {
-    padding: 1px 0 1px 0
-
-}
-  }
-
 @media(min-width: 680px){
 
 .header {
@@ -1669,43 +1659,37 @@ div.youtube-video-wrap:hover {
 }
   }
 
-.wrapper-text {
-  padding-top: 80px;
-  height: 70%;
-  text-align: center;
-  background-color: #ffc6df;
-  overflow: hidden;
+.wrapper-text-contact {
+  padding-top: 20px;
+    padding-bottom: 10px;
+    height: auto;
+    text-align: center;
+    background-color: #ffc6df;
+    overflow: hidden;
 }
 
 @media(min-width: 350px){
 
-.wrapper-text {
-    padding-top: 90px
+.wrapper-text-contact {
+      /*padding-top: 90px;*/
 }
   }
 
 @media(min-width: 520px){
 
-.wrapper-text {
-    padding-top: 100px
-}
-  }
-
-@media(min-width: 680px){
-
-.wrapper-text {
-    padding-top: 120px
+.wrapper-text-contact {
+      padding-top: 40px
 }
   }
 
 @media(min-width: 1000px){
 
-.wrapper-text {
-    padding-top: 170px
+.wrapper-text-contact {
+      padding-top: 100px
 }
   }
 
-.wrapper-text p {
+.wrapper-text-contact p {
     font-size: .9rem;
     width: 90%;
     display: inline-block;
@@ -1714,7 +1698,7 @@ div.youtube-video-wrap:hover {
 
 @media(min-width: 350px){
 
-.wrapper-text p {
+.wrapper-text-contact p {
       font-size: 1.1rem;
       width: 88%
   }
@@ -1722,14 +1706,14 @@ div.youtube-video-wrap:hover {
 
 @media(min-width: 520px){
 
-.wrapper-text p {
+.wrapper-text-contact p {
       width: 80%
   }
   }
 
 @media(min-width: 680px){
 
-.wrapper-text p {
+.wrapper-text-contact p {
       width: 70%
   }
   }
@@ -1796,9 +1780,10 @@ div.youtube-video-wrap:hover {
 }
   }
 
-.wrapper-text {
-  padding-top: 80px;
-  height: 70%;
+.wrapper-text-shipping {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  height: auto;
   text-align: center;
   background-color: #ffc6df;
   overflow: hidden;
@@ -1806,33 +1791,26 @@ div.youtube-video-wrap:hover {
 
 @media(min-width: 350px){
 
-.wrapper-text {
-    padding-top: 90px
+.wrapper-text-shipping {
+    /*padding-top: 90px;*/
 }
   }
 
 @media(min-width: 520px){
 
-.wrapper-text {
-    padding-top: 100px
-}
-  }
-
-@media(min-width: 680px){
-
-.wrapper-text {
-    padding-top: 120px
+.wrapper-text-shipping {
+    padding-top: 40px
 }
   }
 
 @media(min-width: 1000px){
 
-.wrapper-text {
-    padding-top: 170px
+.wrapper-text-shipping {
+    padding-top: 100px
 }
   }
 
-.wrapper-text p {
+.wrapper-text-shipping p {
     font-size: .9rem;
     width: 90%;
     display: inline-block;
@@ -1841,55 +1819,58 @@ div.youtube-video-wrap:hover {
 
 @media(min-width: 350px){
 
-.wrapper-text p {
-      font-size: 1.1rem;
-      width: 88%
+.wrapper-text-shipping p {
+      font-size: 1rem;
+      width: 80%
   }
   }
 
 @media(min-width: 520px){
 
-.wrapper-text p {
-      width: 80%
+.wrapper-text-shipping p {
+      font-size: 1.1rem
   }
   }
 
 @media(min-width: 680px){
 
-.wrapper-text p {
+.wrapper-text-shipping p {
       width: 70%
   }
   }
 
-.email-contact a {
+.shipping-title {
   display: inline-block;
   font-family: PoetsenOne;
   font-size: 1.1rem;
   color: #fff;
-  padding-bottom: .07em;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(250,250,250,.3);
 }
 
 @media(min-width: 350px){
 
-.email-contact a {
+.shipping-title {
     font-size: 1.3rem
 }
   }
 
 @media(min-width: 520px){
 
-.email-contact a {
+.shipping-title {
     font-size: 1.7rem
 }
   }
 
 @media(min-width: 680px){
 
-.email-contact a {
+.shipping-title {
     font-size: 2rem
+}
+  }
+
+@media(min-width: 680px){
+
+.shipping-title {
+    font-size: 2.5rem
 }
   }
 
@@ -1899,67 +1880,34 @@ div.youtube-video-wrap:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
 }
 
 @media(min-width: 680px){
 
 .bkgrd-returns {
-    height: 100px;
-    background-size: contain;
-    background-position: 25% 25%;
-    background-attachment: scroll
+    height: 100px
+
 }
   }
 
-@media(min-width: 1000px){
-
-.bkgrd-returns {
-    background-position: center;
-    /*background-image: url(../../assets/images/TIE_1920.png);*/
-    background-size: cover;
-    /*height: 600px; */
-    background-attachment: scroll
-    /*background-attachment: fixed;*/
-}
-  }
-
-.wrapper-text {
-  padding-top: 80px;
-  height: 70%;
+.wrapper-text-returns {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  height: auto;
   text-align: center;
   background-color: #ffc6df;
   overflow: hidden;
 }
 
-@media(min-width: 350px){
-
-.wrapper-text {
-    padding-top: 90px
-}
-  }
-
 @media(min-width: 520px){
 
-.wrapper-text {
-    padding-top: 100px
+.wrapper-text-returns {
+    padding-top: 40px
 }
   }
 
-@media(min-width: 680px){
-
-.wrapper-text {
-    padding-top: 120px
-}
-  }
-
-@media(min-width: 1000px){
-
-.wrapper-text {
-    padding-top: 170px
-}
-  }
-
-.wrapper-text p {
+.wrapper-text-returns p {
     font-size: .9rem;
     width: 90%;
     display: inline-block;
@@ -1968,55 +1916,58 @@ div.youtube-video-wrap:hover {
 
 @media(min-width: 350px){
 
-.wrapper-text p {
-      font-size: 1.1rem;
-      width: 88%
+.wrapper-text-returns p {
+      font-size: 1rem;
+      width: 80%
   }
   }
 
 @media(min-width: 520px){
 
-.wrapper-text p {
-      width: 80%
+.wrapper-text-returns p {
+      font-size: 1.1rem
   }
   }
 
 @media(min-width: 680px){
 
-.wrapper-text p {
+.wrapper-text-returns p {
       width: 70%
   }
   }
 
-.email-contact a {
+.returns-title {
   display: inline-block;
   font-family: PoetsenOne;
   font-size: 1.1rem;
   color: #fff;
-  padding-bottom: .07em;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(250,250,250,.3);
 }
 
 @media(min-width: 350px){
 
-.email-contact a {
+.returns-title {
     font-size: 1.3rem
 }
   }
 
 @media(min-width: 520px){
 
-.email-contact a {
+.returns-title {
     font-size: 1.7rem
 }
   }
 
 @media(min-width: 680px){
 
-.email-contact a {
+.returns-title {
     font-size: 2rem
+}
+  }
+
+@media(min-width: 680px){
+
+.returns-title {
+    font-size: 2.5rem
 }
   }
 
