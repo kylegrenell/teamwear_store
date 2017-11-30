@@ -1104,8 +1104,8 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 }
 
 a.wiggle-me:hover{
-  -webkit-animation:wiggle .5s 10;
-          animation:wiggle .5s 10;
+  -webkit-animation:wiggle .4s infinite;
+          animation:wiggle .4s infinite;
 }
 
 .bkgrd-looks-tie {
@@ -1412,8 +1412,8 @@ div.youtube-video-wrap:hover {
 }
 
 a.wiggle-me:hover{
-  -webkit-animation:wiggle .5s 10;
-          animation:wiggle .5s 10;
+  -webkit-animation:wiggle .4s infinite;
+          animation:wiggle .4s infinite;
 }
 
 .bkgrd-sizing {
