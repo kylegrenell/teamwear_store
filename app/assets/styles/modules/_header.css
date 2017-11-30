@@ -13,10 +13,14 @@
 
   @mixin atMedium {
     background-color: transparent;
-    width: 250px;
+    width: 400px;
     padding: 5px 5px;
     top:10px;
-    left: 20px;
+    /*left: 10px;*/
+  }
+
+  @mixin atLarge {
+
   }
 
   a:hover {  
@@ -109,9 +113,11 @@
 
   &__menu-content {
     display: none;
+    font-size: .85rem;
 
     @mixin atMedium {
       display: block;
+      font-size: 1rem;
     }
 
     &--is-visible {

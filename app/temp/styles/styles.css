@@ -520,12 +520,15 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .header {
     background-color: transparent;
-    width: 250px;
+    width: 400px;
     padding: 5px 5px;
-    top:10px;
-    left: 20px
+    top:10px
+    /*left: 10px;*/
 
 }
+  }
+
+@media(min-width: 1000px){
   }
 
 .header a:hover {  
@@ -632,12 +635,14 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .header__menu-content {
     display: none;
+    font-size: .85rem;
   }
 
 @media(min-width: 680px){
 
 .header__menu-content {
-      display: block
+      display: block;
+      font-size: 1rem
   }
   }
 
