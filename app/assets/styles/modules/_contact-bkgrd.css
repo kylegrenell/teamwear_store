@@ -23,7 +23,7 @@
 }
 
 .wrapper-text-contact {
-  padding-top: 20px;
+    padding-top: 20px;
     padding-bottom: 10px;
     height: auto;
     text-align: center;
@@ -35,9 +35,6 @@
     }
     @mixin atSmall {
       padding-top: 40px;
-    }
-    @mixin atLarge{
-      padding-top: 100px;
     }
 
   & p {

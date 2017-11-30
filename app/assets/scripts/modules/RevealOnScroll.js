@@ -3,7 +3,7 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 
 class RevealOnScroll {
   constructor(){
-    this.itemsToReveal = $(".bkgrd-main__title");
+    this.itemsToReveal = $(".footer-wrapper");
     this.hideInitially();
     this.createWaypoints();
   }
@@ -22,7 +22,7 @@ class RevealOnScroll {
         handler: function(){
           $(currentItem).addClass("reveal-item--is-visible");
         },
-        offset: "-25%"
+        offset: "85%"
       });
     });
   }
