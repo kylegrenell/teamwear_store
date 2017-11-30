@@ -1,0 +1,60 @@
+.bkgrd-sizing {
+  background-color: #fff;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; 
+
+  @mixin atMedium {
+    height: 100px;
+    background-size: contain;
+    background-position: 25% 25%;
+    background-attachment: scroll;
+  }
+
+  @mixin atLarge {
+    background-position: center;
+    /*background-image: url(../../assets/images/TIE_1920.png);*/
+    background-size: cover;
+    /*height: 600px; */
+    background-attachment: scroll;
+    /*background-attachment: fixed;*/
+  }
+}
+
+.wrapper-text {
+  padding-top: 80px;
+  height: 50%;
+  text-align: center;
+  background-color: $mainPink;
+  overflow: hidden;
+
+  @mixin atSmallest {
+    padding-top: 90px;
+  }
+  @mixin atSmall {
+    padding-top: 100px;
+  }
+  @mixin atMedium {
+    padding-top: 120px;
+  }
+  @mixin atLarge{
+    padding-top: 170px;
+  }
+
+  & p {
+    font-size: .9rem;
+    width: 90%;
+    display: inline-block;
+    @mixin atSmallest {
+      font-size: 1rem;
+      width: 88%;
+    }
+    @mixin atSmall {
+      width: 80%;
+    }
+    @mixin atMedium {
+      width: 70%;
+    }
+  }
+}

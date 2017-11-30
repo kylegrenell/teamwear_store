@@ -486,6 +486,10 @@ a {
   cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;
 }
 
+br.large-break {
+  line-height: 200%;
+}
+
 .wrapper {
   padding-left: 18px;
   padding-right: 18px;
@@ -545,6 +549,13 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 @media(min-width: 520px){
 
 .header__menu-content-looks a {
+      color: #FFF
+  }
+  }
+
+@media(min-width: 520px){
+
+.header__menu-content-squint-club a {
       color: #FFF
   }
   }
@@ -638,11 +649,17 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
     font-size: .85rem;
   }
 
+@media(min-width: 350px){
+
+.header__menu-content {
+      font-size: 1rem
+  }
+  }
+
 @media(min-width: 680px){
 
 .header__menu-content {
-      display: block;
-      font-size: 1rem
+      display: block
   }
   }
 
@@ -879,7 +896,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
   /*background-image: url(../../assets/images/TIE_1280.png);*/
   background-color: #9c8ac1;
-  height: 100px;
+  height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -909,6 +926,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-shop {
     /*background-image: url(../../assets/images/TIE_1680.png);*/
+    height: 100px;
     background-size: contain;
     background-position: 25% 25%;
     background-attachment: scroll
@@ -1313,6 +1331,312 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .bkgrd-looks-tie__text-content {
     overflow: hidden;
     /*text-overflow: ellipsis;*/
+  }
+
+div.youtube-video-wrap {
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 640px;
+  border: 2px solid #119a48;
+}
+
+div.youtube-video-wrap:hover {
+    -webkit-box-shadow: #119a48 7px 7px 0;
+            box-shadow: #119a48 7px 7px 0; 
+    opacity: .9;
+   }
+
+.video-content {
+
+  position:relative;
+  padding-bottom:56.25%;;
+  /*padding-top:10px;*/
+  height:0;
+  overflow:hidden;
+}
+
+.video-content iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+
+.bkgrd-main-squint-club {
+
+  /*background-image: url(../../assets/images/squintmain1.png);*/
+  background-color: #9c8ac1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  height: 80px;
+
+}
+
+@media(min-width: 350px){
+
+.bkgrd-main-squint-club {
+    /*350*/
+
+}
+  }
+
+@media(min-width: 520px){
+
+.bkgrd-main-squint-club {
+    /*500*/
+
+}
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-main-squint-club {
+    height: 100px
+    /*680*/
+/*    background-size: cover;
+    background-position: center;*/
+
+}
+  }
+
+@media(min-width: 1000px){
+
+.bkgrd-main-squint-club {
+    /*1000
+    background-position: center;
+    background-size: cover;
+    /*background-attachment: scroll;*/
+    /*background-attachment: fixed;*/
+
+}
+  }
+
+.bkgrd-main-squint-club-text {
+    padding: 15px 30px;
+    text-align: center;
+    z-index: 5;
+    color: #9c8ac1;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: .95rem;
+    font-weight: 500;
+
+  }
+
+/*    opacity: .8;*/
+
+@media(min-width: 520px){
+
+.bkgrd-main-squint-club-text {
+      font-size: 1rem
+
+  }
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-main-squint-club-text {
+      font-size: 1.1rem
+
+  }
+  }
+
+.bkgrd-main-squint-club-2{
+    background-color: #ffc6df;
+    /*height: 100%;*/
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+@media(min-width: 350px){
+
+.bkgrd-main-squint-club-2{
+      /*height:60vh;*/
+  }
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-main-squint-club-2{
+      /*height:80vh;*/
+  }
+  }
+
+.bkgrd-main-squint-club-3 {
+  background-image: url(../../assets/images/squint3.png);
+  height: 50vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+@media(min-width: 520px){
+
+.bkgrd-main-squint-club-3 {
+    height:60vh
+
+}
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-main-squint-club-3 {
+    height:80vh;
+    background-size: auto
+
+}
+  }
+
+@media(min-width: 1000px){
+
+.bkgrd-main-squint-club-3 {
+    background-size: auto
+
+}
+  }
+
+.bkgrd-main-squint-club__title {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    color: #9c8ac1;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    font-family: PoetsenOne;
+    z-index:2;    
+
+  }
+
+@media(min-width: 350px){
+
+.bkgrd-main-squint-club__title {
+      font-size: 2.5rem    
+
+  }
+  }
+
+@media(min-width: 520px){
+
+.bkgrd-main-squint-club__title {     
+      font-size: 3rem    
+
+  }
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-main-squint-club__title {
+      font-size: 4rem    
+
+  }
+  }
+
+@media(min-width: 1000px){
+  }
+
+.bkgrd-main-squint-club__text-content {
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+  }
+
+.bkgrd-sizing {
+  background-color: #fff;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media(min-width: 680px){
+
+.bkgrd-sizing {
+    height: 100px;
+    background-size: contain;
+    background-position: 25% 25%;
+    background-attachment: scroll
+}
+  }
+
+@media(min-width: 1000px){
+
+.bkgrd-sizing {
+    background-position: center;
+    /*background-image: url(../../assets/images/TIE_1920.png);*/
+    background-size: cover;
+    /*height: 600px; */
+    background-attachment: scroll
+    /*background-attachment: fixed;*/
+}
+  }
+
+.wrapper-text {
+  padding-top: 80px;
+  height: 50%;
+  text-align: center;
+  background-color: #ffc6df;
+  overflow: hidden;
+}
+
+@media(min-width: 350px){
+
+.wrapper-text {
+    padding-top: 90px
+}
+  }
+
+@media(min-width: 520px){
+
+.wrapper-text {
+    padding-top: 100px
+}
+  }
+
+@media(min-width: 680px){
+
+.wrapper-text {
+    padding-top: 120px
+}
+  }
+
+@media(min-width: 1000px){
+
+.wrapper-text {
+    padding-top: 170px
+}
+  }
+
+.wrapper-text p {
+    font-size: .9rem;
+    width: 90%;
+    display: inline-block;
+  }
+
+@media(min-width: 350px){
+
+.wrapper-text p {
+      font-size: 1rem;
+      width: 88%
+  }
+  }
+
+@media(min-width: 520px){
+
+.wrapper-text p {
+      width: 80%
+  }
+  }
+
+@media(min-width: 680px){
+
+.wrapper-text p {
+      width: 70%
+  }
   }
 
 button {

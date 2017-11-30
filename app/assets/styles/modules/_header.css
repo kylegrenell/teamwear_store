@@ -39,6 +39,12 @@
     }
   }
 
+  &__menu-content-squint-club a {
+    @mixin atSmall {
+      color: #FFF;
+    }
+  }
+
   &__shop a {
     color: #fff;
   }
@@ -115,9 +121,13 @@
     display: none;
     font-size: .85rem;
 
+    @mixin atSmallest {
+      font-size: 1rem;
+    }
+
     @mixin atMedium {
       display: block;
-      font-size: 1rem;
+      
     }
 
     &--is-visible {

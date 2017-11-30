@@ -3,7 +3,7 @@
 
   /*background-image: url(../../assets/images/TIE_1280.png);*/
   background-color: $mainPurple;
-  height: 100px;
+  height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; 
@@ -23,6 +23,7 @@
 
   @mixin atMedium {
     /*background-image: url(../../assets/images/TIE_1680.png);*/
+    height: 100px;
     background-size: contain;
     background-position: 25% 25%;
     background-attachment: scroll;
