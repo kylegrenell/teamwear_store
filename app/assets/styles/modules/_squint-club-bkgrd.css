@@ -146,5 +146,5 @@ div.youtube-video-wrap {
 }
 
 a.wiggle-me:hover{
-  animation:wiggle .5s 10;
+  animation:wiggle .4s infinite;
 }
