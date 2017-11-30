@@ -10343,7 +10343,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mobileMenu = new _MobileMenu2.default();
 var revealOnScroll = new _RevealOnScroll2.default();
 
-console.log("Psst, if you're seeing this, check back from time to time for secret discounts... This is our 'Easter Egg' section :) ");
+console.log("%c Psst, if you're seeing this, check back from time to time for secret discounts... This is our 'Easter Egg' section :)", "background: #ffc6df; color: #9c8ac1");
 
 /***/ }),
 /* 2 */

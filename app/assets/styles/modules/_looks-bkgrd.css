@@ -1,7 +1,7 @@
 .bkgrd-looks {
 
   background-color: #fff;
-  height: 40%;
+  height: 25%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; 
@@ -10,7 +10,7 @@
     /*1000*/
     background-position: center;
     background-size: cover;
-    height: 50%; 
+    /*height: 50%; */
     background-attachment: fixed;
   }
 
@@ -43,43 +43,36 @@
     }
   }
 
-  &__instructions {
-    text-align: center;
-    color: $mainPurple;
-    font-size: 1.2rem;
-  }
-
 
 &__title-shop {
   position: absolute;
-  top: 30%;
+  top: 130px;
   left: 0;
   width: 100%;
   color: $mainPink;
   text-align: center;
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: PoetsenOne;
   z-index:2;
+  display: inline-block;
 
   @mixin atSmallest {
-    font-size: 3.3rem;
+    font-size: 2.5rem;
   }
 
-  @mixin atSmall {
-    top: 28%;
-    font-size: 4.5rem;
+  @mixin atSmall {     
+    font-size: 3rem;
   }
 
   @mixin atMedium{
-    top: 26%;
-    font-size: 6rem;
+    font-size: 4rem;
+    top: 140px;
   }    
-
+  
   @mixin atLarge{
-    top: 30%;
-    font-size: 7rem;
-  }    
+    top: 150px;
+  }      
 
 }
 

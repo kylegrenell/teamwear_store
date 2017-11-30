@@ -932,7 +932,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .bkgrd-looks {
 
   background-color: #fff;
-  height: 40%;
+  height: 25%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -945,7 +945,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
     /*1000*/
     background-position: center;
     background-size: cover;
-    height: 50%; 
+    /*height: 50%; */
     background-attachment: fixed
 
 }
@@ -990,39 +990,33 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
   }
 
-.bkgrd-looks__instructions {
-    text-align: center;
-    color: #9c8ac1;
-    font-size: 1.2rem;
-  }
-
 .bkgrd-looks__title-shop {
   position: absolute;
-  top: 30%;
+  top: 130px;
   left: 0;
   width: 100%;
   color: #ffc6df;
   text-align: center;
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: PoetsenOne;
-  z-index:2;    
+  z-index:2;
+  display: inline-block;      
 
 }
 
 @media(min-width: 350px){
 
 .bkgrd-looks__title-shop {
-    font-size: 3.3rem    
+    font-size: 2.5rem      
 
 }
   }
 
 @media(min-width: 520px){
 
-.bkgrd-looks__title-shop {
-    top: 28%;
-    font-size: 4.5rem    
+.bkgrd-looks__title-shop {     
+    font-size: 3rem      
 
 }
   }
@@ -1030,8 +1024,8 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 @media(min-width: 680px){
 
 .bkgrd-looks__title-shop {
-    top: 26%;
-    font-size: 6rem    
+    font-size: 4rem;
+    top: 140px      
 
 }
   }
@@ -1039,8 +1033,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 @media(min-width: 1000px){
 
 .bkgrd-looks__title-shop {
-    top: 30%;
-    font-size: 7rem    
+    top: 150px      
 
 }
   }
@@ -1268,8 +1261,6 @@ div.youtube-video-wrap:hover {
   }
 
 .bkgrd-main-squint-club {
-
-  /*background-image: url(../../assets/images/squintmain1.png);*/
   background-color: #9c8ac1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1278,41 +1269,10 @@ div.youtube-video-wrap:hover {
 
 }
 
-@media(min-width: 350px){
-
-.bkgrd-main-squint-club {
-    /*350*/
-
-}
-  }
-
-@media(min-width: 520px){
-
-.bkgrd-main-squint-club {
-    /*500*/
-
-}
-  }
-
 @media(min-width: 680px){
 
 .bkgrd-main-squint-club {
     height: 100px
-    /*680*/
-/*    background-size: cover;
-    background-position: center;*/
-
-}
-  }
-
-@media(min-width: 1000px){
-
-.bkgrd-main-squint-club {
-    /*1000
-    background-position: center;
-    background-size: cover;
-    /*background-attachment: scroll;*/
-    /*background-attachment: fixed;*/
 
 }
   }
@@ -1349,23 +1309,8 @@ div.youtube-video-wrap:hover {
 
 .bkgrd-main-squint-club-2{
     background-color: #ffc6df;
-    /*height: 100%;*/
     padding-top: 25px;
     padding-bottom: 25px;
-  }
-
-@media(min-width: 350px){
-
-.bkgrd-main-squint-club-2{
-      /*height:60vh;*/
-  }
-  }
-
-@media(min-width: 680px){
-
-.bkgrd-main-squint-club-2{
-      /*height:80vh;*/
-  }
   }
 
 .bkgrd-main-squint-club-3 {

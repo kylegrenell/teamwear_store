@@ -27,37 +27,14 @@ div.youtube-video-wrap {
 }
 
 .bkgrd-main-squint-club {
-
-  /*background-image: url(../../assets/images/squintmain1.png);*/
   background-color: $mainPurple;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
   height: 80px;
 
-  @mixin atSmallest {
-    /*350*/
-
-  }
-
-  @mixin atSmall {
-    /*500*/
-
-  }
-
   @mixin atMedium {
     height: 100px;
-    /*680*/
-/*    background-size: cover;
-    background-position: center;*/ 
-  }
-
-  @mixin atLarge {
-    /*1000
-    background-position: center;
-    background-size: cover;
-    /*background-attachment: scroll;*/
-    /*background-attachment: fixed;*/
   }
 
   &-text {
@@ -83,18 +60,8 @@ div.youtube-video-wrap {
 
   &-2{
     background-color: $mainPink;
-    /*height: 100%;*/
     padding-top: 25px;
     padding-bottom: 25px;
-
-
-    @mixin atSmallest {
-      /*height:60vh;*/
-    }
-
-    @mixin atMedium {
-      /*height:80vh;*/
-    }
   }
 
   &-3 {
