@@ -1,28 +1,16 @@
 .bkgrd-looks {
 
-  /*background-image: url(../../assets/images/TIE_1280.png);*/
   background-color: #fff;
   height: 40%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; 
 
-  @mixin atMedium {
-    /*680*/
-    /*background-image: url(../../assets/images/TIE_1680.png);*/
-/*    background-size: cover;
-    background-position: center;*/
-    background-attachment: fixed;
-    /*height: 600px; */
-  }
-
   @mixin atLarge {
     /*1000*/
     background-position: center;
-    /*background-image: url(../../assets/images/TIE_1920.png);*/
     background-size: cover;
     height: 50%; 
-    /*background-attachment: scroll;*/
     background-attachment: fixed;
   }
 

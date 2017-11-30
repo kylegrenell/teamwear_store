@@ -1,91 +1,37 @@
-
 .bkgrd-shop {
-
-  /*background-image: url(../../assets/images/TIE_1280.png);*/
   background-color: $mainPurple;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; 
 
-
-  @mixin atSmallest {
-    /*background-image: url(../../assets/images/TIE_1280.png);*/
-    background-size: contain;
-  }
-
-
-  @mixin atSmall {
-    /*background-image: url(../../assets/images/TIE_1280.png);*/
-    background-size: contain;
-    /*height: 450px;*/
-  }
-
   @mixin atMedium {
-    /*background-image: url(../../assets/images/TIE_1680.png);*/
     height: 100px;
     background-size: contain;
     background-position: 25% 25%;
     background-attachment: scroll;
-    /*height: 500px; */
   }
 
   @mixin atLarge {
     background-position: center;
-    /*background-image: url(../../assets/images/TIE_1920.png);*/
     background-size: cover;
-    /*height: 600px; */
     background-attachment: scroll;
-    /*background-attachment: fixed;*/
-  }
-
-  &-2{
-
-    /*background-color: $mainPink;*/
-    /*height: 50vh;
-
-    @mixin atSmall {
-      height:60vh;
-    }
-
-    @mixin atMedium {
-      height:80vh;
-    }*/
-
   }
 
   &-3 {
-  background-image: url(../../assets/images/squint3.png);
-  height: 50vh; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @mixin atSmall {
-    height:60vh;
+    background: linear-gradient(to right, $mainPurple , $mainPink);
+    /*background-color: $mainPurple;*/
+    height: 300px;
   }
-
-  @mixin atMedium {
-    height:80vh;
-    background-size: auto;
-  }
-
-  @mixin atLarge {
-    background-size: auto;
-  }
-
-}
 
   &__text-content {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
   }
 
 }
 
-#my-store-12708124 {
+/*#my-store-12708124 {
   background-color: $mainPurple;
-}
+}*/

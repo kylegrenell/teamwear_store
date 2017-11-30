@@ -883,8 +883,6 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
 
 .bkgrd-shop {
-
-  /*background-image: url(../../assets/images/TIE_1280.png);*/
   background-color: #9c8ac1;
   height: 80px;
   background-repeat: no-repeat;
@@ -893,34 +891,13 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 }
 
-@media(min-width: 350px){
-
-.bkgrd-shop {
-    /*background-image: url(../../assets/images/TIE_1280.png);*/
-    background-size: contain
-
-}
-  }
-
-@media(min-width: 520px){
-
-.bkgrd-shop {
-    /*background-image: url(../../assets/images/TIE_1280.png);*/
-    background-size: contain
-    /*height: 450px;*/
-
-}
-  }
-
 @media(min-width: 680px){
 
 .bkgrd-shop {
-    /*background-image: url(../../assets/images/TIE_1680.png);*/
     height: 100px;
     background-size: contain;
     background-position: 25% 25%;
     background-attachment: scroll
-    /*height: 500px; */
 
 }
   }
@@ -929,79 +906,31 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-shop {
     background-position: center;
-    /*background-image: url(../../assets/images/TIE_1920.png);*/
     background-size: cover;
-    /*height: 600px; */
     background-attachment: scroll
-    /*background-attachment: fixed;*/
 
 }
   }
 
-.bkgrd-shop-2{
-
-    /*background-color: $mainPink;*/
-    /*height: 50vh;
-
-    @mixin atSmall {
-      height:60vh;
-    }
-
-    @mixin atMedium {
-      height:80vh;
-    }*/
-
-  }
-
 .bkgrd-shop-3 {
-  background-image: url(../../assets/images/squint3.png);
-  height: 50vh; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-@media(min-width: 520px){
-
-.bkgrd-shop-3 {
-    height:60vh
-
-}
-  }
-
-@media(min-width: 680px){
-
-.bkgrd-shop-3 {
-    height:80vh;
-    background-size: auto
-
-}
-  }
-
-@media(min-width: 1000px){
-
-.bkgrd-shop-3 {
-    background-size: auto
-
-}
+    background: -webkit-gradient(linear, left top, right top, from(#9c8ac1) , to(#ffc6df));
+    background: linear-gradient(to right, #9c8ac1 , #ffc6df);
+    /*background-color: $mainPurple;*/
+    height: 300px;
   }
 
 .bkgrd-shop__text-content {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
   }
 
-#my-store-12708124 {
-  background-color: #9c8ac1;
-}
+/*#my-store-12708124 {
+  background-color: $mainPurple;
+}*/
 
 .bkgrd-looks {
 
-  /*background-image: url(../../assets/images/TIE_1280.png);*/
   background-color: #fff;
   height: 40%;
   background-repeat: no-repeat;
@@ -1010,28 +939,13 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 }
 
-@media(min-width: 680px){
-
-.bkgrd-looks {
-    /*680*/
-    /*background-image: url(../../assets/images/TIE_1680.png);*/
-/*    background-size: cover;
-    background-position: center;*/
-    background-attachment: fixed
-    /*height: 600px; */
-
-}
-  }
-
 @media(min-width: 1000px){
 
 .bkgrd-looks {
     /*1000*/
     background-position: center;
-    /*background-image: url(../../assets/images/TIE_1920.png);*/
     background-size: cover;
     height: 50%; 
-    /*background-attachment: scroll;*/
     background-attachment: fixed
 
 }
