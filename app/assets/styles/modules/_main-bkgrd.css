@@ -67,6 +67,10 @@
     @mixin atMedium {
       /*height:80vh;*/
     }
+
+    & p {
+      text-align: center;
+    }
   }
 
   &-3 {

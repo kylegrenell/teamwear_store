@@ -833,6 +833,10 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
   }
 
+.bkgrd-main-2 p {
+      text-align: center;
+    }
+
 .bkgrd-main-3 {
   background-image: url(../../assets/images/squint3.png);
   height: 50vh; 
