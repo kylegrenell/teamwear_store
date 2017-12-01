@@ -1945,6 +1945,7 @@ button:hover{
 #gallery-wrapper {
 
     margin-top: 15px !important;
+    margin-bottom: 15px !important;
 
 }
 
@@ -1962,6 +1963,7 @@ button:hover{
 
 #gallery-wrapper img {
         width: 100%;
+        border: 2px solid #ffc6df;
     }
 
 @media(min-width: 350px){
