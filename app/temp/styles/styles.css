@@ -2026,7 +2026,7 @@ button:hover{
 #gallery-wrapper {
         margin: 0 auto;
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 5px;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(24)
 
@@ -2754,7 +2754,7 @@ button:hover{
 @media(min-width: 350px){
 
 .gallery-image-grad-8 {
-        grid-column: 1 / 13;
+        grid-column: 4 / 10;
         grid-row: 11 / 13
     }
   }

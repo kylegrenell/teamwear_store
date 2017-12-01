@@ -7,7 +7,7 @@
     @mixin atSmall {
         margin: 0 auto;
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 5px;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(24);
     }
