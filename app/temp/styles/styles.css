@@ -510,6 +510,22 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 }
 
+.header-sizing {
+    background-color: rgba(156,138,193, 0);
+  }
+
+.header-contact {
+    background-color: rgba(156,138,193, 0);
+  }
+
+.header-shipping {
+    background-color: rgba(156,138,193, 0);
+  }
+
+.header-returns {
+    background-color: rgba(156,138,193, 0);
+  }
+
 @media(min-width: 680px){
 
 .header {
@@ -928,8 +944,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
 
 .bkgrd-shop {
-  background: -webkit-gradient(linear, left top, right top, from(#9c8ac1) , to(#ffc6df));
-  background: linear-gradient(to right, #9c8ac1 , #ffc6df);
+ background-color: #9c8ac1;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -999,8 +1014,8 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 }*/
 
 .bkgrd-looks {
-  background: -webkit-gradient(linear, left top, right top, from(#ffc6df), to(#9c8ac1));
-  background: linear-gradient(to right, #ffc6df, #9c8ac1);
+  /*background: linear-gradient(to right, $mainPink, $mainPurple);*/
+  background-color: #9c8ac1;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1359,8 +1374,8 @@ div.youtube-video-wrap:hover {
   }
 
 .bkgrd-main-squint-club {
-  background: -webkit-gradient(linear, left top, right top, from(#9c8ac1) , to(#119a48));
-  background: linear-gradient(to right, #9c8ac1 , #119a48);
+  /*background: linear-gradient(to right, $mainPurple , $mainGreen);*/
+  background-color: #9c8ac1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
@@ -1512,7 +1527,8 @@ a.wiggle-me:hover{
 }
 
 .bkgrd-sizing {
-  background-color: #9c8ac1;
+   background: -webkit-gradient(linear, left top, right top, from(#119a48) , to(#9c8ac1));
+   background: linear-gradient(to right, #119a48 , #9c8ac1);
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1606,7 +1622,8 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-contact {
-  background: #9c8ac1;
+  background: -webkit-gradient(linear, left top, right top, from(#119a48), to(#9c8ac1));
+  background: linear-gradient(to right, #119a48, #9c8ac1); 
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1720,7 +1737,8 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-shipping {
-  background-color: #9c8ac1;
+  background: -webkit-gradient(linear, left top, right top, from(#119a48), to(#9c8ac1));
+  background: linear-gradient(to right, #119a48, #9c8ac1);  
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1844,7 +1862,8 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-returns {
-  background-color: #9c8ac1;
+  background: -webkit-gradient(linear, left top, right top, from(#119a48), to(#9c8ac1));
+  background: linear-gradient(to right, #119a48, #9c8ac1);   
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;

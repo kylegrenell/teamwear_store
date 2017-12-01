@@ -6,6 +6,19 @@
   z-index: 10;
   background-color: rgba($mainPurple, .75);
 
+  &-sizing {
+    background-color: rgba($mainPurple, 0);
+  }
+  &-contact {
+    background-color: rgba($mainPurple, 0);
+  }
+  &-shipping {
+    background-color: rgba($mainPurple, 0);
+  }
+  &-returns {
+    background-color: rgba($mainPurple, 0);
+  }
+
   @mixin atMedium {
     background-color: transparent;
     width: 400px;

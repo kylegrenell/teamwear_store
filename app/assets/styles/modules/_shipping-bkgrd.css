@@ -1,5 +1,5 @@
 .bkgrd-shipping {
-  background-color: $mainPurple;
+  background: linear-gradient(to right, $mainGreen, $mainPurple);  
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;

@@ -1,5 +1,6 @@
 .bkgrd-looks {
-  background: linear-gradient(to right, $mainPink, $mainPurple);
+  /*background: linear-gradient(to right, $mainPink, $mainPurple);*/
+  background-color: $mainPurple;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
