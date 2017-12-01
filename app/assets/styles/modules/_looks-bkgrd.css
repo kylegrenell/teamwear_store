@@ -1,10 +1,23 @@
 .bkgrd-looks {
+  background: linear-gradient(to right, $mainPink, $mainPurple);
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 
+  @mixin atMedium {
+    height: 100px;
+    background-size: contain;
+    background-position: 25% 25%;
+    background-attachment: scroll;
+  }
+
+  &-2 {
   background-color: #fff;
   height: 25%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center; 
+  background-position: center;
 
   @mixin atLarge {
     /*1000*/
@@ -13,6 +26,7 @@
     /*height: 50%; */
     background-attachment: fixed;
   }
+  } 
 
   &-text {
     text-align: center;
