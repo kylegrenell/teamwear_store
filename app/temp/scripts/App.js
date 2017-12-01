@@ -10338,10 +10338,16 @@ var _RevealOnScroll = __webpack_require__(3);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-var revealOnScroll = new _RevealOnScroll2.default();
+// var revealOnScroll = new RevealOnScroll();
+new _RevealOnScroll2.default((0, _jquery2.default)(".footer-wrapper"), "85%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".squint-logo-image"), "85%");
 
 console.log("%c Psst, if you're seeing this, check back from time to time for secret discounts... This is our 'Easter Egg' section :)", "background: #ffc6df; color: #9c8ac1");
 
@@ -10419,10 +10425,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var RevealOnScroll = function () {
-  function RevealOnScroll() {
+  function RevealOnScroll(element, offset) {
     _classCallCheck(this, RevealOnScroll);
 
-    this.itemsToReveal = (0, _jquery2.default)(".footer-wrapper");
+    this.itemsToReveal = element;
+    this.offsetPercentage = offset;
     this.hideInitially();
     this.createWaypoints();
   }
@@ -10435,8 +10442,11 @@ var RevealOnScroll = function () {
   }, {
     key: 'createWaypoints',
     value: function createWaypoints() {
+      var that = this;
       this.itemsToReveal.each(function () {
+
         var currentItem = this;
+
         new Waypoint({
           // dom element watching for as scroll
           element: currentItem,
@@ -10444,7 +10454,7 @@ var RevealOnScroll = function () {
           handler: function handler() {
             (0, _jquery2.default)(currentItem).addClass("reveal-item--is-visible");
           },
-          offset: "85%"
+          offset: that.offsetPercentage
         });
       });
     }

@@ -27,7 +27,7 @@ div.youtube-video-wrap {
 }
 
 .bkgrd-main-squint-club {
-  background-color: $mainPurple;
+  background: linear-gradient(to right, $mainPurple , $mainGreen);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 

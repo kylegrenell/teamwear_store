@@ -550,6 +550,34 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
   }
 
+@media(min-width: 520px){
+
+.header__menu-content-sizing a {
+      color: #FFF
+  }
+  }
+
+@media(min-width: 520px){
+
+.header__menu-content-contact a {
+      color: #FFF
+  }
+  }
+
+@media(min-width: 520px){
+
+.header__menu-content-shipping a {
+      color: #FFF
+  }
+  }
+
+@media(min-width: 520px){
+
+.header__menu-content-returns a {
+      color: #FFF
+  }
+  }
+
 .header__shop a {
     color: #fff;
   }
@@ -701,7 +729,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
 
-  background-image: url(../../assets/images/squintmain1.png);
+  background-image: url(../../assets/images/squintmain680.png);
   height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -713,7 +741,6 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*350*/
-    background-image: url(../../assets/images/squintmain1.png);
     height: 400px
 
 }
@@ -723,7 +750,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*500*/
-    background-image: url(../../assets/images/squintmain1.png);
+    background-image: url(../../assets/images/squintmain1920.png);    
     height: 450px
 
 }
@@ -733,9 +760,6 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*680*/
-    background-image: url(../../assets/images/squintmain1.png);
-/*    background-size: cover;
-    background-position: center;*/
     background-attachment: fixed;
     height: 600px
 
@@ -747,7 +771,6 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .bkgrd-main {
     /*1000*/
     background-position: center;
-    background-image: url(../../assets/images/squintmain1.png);
     background-size: cover;
     height: 100vh; 
     /*background-attachment: scroll;*/
@@ -897,7 +920,8 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
 
 .bkgrd-shop {
-  background-color: #9c8ac1;
+  background: -webkit-gradient(linear, left top, right top, from(#9c8ac1) , to(#ffc6df));
+  background: linear-gradient(to right, #9c8ac1 , #ffc6df);
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -927,8 +951,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   }
 
 .bkgrd-shop-3 {
-    background: -webkit-gradient(linear, left top, right top, from(#9c8ac1) , to(#ffc6df));
-    background: linear-gradient(to right, #9c8ac1 , #ffc6df);
+    background: #9c8ac1;
     /*background-color: $mainPurple;*/
     height: 300px;
   }
@@ -968,25 +991,43 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 }*/
 
 .bkgrd-looks {
-
-  background-color: #fff;
-  height: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffc6df), to(#9c8ac1));
+  background: linear-gradient(to right, #ffc6df, #9c8ac1);
+  height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 
 }
 
-@media(min-width: 1000px){
+@media(min-width: 680px){
 
 .bkgrd-looks {
+    height: 100px;
+    background-size: contain;
+    background-position: 25% 25%;
+    background-attachment: scroll
+
+}
+  }
+
+.bkgrd-looks-2 {
+  background-color: #fff;
+  height: 25%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  }
+
+@media(min-width: 1000px){
+
+.bkgrd-looks-2 {
     /*1000*/
     background-position: center;
     background-size: cover;
     /*height: 50%; */
     background-attachment: fixed
-
-}
+  }
   }
 
 .bkgrd-looks-text {
@@ -1289,7 +1330,8 @@ div.youtube-video-wrap:hover {
   }
 
 .bkgrd-main-squint-club {
-  background-color: #9c8ac1;
+  background: -webkit-gradient(linear, left top, right top, from(#9c8ac1) , to(#119a48));
+  background: linear-gradient(to right, #9c8ac1 , #119a48);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
@@ -1535,7 +1577,7 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-contact {
-  background-color: #fff;
+  background: #9c8ac1;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1946,25 +1988,33 @@ button:hover{
 
     margin-top: 15px !important;
     margin-bottom: 15px !important;
+    background-color: #119a48;
 
 }
 
 @media(min-width: 520px){
 
 #gallery-wrapper {
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(24)
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(24)
 
 }
   }
 
 #gallery-wrapper img {
         width: 100%;
-        border: 2px solid #ffc6df;
     }
+
+#gallery-wrapper img:nth-child(odd) {
+            /*border-right: 2px solid $mainPink;*/
+        }
+
+#gallery-wrapper img:nth-child(even) {
+            /*border-top: 2px solid $mainGreen;*/
+        }
 
 @media(min-width: 350px){
 

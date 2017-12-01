@@ -40,6 +40,30 @@
     }
   }
 
+  &__menu-content-sizing a {
+    @mixin atSmall {
+      color: #FFF;
+    }
+  }
+
+  &__menu-content-contact a {
+    @mixin atSmall {
+      color: #FFF;
+    }
+  }
+
+  &__menu-content-shipping a {
+    @mixin atSmall {
+      color: #FFF;
+    }
+  }
+
+  &__menu-content-returns a {
+    @mixin atSmall {
+      color: #FFF;
+    }
+  }
+
   &__shop a {
     color: #fff;
   }

@@ -1,5 +1,5 @@
 .bkgrd-shop {
-  background-color: $mainPurple;
+  background: linear-gradient(to right, $mainPurple , $mainPink);
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,7 +19,7 @@
   }
 
   &-3 {
-    background: linear-gradient(to right, $mainPurple , $mainPink);
+    background: $mainPurple;
     /*background-color: $mainPurple;*/
     height: 300px;
   }

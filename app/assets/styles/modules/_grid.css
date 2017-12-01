@@ -2,18 +2,26 @@
 
     margin-top: 15px !important;
     margin-bottom: 15px !important;
+    background-color: $mainGreen;
 
     @mixin atSmall {
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(24);
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(24);
     }
 
     & img {
         width: 100%;
-        border: 2px solid $mainPink;
+
+        &:nth-child(odd) {
+            /*border-right: 2px solid $mainPink;*/
+        }
+
+        &:nth-child(even) {
+            /*border-top: 2px solid $mainGreen;*/
+        }
     }
 
 }
