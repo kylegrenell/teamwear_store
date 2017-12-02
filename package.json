@@ -2,6 +2,7 @@
   "name": "squint",
   "version": "1.0.0",
   "dependencies": {
+    "instafeed.js": "^1.4.1",
     "jquery": "3.2.1",
     "jquery-smooth-scroll": "2.2.0",
     "lazysizes": "4.0.0-rc3",

@@ -1,26 +1,26 @@
 .bkgrd-main {
 
   background-image: url(../../assets/images/squintmain680.png);
-  height: 350px;
+  height: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
 
   @mixin atSmallest {
     /*350*/
-    height: 400px;
+    height: 60%;
   }
 
   @mixin atSmall {
     /*500*/
-    background-image: url(../../assets/images/squintmain1920.png);    
-    height: 450px;
+    background-image: url(../../assets/images/squintmain1920.png);  
+    height: 70%;
+
   }
 
   @mixin atMedium {
     /*680*/
-    background-attachment: fixed;
-    height: 600px; 
+    height: 80%; 
   }
 
   @mixin atLarge {

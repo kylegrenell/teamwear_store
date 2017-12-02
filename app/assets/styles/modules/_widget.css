@@ -22,7 +22,7 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 
 }
 
-.instagram-wrapper {
+#instafeed {
     padding: 10px 10px 30px 10px;
     text-align: center;
     background-color: $mainGreen;

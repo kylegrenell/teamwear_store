@@ -750,7 +750,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .bkgrd-main {
 
   background-image: url(../../assets/images/squintmain680.png);
-  height: 350px;
+  height: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -761,7 +761,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*350*/
-    height: 400px
+    height: 60%
 
 }
   }
@@ -770,8 +770,8 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*500*/
-    background-image: url(../../assets/images/squintmain1920.png);    
-    height: 450px
+    background-image: url(../../assets/images/squintmain1920.png);  
+    height: 70%
 
 }
   }
@@ -780,8 +780,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*680*/
-    background-attachment: fixed;
-    height: 600px
+    height: 80%
 
 }
   }
@@ -1775,27 +1774,6 @@ a.wiggle-me:hover{
   background-color: #ffc6df;
   overflow: hidden;
 }
-
-@media(min-width: 350px){
-
-.wrapper-text-shipping {
-    /*padding-top: 90px;*/
-}
-  }
-
-@media(min-width: 520px){
-
-.wrapper-text-shipping {
-    padding-top: 40px
-}
-  }
-
-@media(min-width: 1000px){
-
-.wrapper-text-shipping {
-    padding-top: 100px
-}
-  }
 
 .wrapper-text-shipping p {
     font-size: .9rem;
@@ -2938,7 +2916,7 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 }
   }
 
-.instagram-wrapper {
+#instafeed {
     padding: 10px 10px 30px 10px;
     text-align: center;
     background-color: #119a48;

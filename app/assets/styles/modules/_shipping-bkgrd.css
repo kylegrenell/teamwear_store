@@ -30,16 +30,6 @@
   background-color: $mainPink;
   overflow: hidden;
 
-  @mixin atSmallest {
-    /*padding-top: 90px;*/
-  }
-  @mixin atSmall {
-    padding-top: 40px;
-  }
-  @mixin atLarge{
-    padding-top: 100px;
-  }
-
   & p {
     font-size: .9rem;
     width: 90%;
