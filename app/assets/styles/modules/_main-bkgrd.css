@@ -8,19 +8,18 @@
 
   @mixin atSmallest {
     /*350*/
-    height: 60%;
+    height: 400px;
   }
 
   @mixin atSmall {
     /*500*/
     background-image: url(../../assets/images/squintmain1920.png);  
-    height: 70%;
-
+    height: 450px;
   }
 
   @mixin atMedium {
     /*680*/
-    height: 80%; 
+    height: 600px; 
   }
 
   @mixin atLarge {
