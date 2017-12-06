@@ -750,7 +750,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 .bkgrd-main {
 
   background-image: url(../../assets/images/squintmain680.png);
-  height: 50%;
+  height: 350px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
