@@ -9,21 +9,24 @@
   @mixin atSmallest {
     /*350*/
     height: 400px;
+    background-image: url(../../assets/images/squintmain1024.png); 
   }
 
   @mixin atSmall {
     /*500*/
-    background-image: url(../../assets/images/squintmain1920.png);  
+    background-image: url(../../assets/images/squintmain1280.png);  
     height: 450px;
   }
 
   @mixin atMedium {
     /*680*/
     height: 600px; 
+    background-image: url(../../assets/images/squintmain1440.png); 
   }
 
   @mixin atLarge {
     /*1000*/
+    background-image: url(../../assets/images/squintmain1920.png); 
     background-position: center;
     background-size: cover;
     height: 100vh; 

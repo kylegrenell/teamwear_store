@@ -761,7 +761,8 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*350*/
-    height: 400px
+    height: 400px;
+    background-image: url(../../assets/images/squintmain1024.png)
 
 }
   }
@@ -770,7 +771,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*500*/
-    background-image: url(../../assets/images/squintmain1920.png);  
+    background-image: url(../../assets/images/squintmain1280.png);  
     height: 450px
 
 }
@@ -780,7 +781,8 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*680*/
-    height: 600px
+    height: 600px; 
+    background-image: url(../../assets/images/squintmain1440.png)
 
 }
   }
@@ -789,6 +791,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-main {
     /*1000*/
+    background-image: url(../../assets/images/squintmain1920.png); 
     background-position: center;
     background-size: cover;
     height: 100vh; 
@@ -3078,154 +3081,6 @@ form input[name=subscribe] {
   }
 
 */
-
-.wave-purple{
-  background-color: #9c8ac1;
-  /*height: 20px;*/
-  position: relative;
-}
-
-.wave-purple::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 10px;
-  background-size: 20px 20px;
-  background-image:
-    radial-gradient(circle at 10px -5px, transparent 12px, #9c8ac1 13px);
-}
-
-.wave-purple::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 15px;
-  background-size: 40px 20px;
-  background-image:
-    radial-gradient(circle at 10px 15px, #9c8ac1 12px, transparent 13px);
-}
-
-.wave-white {
-  background-color: #9c8ac1;
-  /*height: 20px;*/
-  position: relative;
-}
-
-.wave-white::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 10px;
-  background-size: 20px 20px;
-  background-image:
-    radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
-}
-
-.wave-white::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 15px;
-  background-size: 40px 20px;
-  background-image:
-    radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
-}
-
-.wave-green{
-  background-color: #119a48;
-  /*height: 20px;*/
-  position: relative;
-}
-
-.wave-green::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 10px;
-  background-size: 20px 20px;
-  background-image:
-    radial-gradient(circle at 10px -5px, transparent 12px, #119a48 13px);
-}
-
-.wave-green::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 15px;
-  background-size: 40px 20px;
-  background-image:
-    radial-gradient(circle at 10px 15px, #119a48 12px, transparent 13px);
-}
-
-/*section {
-  width: 100%;
-  min-height: 500px;
-  background-color: $mainPurple;
-}*/
-
-.wave-looks {
-  /*position: relative;*/
-  content: '';
-  /*position: absolute;*/
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background: url(../../assets/images/bkgrd-white-thin.png);
-  background-repeat: no-repeat;
-  background-color: red;
-}
-
-.wave-pink{
-  background-color: #ffc6df;
-  /*height: 20px;*/
-  position: relative;
-}
-
-.wave-pink::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 10px;
-  background-size: 20px 20px;
-  background-image:
-    radial-gradient(circle at 10px -5px, transparent 12px, #ffc6df 13px);
-}
-
-.wave-pink::after{
-  content: "";
-  overflow:hidden;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 15px;
-  background-size: 40px 20px;
-  background-image:
-    radial-gradient(circle at 10px 15px, #ffc6df 12px, transparent 13px);
-}
 
 .wiggle{
  position: relative;
