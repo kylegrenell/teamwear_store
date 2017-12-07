@@ -138,3 +138,33 @@
     radial-gradient(circle at 10px 15px, $mainPink 12px, transparent 13px);
 }
 
+.wiggle{
+ position: relative;
+
+ &:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 25px;
+  background-position: center;
+ }
+
+ &__purple:before{
+   background-image: url(../../assets/images/purple-bkgrd.svg);
+ }
+
+ &__white:before{
+   background-image: url(../../assets/images/white-bkgrd.svg);
+ }
+
+ &__pink:before{
+   background-image: url(../../assets/images/pink-bkgrd.svg);
+ }
+
+ &__green:before{
+   background-image: url(../../assets/images/green-bkgrd.svg);
+ }
+
+}

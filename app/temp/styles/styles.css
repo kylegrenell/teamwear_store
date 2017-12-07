@@ -3226,3 +3226,34 @@ form input[name=subscribe] {
   background-image:
     radial-gradient(circle at 10px 15px, #ffc6df 12px, transparent 13px);
 }
+
+.wiggle{
+ position: relative;
+
+}
+
+.wiggle:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 25px;
+  background-position: center;
+ }
+
+.wiggle__purple:before{
+   background-image: url(../../assets/images/purple-bkgrd.svg);
+ }
+
+.wiggle__white:before{
+   background-image: url(../../assets/images/white-bkgrd.svg);
+ }
+
+.wiggle__pink:before{
+   background-image: url(../../assets/images/pink-bkgrd.svg);
+ }
+
+.wiggle__green:before{
+   background-image: url(../../assets/images/green-bkgrd.svg);
+ }
