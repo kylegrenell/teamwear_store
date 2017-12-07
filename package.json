@@ -2,6 +2,8 @@
   "name": "squint",
   "version": "1.0.0",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "instafeed": "^2.0.0",
     "instafeed.js": "^1.4.1",
     "jquery": "3.2.1",
     "jquery-smooth-scroll": "2.2.0",
