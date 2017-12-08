@@ -10346,6 +10346,10 @@ var _instafeed = __webpack_require__(5);
 
 var _instafeed2 = _interopRequireDefault(_instafeed);
 
+var _LoadModal = __webpack_require__(6);
+
+var _LoadModal2 = _interopRequireDefault(_LoadModal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
@@ -10364,37 +10368,10 @@ var userFeed = new _instafeed2.default({
   limit: 8,
   links: true
 });
+
 userFeed.run();
 
 console.log("%c Psst, if you're seeing this, check back from time to time for secret discounts... This is our 'Easter Egg' section :)", "background: #ffc6df; color: #9c8ac1");
-
-function loadModal() {
-
-  (0, _jquery2.default)(document).ready(function () {
-    (0, _jquery2.default)(".cover").fadeIn('medium');
-    (0, _jquery2.default)(".popup").fadeIn('slow');
-  });
-
-  (0, _jquery2.default)(".popup").on('click', function () {
-    if ((0, _jquery2.default)(event.target).is("#close")) {
-      (0, _jquery2.default)(".cover").fadeOut('slow');
-      (0, _jquery2.default)(".popup").fadeOut('medium');
-    }
-  });
-
-  (0, _jquery2.default)(document).mouseup(function (e) {
-    var container = (0, _jquery2.default)(".popup");
-    var cover = (0, _jquery2.default)(".cover");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      container.fadeOut('medium');
-      cover.fadeOut('slow');
-    }
-  });
-};
-
-window.onload = function () {
-  loadModal();
-};
 
 /***/ }),
 /* 2 */
@@ -11692,6 +11669,41 @@ limitations under the License.
     });
 }.call(this));
 
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function loadModal() {
+
+  $(document).ready(function () {
+    $(".cover").fadeIn('medium');
+    $(".popup").fadeIn('slow');
+  });
+
+  $(".popup").on('click', function () {
+    if ($(event.target).is("#close")) {
+      $(".cover").fadeOut('slow');
+      $(".popup").fadeOut('medium');
+    }
+  });
+
+  $(document).mouseup(function (e) {
+    var container = $(".popup");
+    var cover = $(".cover");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      container.fadeOut('medium');
+      cover.fadeOut('slow');
+    }
+  });
+};
+
+window.onload = function () {
+  loadModal();
+};
 
 /***/ })
 /******/ ]);

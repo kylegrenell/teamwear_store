@@ -1,4 +1,5 @@
 .header {
+  font-family: ArialItalic;
   text-decoration: none;
   position: absolute;
   width: 100%;
@@ -10,13 +11,11 @@
   background-color: rgba($mainPurple, .8);
   }
 
-
   @mixin atMedium {
     background-color: transparent;
     width: 400px;
     padding: 5px 5px;
     top:20px;
-    /*left: 10px;*/
   }
 
   @mixin atLarge {

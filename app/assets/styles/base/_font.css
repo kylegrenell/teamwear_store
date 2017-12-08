@@ -2,3 +2,13 @@
 font-family: PoetsenOne;
 src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 }
+
+@font-face {
+font-family: ArialItalicBold;
+src: url(../../assets/fonts/ARIALBI0.TTF);
+}
+
+@font-face {
+font-family: ArialItalic;
+src: url(../../assets/fonts/ARIALI.TTF);
+}

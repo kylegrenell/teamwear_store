@@ -1,0 +1,93 @@
+.cover {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba($mainPurple,0.75);*/
+  background: radial-gradient(#293f50, $mainPurple);
+  opacity: .85;
+  display: none;
+  z-index: 3000;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  position: absolute;
+  z-index: 5000;
+  width: 250px;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 15px;
+  display: none;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  outline:0;
+
+  @mixin atSmallest {
+    width: 320px;
+    height: 180px;
+  }
+
+  @mixin atSmall {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+#popup-container {
+  margin: 0 auto;
+  margin-top: 100px; 
+  display: block;
+}
+
+#mc_embed_signup {
+  padding-top: 30px !important;
+  border-radius: 15px !important;
+
+  @mixin atSmall {
+    padding-top: 35px !important;
+  }
+
+  & label {
+    font-family: PoetsenOne !important;
+    font-size: .8rem !important;
+
+    @mixin atSmallest {
+      font-size: 1.1rem !important;
+    }
+  }
+}
+
+#mc-embedded-subscribe {
+  font-family: ArialItalicBold !important;
+  font-size: .8rem !important;
+
+  @mixin atSmallest {
+    font-size: 1.1rem !important;
+  }
+}
+
+#mce-EMAIL {
+  font-family: ArialItalicBold !important;
+  font-size: .8rem !important;
+  border: 2px solid $mainPurple !important;
+
+  @mixin atSmall {
+    font-size: .9rem !important;
+  }
+}
+
+#close {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 25px;
+  border-radius: 50%;
+  float: right;
+  color: $mainPurple;
+  cursor: pointer;
+}

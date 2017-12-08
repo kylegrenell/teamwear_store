@@ -43,6 +43,7 @@
   /*border: 2px solid $mainPink;*/
   line-height: 25px;
   padding: 0 0 5px 0;
+  font-family: ArialItalic;
 
   a {
     color: $mainPurple;
