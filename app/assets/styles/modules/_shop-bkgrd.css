@@ -20,8 +20,12 @@
 
   &-3 {
     background: $mainPurple;
-    /*background-color: $mainPurple;*/
-    height: 300px;
+    height: auto;
+    padding: 25px 0 35px 0;
+
+    @mixin atSmall {
+      padding: 20px 0 30px 0;
+    }
   }
 
   &__text-content {
@@ -34,11 +38,6 @@
 
 .squint-logo {
   text-align: center;
-  padding: 25px;
-
-  @mixin atSmall {
-    padding: 10px;
-  }
 
   &-image {
     height: 230px;

@@ -2531,24 +2531,12 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
   width: 100%;
   color: #FFF;
   z-index: 10;
-  background-color: rgba(156,138,193, .75);
+  background-color: rgba(156,138,193, 0);
 
 }
 
-.header-sizing {
-    background-color: rgba(156,138,193, 0);
-  }
-
-.header-contact {
-    background-color: rgba(156,138,193, 0);
-  }
-
-.header-shipping {
-    background-color: rgba(156,138,193, 0);
-  }
-
-.header-returns {
-    background-color: rgba(156,138,193, 0);
+.header-index {
+  background-color: rgba(156,138,193, .8);
   }
 
 @media(min-width: 680px){
@@ -2557,7 +2545,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
     background-color: transparent;
     width: 400px;
     padding: 5px 5px;
-    top:10px
+    top:20px
     /*left: 10px;*/
 
 }
@@ -2642,7 +2630,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
       left: 0;
       width: 20px;
       height: 2px;
-      background-color: #119a48;
+      background-color: #fff;
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
       -webkit-transition: -webkit-transform .3s ease-out;
@@ -2657,7 +2645,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
       left: 0;
       width: 20px;
       height: 2px;
-      background-color: #119a48;
+      background-color: #fff;
       -webkit-transition: all .1s ease-out;
       transition: all .1s ease-out;
       -webkit-transform-origin: 0 50%;
@@ -2671,7 +2659,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
       left: 0;
       width: 20px;
       height: 2px;
-      background-color: #119a48;
+      background-color: #fff;
       -webkit-transform-origin: 0 100%;
               transform-origin: 0 100%;      
       -webkit-transition: -webkit-transform .3s ease-out;      
@@ -2679,6 +2667,18 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
       transition: transform .3s ease-out;      
       transition: transform .3s ease-out, -webkit-transform .3s ease-out;
     }
+
+.header__menu-icon-green::before {
+        background-color: #119a48;
+      }
+
+.header__menu-icon-green::after {
+        background-color: #119a48;
+      }
+
+.header__menu-icon-green__middle {
+        background-color: #119a48;
+      }
 
 @media(min-width: 680px){
 
@@ -2730,15 +2730,8 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
     }
 
 .header__menu-content--is-visible ul li {
-        padding: 18px 4px 5px 4px;
+        padding: 20px 5px 0px 5px;
       }
-
-@media(min-width: 350px){
-
-.header__menu-content--is-visible ul li {
-          padding: 12px 5px 5px 5px
-      }
-  }
 
 .dropdown-content {
     display: none;
@@ -3024,8 +3017,15 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .bkgrd-shop-3 {
     background: #9c8ac1;
-    /*background-color: $mainPurple;*/
-    height: 300px;
+    height: auto;
+    padding: 25px 0 35px 0;
+  }
+
+@media(min-width: 520px){
+
+.bkgrd-shop-3 {
+      padding: 20px 0 30px 0
+  }
   }
 
 .bkgrd-shop__text-content {
@@ -3036,15 +3036,7 @@ src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
 
 .squint-logo {
   text-align: center;
-  padding: 25px;
 }
-
-@media(min-width: 520px){
-
-.squint-logo {
-    padding: 10px
-}
-  }
 
 .squint-logo-image {
     height: 230px;
@@ -3649,6 +3641,7 @@ a.wiggle-me:hover{
   }
 
 .wrapper-text p {
+    font-family: PoetsenOne;
     font-size: .9rem;
     width: 90%;
     display: inline-block;
@@ -3730,6 +3723,7 @@ a.wiggle-me:hover{
   }
 
 .wrapper-text-contact p {
+    font-family: PoetsenOne;
     font-size: .9rem;
     width: 90%;
     display: inline-block;
@@ -3830,6 +3824,7 @@ a.wiggle-me:hover{
 }
 
 .wrapper-text-shipping p {
+    font-family: PoetsenOne;
     font-size: .9rem;
     width: 90%;
     display: inline-block;
@@ -3927,6 +3922,7 @@ a.wiggle-me:hover{
   }
 
 .wrapper-text-returns p {
+    font-family: PoetsenOne;
     font-size: .9rem;
     width: 90%;
     display: inline-block;

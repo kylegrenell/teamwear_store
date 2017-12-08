@@ -51,6 +51,7 @@
   }
 
   & p {
+    font-family: PoetsenOne;
     font-size: .9rem;
     width: 90%;
     display: inline-block;
