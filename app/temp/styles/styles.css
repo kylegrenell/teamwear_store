@@ -3606,39 +3606,46 @@ a.wiggle-me:hover{
   }
 
 .wrapper-text {
-  padding-top: 80px;
-  height: 50%;
+  padding-top: 50px;
+  padding-bottom: 55px;
+  height: auto;
   text-align: center;
   background-color: #ffc6df;
   overflow: hidden;
 }
 
+.wrapper-text h2 {
+    font-family: PoetsenOne;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
 @media(min-width: 350px){
 
-.wrapper-text {
-    padding-top: 90px
-}
+.wrapper-text h2 {
+      font-size: 1.3rem
+  }
   }
 
 @media(min-width: 520px){
 
-.wrapper-text {
-    padding-top: 100px
-}
+.wrapper-text h2 {
+      font-size: 1.7rem
+  }
   }
 
 @media(min-width: 680px){
 
-.wrapper-text {
-    padding-top: 120px
-}
+.wrapper-text h2 {
+      font-size: 2rem
+  }
   }
 
-@media(min-width: 1000px){
+@media(min-width: 680px){
 
-.wrapper-text {
-    padding-top: 170px
-}
+.wrapper-text h2 {
+      font-size: 2.5rem
+  }
   }
 
 .wrapper-text p {
@@ -3670,8 +3677,7 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-contact {
-  background: -webkit-gradient(linear, left top, right top, from(#119a48), to(#9c8ac1));
-  background: linear-gradient(to right, #119a48, #9c8ac1); 
+  background: #9c8ac1; 
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3785,8 +3791,7 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-shipping {
-  background: -webkit-gradient(linear, left top, right top, from(#119a48), to(#9c8ac1));
-  background: linear-gradient(to right, #119a48, #9c8ac1);  
+  background: #9c8ac1;  
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3889,8 +3894,7 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-returns {
-  background: -webkit-gradient(linear, left top, right top, from(#119a48), to(#9c8ac1));
-  background: linear-gradient(to right, #119a48, #9c8ac1);   
+  background: #9c8ac1;    
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;

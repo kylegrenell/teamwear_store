@@ -1,5 +1,5 @@
 .bkgrd-returns {
-  background: linear-gradient(to right, $mainGreen, $mainPurple);   
+  background: $mainPurple;    
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
