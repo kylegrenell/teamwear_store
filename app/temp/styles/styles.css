@@ -2497,6 +2497,7 @@ ul {
 }
 
 ul li {
+
   display: list-item;
   padding: 5px 10px;
   margin: 0 5px 0 0;
@@ -2509,6 +2510,10 @@ a {
   text-decoration: none;
   color: #FFF;
   cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 br.large-break {
@@ -2554,14 +2559,11 @@ src: url(../../assets/fonts/ARIALI.TTF);
 
 .header {
     background-color: transparent;
-    width: 400px;
+    width: 450px;
     padding: 5px 5px;
     top:20px
 
 }
-  }
-
-@media(min-width: 1000px){
   }
 
 .header a:hover {  
@@ -2740,25 +2742,16 @@ src: url(../../assets/fonts/ARIALI.TTF);
     }
 
 .header__menu-content--is-visible ul li {
-        padding: 20px 5px 0px 5px;
+        list-style-type: none;
+        padding: 25px 3px 0px 3px;
       }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 60;
-}
+@media(min-width: 350px){
 
-.dropdown-content:hover a {
-    display: block;
-    background-color: #3e8e41;
-    width: 100px;
-    height: 50px;
-}
+.header__menu-content--is-visible ul li {
+          padding: 20px 5px 0px 5px
+      }
+  }
 
 .reveal-item {
   opacity: 0;
@@ -2949,7 +2942,7 @@ src: url(../../assets/fonts/ARIALI.TTF);
     text-align: center;
     margin: 0;
     font-size: 4rem;
-    font-family: PoetsenOne;
+    font-family: PoetsenOne, ArialItalicBold;
     z-index:2;    
 
   }
@@ -2957,7 +2950,7 @@ src: url(../../assets/fonts/ARIALI.TTF);
 @media(min-width: 350px){
 
 .bkgrd-main__title {
-      top: 150px;
+      top: 140px;
       font-size: 5rem    
 
   }
@@ -2966,8 +2959,8 @@ src: url(../../assets/fonts/ARIALI.TTF);
 @media(min-width: 520px){
 
 .bkgrd-main__title {
-      top: 180px;
-      font-size: 5rem    
+      top: 150px;
+      font-size: 6rem    
 
   }
   }
@@ -2975,8 +2968,8 @@ src: url(../../assets/fonts/ARIALI.TTF);
 @media(min-width: 680px){
 
 .bkgrd-main__title {
-      top: 230px;
-      font-size: 7rem    
+      top: 200px;
+      font-size: 8rem    
 
   }
   }
@@ -2984,7 +2977,7 @@ src: url(../../assets/fonts/ARIALI.TTF);
 @media(min-width: 1000px){
 
 .bkgrd-main__title {
-      top: 250px;
+      top: 220px;
       font-size: 10rem    
 
   }
@@ -4102,6 +4095,7 @@ button:hover{
 }
 
 .btn-shop-now {
+  font-family: ArialItalicBold;
   text-decoration: none;
   padding-top: 200px;
   display: block;
@@ -4135,6 +4129,43 @@ button:hover{
     padding-top: 450px
 }
   }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      background-color: #ffc6df;
+      padding: 0 2px 0 2px;
+    }
+
+@media(min-width: 520px){
+
+.dropdown-content a {
+        color: #9c8ac1
+    }
+  }
+
+.dropdown-content-alt a {
+      background-color: #119a48;
+      color: #fff;
+    }
+
+.dropdown-content-alt a:hover{
+        color: #ffc6df;
+      }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 #gallery-wrapper {
     max-width: 1100px;

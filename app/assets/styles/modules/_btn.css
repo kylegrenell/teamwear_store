@@ -29,6 +29,7 @@ button:hover{
 }
 
 .btn-shop-now {
+  font-family: ArialItalicBold;
   text-decoration: none;
   padding-top: 200px;
   display: block;
@@ -50,3 +51,42 @@ button:hover{
     padding-top: 450px;
   }
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content {
+
+    & a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      background-color: $mainPink;
+      padding: 0 2px 0 2px;
+
+      @mixin atSmall {
+        color: $mainPurple;
+      }
+    }
+
+    &-alt a {
+      background-color: $mainGreen;
+      color: #fff;
+
+      &:hover{
+        color: $mainPink;
+      }
+    }
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

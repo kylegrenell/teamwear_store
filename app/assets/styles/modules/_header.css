@@ -13,13 +13,9 @@
 
   @mixin atMedium {
     background-color: transparent;
-    width: 400px;
+    width: 450px;
     padding: 5px 5px;
     top:20px;
-  }
-
-  @mixin atLarge {
-
   }
 
   a:hover {  
@@ -170,26 +166,15 @@
       display: block;
       
       ul li {
-        padding: 20px 5px 0px 5px;
+        list-style-type: none;
+        padding: 25px 3px 0px 3px;
+
+        @mixin atSmallest {
+          padding: 20px 5px 0px 5px;
+        }
       }
     }
 
   }
 
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 60;
-}
-
-.dropdown-content:hover a {
-    display: block;
-    background-color: #3e8e41;
-    width: 100px;
-    height: 50px;
 }

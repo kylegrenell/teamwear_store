@@ -122,26 +122,26 @@
     text-align: center;
     margin: 0;
     font-size: 4rem;
-    font-family: PoetsenOne;
+    font-family: PoetsenOne, ArialItalicBold;
     z-index:2;
 
     @mixin atSmallest {
-      top: 150px;
+      top: 140px;
       font-size: 5rem;
     }
 
     @mixin atSmall {
-      top: 180px;
-      font-size: 5rem;
+      top: 150px;
+      font-size: 6rem;
     }
 
     @mixin atMedium{
-      top: 230px;
-      font-size: 7rem;
+      top: 200px;
+      font-size: 8rem;
     }    
  
     @mixin atLarge{
-      top: 250px;
+      top: 220px;
       font-size: 10rem;
     }    
 
