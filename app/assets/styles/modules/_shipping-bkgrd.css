@@ -47,6 +47,9 @@
     @mixin atMedium {
       width: 70%;
     }
+    @mixin atLarge {
+      width: 50%;
+    }
   }
 }
 

@@ -3650,7 +3650,7 @@ a.wiggle-me:hover{
 @media(min-width: 350px){
 
 .wrapper-text p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       width: 88%
   }
   }
@@ -3666,6 +3666,13 @@ a.wiggle-me:hover{
 
 .wrapper-text p {
       width: 70%
+  }
+  }
+
+@media(min-width: 1000px){
+
+.wrapper-text p {
+      width: 50%
   }
   }
 
@@ -3728,6 +3735,7 @@ a.wiggle-me:hover{
     width: 90%;
     display: inline-block;
     line-height: 1.5rem;
+    padding: 10px;
   }
 
 @media(min-width: 350px){
@@ -3752,6 +3760,13 @@ a.wiggle-me:hover{
   }
   }
 
+@media(min-width: 1000px){
+
+.wrapper-text-contact p {
+      width: 55%
+  }
+  }
+
 .email-contact a {
   display: inline-block;
   font-family: PoetsenOne;
@@ -3773,14 +3788,14 @@ a.wiggle-me:hover{
 @media(min-width: 520px){
 
 .email-contact a {
-    font-size: 1.7rem
+    font-size: 1.5rem
 }
   }
 
 @media(min-width: 680px){
 
 .email-contact a {
-    font-size: 2rem
+    font-size: 1.7rem
 }
   }
 
@@ -3850,6 +3865,13 @@ a.wiggle-me:hover{
 
 .wrapper-text-shipping p {
       width: 70%
+  }
+  }
+
+@media(min-width: 1000px){
+
+.wrapper-text-shipping p {
+      width: 50%
   }
   }
 
@@ -3948,6 +3970,13 @@ a.wiggle-me:hover{
 
 .wrapper-text-returns p {
       width: 70%
+  }
+  }
+
+@media(min-width: 1000px){
+
+.wrapper-text-returns p {
+      width: 50%
   }
   }
 
