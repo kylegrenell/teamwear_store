@@ -15,6 +15,7 @@
   <!-- build:js assets/scripts/Vendor.js -->
   <script src="/temp/scripts/Vendor.js"></script>
   <!-- endbuild -->
+
 </head>
 <body>
 
@@ -101,10 +102,36 @@
     </ul>
     </div>
 
+    <div class="container" id="popup-container" onload=>
+      <div class="popup">
+        <span id="close">&times;</span>
+         <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+         <style type="text/css">
+           #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+           /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+         </style>
+         <div id="mc_embed_signup">
+         <form action="https://squintclothing.us17.list-manage.com/subscribe/post?u=03140d0f4f083a88477ba00cd&amp;id=e0bf9dcbf4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+             <div id="mc_embed_signup_scroll">
+           <label for="mce-EMAIL">Join our mailing list to receive a 10% discount!</label>
+           <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_03140d0f4f083a88477ba00cd_e0bf9dcbf4" tabindex="-1" value=""></div>
+             <div class="clear"><input type="submit" value="JOIN" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+             </div>
+         </form>
+         </div>
+      </div>
+    </div>
+
+    <div class="cover"></div>
+
   <!-- build:js assets/scripts/App.js -->
 <script src="/temp/scripts/App.js"></script> 
 <!-- endbuild -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </body>
 </html>

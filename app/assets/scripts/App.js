@@ -22,3 +22,33 @@ var userFeed = new Instafeed({
 userFeed.run();
 
 console.log("%c Psst, if you're seeing this, check back from time to time for secret discounts... This is our 'Easter Egg' section :)", "background: #ffc6df; color: #9c8ac1");
+
+function loadModal(){
+
+  $(document).ready(function(){  
+    $(".cover").fadeIn('medium');
+    $(".popup").fadeIn('slow');
+  });
+
+  $(".popup").on('click', function(){
+    if($(event.target).is("#close")){
+      $(".cover").fadeOut('slow');
+      $(".popup").fadeOut('medium');
+    }
+  });
+
+  $(document).mouseup(function(e) {
+      var container = $(".popup");
+      var cover = $(".cover")
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+          container.fadeOut('medium');
+          cover.fadeOut('slow');
+      }
+  });                                    
+
+};
+
+window.onload = function(){
+  loadModal();
+};
+
