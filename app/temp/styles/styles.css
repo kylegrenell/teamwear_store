@@ -4044,8 +4044,12 @@ button {
 }
   }
 
+button a:hover {
+    color: rgba(255,198,223, 1);
+  }
+
 button:hover{
-  background-color: #7258a6;
+  background-color: rgba(156,138,193, 0.85);
 }
 
 .btn-shop-now {
@@ -5034,7 +5038,7 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 
 #instafeed img {
       padding:5px;
-      height:auto;
+      height:150px;
       width:150px;
 
     }
@@ -5078,8 +5082,15 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 .instafeed-wrapper {
   display: table;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 600px;
 }
+
+@media(min-width: 680px){
+
+.instafeed-wrapper {
+    max-width: 700px
+}
+  }
 
 @media(min-width: 1000px){
 
@@ -5151,21 +5162,6 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 }
   }
 
-/*.footer-wrapper > div:last-child {
-  display: flex; 
-  margin-top: 0px;
-  flex-basis: calc(100% - 22px);  
-  justify-content: center;
-  flex-direction: column;
-}*/
-
-/*.footer-wrapper > div > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-*/
-
 .footer {
   margin: 10px 0 20px 0px;
 }
@@ -5234,21 +5230,9 @@ form input[name=subscribe] {
       margin: 0 auto !important; /*centers the button*/
     }
 
-/*.footer {
-  width: 100%;
-  height: 300px;
-  background-color: #FFF;
-  text-decoration: none;
-  padding: 3px 3px;
-  display: flex;
-  flex: 1;  
-  }
-
-  a, a:hover {
-    color: $mainPurple !important;
-  }
-
-*/
+#social-media-icons {
+  padding-bottom: 10px;
+}
 
 .cover {
   position: fixed;

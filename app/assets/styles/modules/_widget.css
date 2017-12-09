@@ -11,7 +11,7 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 
     & img {
       padding:5px;
-      height:auto;
+      height:150px;
       width:150px;
 
       @mixin atSmallest{
@@ -40,7 +40,11 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 .instafeed-wrapper {
   display: table;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 600px;
+
+  @mixin atMedium {
+    max-width: 700px;
+  }
 
   @mixin atLarge {
     max-width: 900px;

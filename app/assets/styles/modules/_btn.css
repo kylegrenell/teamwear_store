@@ -20,12 +20,16 @@ button {
   @mixin atMedium {
     padding:16px 32px;
     font-size:16px;
+  }
+
+  & a:hover {
+    color: rgba($mainPink, 1);
   }    
 
 }
 
 button:hover{
-  background-color: $darkPurple;
+  background-color: rgba($mainPurple, 0.85);
 }
 
 .btn-shop-now {
