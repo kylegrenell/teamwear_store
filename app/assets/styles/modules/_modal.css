@@ -13,14 +13,14 @@
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   z-index: 5000;
   width: 250px;
   height: 180px;
   background-color: #fff;
   border-radius: 15px;
   display: none;
-  top: 25%;
+  top: 30vh;
   bottom: 0;
   left: 0;
   right: 0;

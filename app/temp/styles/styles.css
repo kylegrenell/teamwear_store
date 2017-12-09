@@ -3064,7 +3064,6 @@ src: url(../../assets/fonts/ARIALI.TTF);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-
 }
 
 @media(min-width: 680px){
@@ -3074,27 +3073,7 @@ src: url(../../assets/fonts/ARIALI.TTF);
     background-size: contain;
     background-position: 25% 25%;
     background-attachment: scroll
-
 }
-  }
-
-.bkgrd-looks-2 {
-  background-color: #fff;
-  height: 25%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  }
-
-@media(min-width: 1000px){
-
-.bkgrd-looks-2 {
-    /*1000*/
-    background-position: center;
-    background-size: cover;
-    /*height: 50%; */
-    background-attachment: fixed
-  }
   }
 
 .bkgrd-looks-text {
@@ -3137,57 +3116,34 @@ src: url(../../assets/fonts/ARIALI.TTF);
   }
 
 .bkgrd-looks__title-shop a {
-  position: absolute;
-  top: 150px;
-  left: 0;
-  width: 100%;
   color: #ffc6df;
-  text-align: center;
-  margin: 0;
   font-size: 2rem;
-  font-family: PoetsenOne;
-  z-index:2;
-  display: inline-block;    
-
+  font-family: PoetsenOne;     
 }
 
 @media(min-width: 350px){
 
 .bkgrd-looks__title-shop a {
-    font-size: 2.5rem    
-
+    font-size: 2.5rem     
 }
   }
 
 @media(min-width: 520px){
 
 .bkgrd-looks__title-shop a {     
-    font-size: 3rem    
-
+    font-size: 3rem     
 }
   }
 
 @media(min-width: 680px){
 
 .bkgrd-looks__title-shop a {
-    font-size: 4rem;
-    top: 140px    
-
-}
-  }
-
-@media(min-width: 680px){
-
-.bkgrd-looks__title-shop a {
-    font-size: 4rem;
-    top: 170px    
-
+    font-size: 4rem     
 }
   }
 
 .bkgrd-looks__text-content {
     overflow: hidden;
-    /*text-overflow: ellipsis;*/
   }
 
 .collections {
@@ -3195,6 +3151,7 @@ src: url(../../assets/fonts/ARIALI.TTF);
   width: 100%; 
   max-width: 640px;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .collections img {
@@ -3208,9 +3165,6 @@ src: url(../../assets/fonts/ARIALI.TTF);
     -webkit-box-shadow: #119a48 7px 7px 0;
             box-shadow: #119a48 7px 7px 0; 
     opacity: .8;
-    /*border: 2px solid #119a48;*/
-    /*margin-left: -2px;*/
-    /*margin-top: -2px;*/
   }
 
 .collections p {
@@ -5257,14 +5211,14 @@ form input[name=subscribe] {
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   z-index: 5000;
   width: 250px;
   height: 180px;
   background-color: #fff;
   border-radius: 15px;
   display: none;
-  top: 25%;
+  top: 30vh;
   bottom: 0;
   left: 0;
   right: 0;

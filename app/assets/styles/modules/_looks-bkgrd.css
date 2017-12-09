@@ -13,22 +13,6 @@
     background-attachment: scroll;
   }
 
-  &-2 {
-  background-color: #fff;
-  height: 25%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-
-  @mixin atLarge {
-    /*1000*/
-    background-position: center;
-    background-size: cover;
-    /*height: 50%; */
-    background-attachment: fixed;
-  }
-  } 
-
   &-text {
     text-align: center;
     z-index: 5;
@@ -58,19 +42,10 @@
     }
   }
 
-
 &__title-shop a {
-  position: absolute;
-  top: 150px;
-  left: 0;
-  width: 100%;
   color: $mainPink;
-  text-align: center;
-  margin: 0;
   font-size: 2rem;
   font-family: PoetsenOne;
-  z-index:2;
-  display: inline-block;
 
   @mixin atSmallest {
     font-size: 2.5rem;
@@ -82,21 +57,12 @@
 
   @mixin atMedium{
     font-size: 4rem;
-    top: 140px;
-  }   
-
-  @mixin atMedium{
-    font-size: 4rem;
-    top: 170px;
-  }    
-
+  }     
 }
 
   &__text-content {
     overflow: hidden;
-    /*text-overflow: ellipsis;*/
   }
-
 }
 
 .collections {
@@ -104,6 +70,7 @@
   width: 100%; 
   max-width: 640px;
   padding-bottom: 20px;
+  padding-top: 20px;
 
   & img {
     display: inline-block;
@@ -115,9 +82,6 @@
   & img:hover {
     box-shadow: $mainGreen 7px 7px 0; 
     opacity: .8;
-    /*border: 2px solid #119a48;*/
-    /*margin-left: -2px;*/
-    /*margin-top: -2px;*/
   }
 
   & p {
