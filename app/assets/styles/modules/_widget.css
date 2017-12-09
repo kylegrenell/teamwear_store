@@ -3,13 +3,48 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 }
 
 #instafeed {
-  padding: 40px 10px 70px 10px;
+  padding: 40px 0px 70px 0px;
+  width: 100%;
   text-align: center;
+  margin: 0 auto;
   background-color: $mainPink;
 
     & img {
       padding:5px;
+      height:auto;
+      width:150px;
+
+      @mixin atSmallest{
+        height:170px;
+        width:170px;
+      }
+
+      @mixin atSmall{
+        height:200px;
+        width:200px;
+      }
+
+      @mixin atMedium{
+        height:220px;
+        width:220px;
+      }
+
+      @mixin atLarge{
+        height:300px;
+        width:300px;
+      }
+
     }
+}
+
+.instafeed-wrapper {
+  display: table;
+  margin: 0 auto;
+  max-width: 700px;
+
+  @mixin atLarge {
+    max-width: 900px;
+  }
 }
 
 .instagram-follow {
