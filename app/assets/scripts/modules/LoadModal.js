@@ -12,14 +12,14 @@ function loadModal(){
     }
   });
 
-  $(document).mouseup(function(e) {
+  $(document).on("click touchstart",function(e) {
       var container = $(".popup");
       var cover = $(".cover")
       if (!container.is(e.target) && container.has(e.target).length === 0) {
           container.fadeOut('medium');
           cover.fadeOut('slow');
       }
-  });                                    
+  });                                   
 
 };
 
