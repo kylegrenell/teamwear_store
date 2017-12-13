@@ -11,26 +11,22 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 
     & img {
       padding:5px;
-      height:150px;
+      height:auto;
       width:150px;
 
       @mixin atSmallest{
-        height:170px;
         width:170px;
       }
 
       @mixin atSmall{
-        height:200px;
         width:200px;
       }
 
       @mixin atMedium{
-        height:220px;
         width:220px;
       }
 
       @mixin atLarge{
-        height:300px;
         width:300px;
       }
 
@@ -71,4 +67,8 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
     color: $mainGreen;
   }
 
+}
+
+img[alt~="www.000webhost.com"]{
+  display: none;
 }

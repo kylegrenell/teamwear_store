@@ -2803,7 +2803,7 @@ src: url(../../assets/fonts/ARIALI.TTF);
 .bkgrd-main {
     /*680*/
     height: 600px; 
-    background-image: url(../../assets/images/squintmain1440.png)
+    background-image: url(../../assets/images/squintmain1920.png)
 
 }
   }
@@ -2812,7 +2812,6 @@ src: url(../../assets/fonts/ARIALI.TTF);
 
 .bkgrd-main {
     /*1000*/
-    background-image: url(../../assets/images/squintmain1920.png); 
     background-position: center;
     background-size: cover;
     height: 100vh; 
@@ -3338,6 +3337,132 @@ a.wiggle-me:hover{
   }
 
 .bkgrd-looks-tie__text-content {
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+  }
+
+.bkgrd-looks-grad {
+
+  /*background-image: url(../../assets/images/TIE_1280.png);*/
+  background-color: #9c8ac1;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+
+@media(min-width: 680px){
+
+.bkgrd-looks-grad {
+    background-attachment: fixed
+
+}
+  }
+
+@media(min-width: 1000px){
+
+.bkgrd-looks-grad {
+    /*1000*/
+    background-position: center;
+    background-size: cover;
+    height: 50%; 
+    background-attachment: fixed
+
+}
+  }
+
+.bkgrd-looks-grad-text {
+    padding: 15px 30px;
+    text-align: center;
+    z-index: 5;
+    color: #fff;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: .95rem;
+    font-weight: 500;
+    opacity: .8;
+
+  }
+
+@media(min-width: 520px){
+
+.bkgrd-looks-grad-text {
+      font-size: 1rem
+
+  }
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-looks-grad-text {
+      font-size: 1.1rem
+
+  }
+  }
+
+.bkgrd-looks-grad-2{
+    background-color: #119a48;
+    
+  }
+
+@media(min-width: 350px){
+  }
+
+@media(min-width: 680px){
+  }
+
+.bkgrd-looks-grad__title-grad {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  color: #ffc6df;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: PoetsenOne;
+  z-index:2;    
+
+}
+
+@media(min-width: 350px){
+
+.bkgrd-looks-grad__title-grad {
+    top: 110px;
+    font-size: 3.3rem    
+
+}
+  }
+
+@media(min-width: 520px){
+
+.bkgrd-looks-grad__title-grad {
+    top: 100px;
+    font-size: 4.5rem    
+
+}
+  }
+
+@media(min-width: 680px){
+
+.bkgrd-looks-grad__title-grad {
+    top: 90px;
+    font-size: 6rem    
+
+}
+  }
+
+@media(min-width: 1000px){
+
+.bkgrd-looks-grad__title-grad {
+    top: 120px;
+    font-size: 7rem    
+
+}
+  }
+
+.bkgrd-looks-grad__text-content {
     overflow: hidden;
     /*text-overflow: ellipsis;*/
   }
@@ -4710,7 +4835,7 @@ button:hover{
 
 #gallery-wrapper-grad {
     max-width: 1100px;
-    margin-top: 15px !important;
+    margin-top: 40px !important;
 
 }
 
@@ -5038,7 +5163,7 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 
 #instafeed img {
       padding:5px;
-      height:150px;
+      height:auto;
       width:150px;
 
     }
@@ -5046,7 +5171,6 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 @media(min-width: 350px){
 
 #instafeed img {
-        height:170px;
         width:170px
 
     }
@@ -5055,7 +5179,6 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 @media(min-width: 520px){
 
 #instafeed img {
-        height:200px;
         width:200px
 
     }
@@ -5064,7 +5187,6 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 @media(min-width: 680px){
 
 #instafeed img {
-        height:220px;
         width:220px
 
     }
@@ -5073,7 +5195,6 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 @media(min-width: 1000px){
 
 #instafeed img {
-        height:300px;
         width:300px
 
     }
@@ -5124,6 +5245,10 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
 .instagram-follow a:hover {
     color: #119a48;
   }
+
+img[alt~="www.000webhost.com"]{
+  display: none;
+}
 
 .footer-wrapper {
   min-height: 250px;

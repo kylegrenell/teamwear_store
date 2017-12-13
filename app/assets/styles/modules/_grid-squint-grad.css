@@ -1,6 +1,6 @@
 #gallery-wrapper-grad {
     max-width: 1100px;
-    margin-top: 15px !important;
+    margin-top: 40px !important;
 
     @mixin atSmall {
     margin: 0 auto;
