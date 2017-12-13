@@ -14,6 +14,11 @@
 
     & img {
         width: 100%;
+        padding-bottom: 5px;
+
+        @mixin atSmall {
+        padding-bottom: 0;
+        }
 
         &:nth-child(odd) {
             /*border-right: 2px solid $mainPink;*/

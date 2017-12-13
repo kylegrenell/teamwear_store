@@ -68,6 +68,7 @@ button:hover{
 .dropdown-content {
 
     & a {
+      font-size: 0.8rem;
       color: #fff;
       text-decoration: none;
       display: block;
@@ -88,6 +89,10 @@ button:hover{
       }
     }
     
+}
+
+span > li {
+
 }
 
 .dropdown:hover .dropdown-content {

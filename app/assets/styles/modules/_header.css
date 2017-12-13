@@ -1,4 +1,6 @@
 .header {
+  position: absolute;
+  z-index: 100;
   font-family: ArialItalic;
   text-decoration: none;
   position: absolute;

@@ -2497,7 +2497,6 @@ ul {
 }
 
 ul li {
-
   display: list-item;
   padding: 5px 10px;
   margin: 0 5px 0 0;
@@ -2526,8 +2525,12 @@ br.large-break {
 }
 
 @font-face {
-font-family: PoetsenOne;
-src: url(../../assets/fonts/PoetsenOne-Regular.ttf);
+    font-family: 'PoetsenOne';
+    src: url('../../assets/fonts/PoetsenOne/poetsenone-regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/PoetsenOne/poetsenone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
@@ -2541,6 +2544,8 @@ src: url(../../assets/fonts/ARIALI.TTF);
 }
 
 .header {
+  position: absolute;
+  z-index: 100;
   font-family: ArialItalic;
   text-decoration: none;
   position: absolute;
@@ -4223,6 +4228,7 @@ button:hover{
 }
 
 .dropdown-content a {
+      font-size: 0.8rem;
       color: #fff;
       text-decoration: none;
       display: block;
@@ -4245,6 +4251,10 @@ button:hover{
 .dropdown-content-alt a:hover{
         color: #ffc6df;
       }
+
+span > li {
+
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -4272,7 +4282,15 @@ button:hover{
 
 #gallery-wrapper img {
         width: 100%;
+        padding-bottom: 5px;
     }
+
+@media(min-width: 520px){
+
+#gallery-wrapper img {
+        padding-bottom: 0
+    }
+  }
 
 #gallery-wrapper img:nth-child(odd) {
             /*border-right: 2px solid $mainPink;*/
@@ -4853,7 +4871,15 @@ button:hover{
 
 #gallery-wrapper-grad img {
         width: 100%;
+        padding-bottom: 5px;
     }
+
+@media(min-width: 520px){
+
+#gallery-wrapper-grad img {
+        padding-bottom: 0
+    }
+  }
 
 @media(min-width: 350px){
 
@@ -5500,4 +5526,20 @@ form input[name=subscribe] {
 
 .wiggle__green:before{
    background-image: url(../../assets/images/green-bkgrd.svg);
+ }
+
+.wiggle__pink-long:before{
+   background-image: url(../../assets/images/pink-bkgrd-long.png);
+ }
+
+.wiggle__green-long:before{
+   background-image: url(../../assets/images/green-bkgrd-long.svg);
+ }
+
+.wiggle__purple-long:before{
+   background-image: url(../../assets/images/purple-bkgrd-long.svg);
+ }
+
+.wiggle__white-long:before{
+   background-image: url(../../assets/images/white-bkgrd-long.svg);
  }

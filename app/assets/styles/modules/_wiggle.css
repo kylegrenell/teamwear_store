@@ -27,4 +27,20 @@
    background-image: url(../../assets/images/green-bkgrd.svg);
  }
 
+ &__pink-long:before{
+   background-image: url(../../assets/images/pink-bkgrd-long.png);
+ }
+
+ &__green-long:before{
+   background-image: url(../../assets/images/green-bkgrd-long.svg);
+ }
+
+ &__purple-long:before{
+   background-image: url(../../assets/images/purple-bkgrd-long.svg);
+ }
+
+ &__white-long:before{
+   background-image: url(../../assets/images/white-bkgrd-long.svg);
+ }
+
 }
