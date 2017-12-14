@@ -2478,6 +2478,7 @@ a.text-dark:focus,a.text-dark:hover{color:#1d2124!important}
 html, body {
   height: 100%;
   margin: 0;
+  overflow: 0;
   font-family: 'Roboto', sans-serif;
   color: #9E8ABE;
   font-weight: 400;
@@ -2759,18 +2760,19 @@ src: url(../../assets/fonts/ARIALI.TTF);
   }
 
 .reveal-item {
+  height: auto;
   opacity: 0;
   -webkit-transition: all 1.75s ease-out;
   transition: all 1.75s ease-out;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 
 }
 
 .reveal-item--is-visible {
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 
 .bkgrd-main {
@@ -5529,7 +5531,7 @@ form input[name=subscribe] {
  }
 
 .wiggle__pink-long:before{
-   background-image: url(../../assets/images/pink-bkgrd-long.png);
+   background-image: url(../../assets/images/pink-bkgrd-long.svg);
  }
 
 .wiggle__green-long:before{
