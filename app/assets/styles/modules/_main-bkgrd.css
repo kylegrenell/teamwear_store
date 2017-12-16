@@ -90,24 +90,14 @@
 }
 
   &-3 {
-  background-image: url(../../assets/images/squint3.png);
-  height: 50vh; 
-  background-attachment: fixed;
-  background-position: center;
+  overflow: hidden;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center; 
 
-  @mixin atSmall {
-    height:60vh;
-  }
-
-  @mixin atMedium {
-    height:80vh;
-    background-size: auto;
-  }
-
-  @mixin atLarge {
-    background-size: auto;
+  & video {
+    transform: translate(-5%, -20%);
   }
 
 }

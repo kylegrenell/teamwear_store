@@ -17,6 +17,7 @@
 
  &__white:before{
    background-image: url(../../assets/images/white-bkgrd.svg);
+   height: 35px;
  }
 
  &__pink:before{
@@ -41,6 +42,11 @@
 
  &__white-long:before{
    background-image: url(../../assets/images/white-bkgrd-long.svg);
+ }
+
+ &__white-long-video:before{
+   background-image: url(../../assets/images/white-bkgrd-long.svg);
+   height: 55px;
  }
 
 }
