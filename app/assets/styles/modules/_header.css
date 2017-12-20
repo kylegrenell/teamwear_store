@@ -3,13 +3,12 @@
   z-index: 100;
   font-family: ArialItalic;
   text-decoration: none;
-  position: absolute;
   width: 100%;
   color: #FFF;
   z-index: 10;
   background-color: rgba($mainPurple, 0);
 
-  &-index {
+  &__index {
   background-color: rgba($mainPurple, .8);
   }
 
@@ -21,7 +20,11 @@
   }
 
   a:hover {  
-    color: $mainGreen;
+    color: $mainPink;
+  }
+
+  &__index a:hover{
+    color: $mainGreen !important;
   }
     
   a {
@@ -46,17 +49,35 @@
     @mixin atSmall {
       color: #FFF;
     }
+
+    &:hover {
+      color: $mainGreen;
+    }
   }
 
   &__menu-content-contact a {
     @mixin atSmall {
-      color: #FFF;
+      color: $mainPurple;
     }
+  }
+
+  &__menu-content-contact a {
+    @mixin atSmall {
+      color: #fff;
+    }
+
+    &:hover { 
+        color: $mainGreen;     
+    }  
   }
 
   &__menu-content-shipping a {
     @mixin atSmall {
-      color: #FFF;
+      color: #fff;
+
+      &:hover { 
+          color: $mainGreen;     
+      }     
     }
   }
 
@@ -64,13 +85,16 @@
     @mixin atSmall {
       color: #FFF;
     }
+    &:hover{
+      color: $mainGreen;
+    }
   }
 
   &__shop a {
     color: #fff;
   }
 
-  &__shop a:hover{
+  &__squint-club a:hover{
     color: $mainGreen;
   }
 

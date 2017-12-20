@@ -8,7 +8,7 @@
   bottom: 0;
   right: 0;
   height: 25px;
-  background-position: center;
+  background-position: left;
  }
 
  &__purple:before{
@@ -32,12 +32,31 @@
    background-image: url(../../assets/images/pink-bkgrd-long.svg);
  }
 
+ &__pink-long-video:before{
+   background-image: url(../../assets/images/pink-bkgrd-long.svg);
+   height: 120px;
+   background-position: left;
+
+   @mixin atSmallest {
+    height: 100px;
+   }
+
+   @mixin atSmall {
+    height: 75px;
+   }
+ }
+
  &__green-long:before{
    background-image: url(../../assets/images/green-bkgrd-long.svg);
  }
 
  &__purple-long:before{
    background-image: url(../../assets/images/purple-bkgrd-long.svg);
+ }
+
+ &__purple-long-animation:before{
+   background-image: url(../../assets/images/purple-bkgrd-long.svg);
+   height: 30px;
  }
 
  &__white-long:before{

@@ -8,6 +8,7 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
   text-align: center;
   margin: 0 auto;
   background-color: $mainPink;
+  position: relative;
 
     & img {
       padding:5px;
@@ -37,6 +38,7 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
   display: table;
   margin: 0 auto;
   max-width: 600px;
+  z-index: 5;
 
   @mixin atMedium {
     max-width: 700px;
@@ -51,6 +53,8 @@ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), progress !impor
   font-family: PoetsenOne;
   font-size: 25px;
   color: #fff;
+  z-index: 5;
+
 
   @mixin atMedium {
     font-size: 30px;

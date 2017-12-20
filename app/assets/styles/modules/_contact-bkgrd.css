@@ -1,5 +1,5 @@
 .bkgrd-contact {
-  background: $mainPurple; 
+  background: $mainPink; 
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -23,18 +23,15 @@
 }
 
 .wrapper-text-contact {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    /*padding-top: 20px;*/
+    padding-bottom: 50px;
     height: auto;
     text-align: center;
-    background-color: $mainPink;
+    background: linear-gradient($mainPink,#fff);
     overflow: hidden;
 
     @mixin atSmallest {
       /*padding-top: 90px;*/
-    }
-    @mixin atSmall {
-      padding-top: 40px;
     }
 
   & p {
@@ -44,6 +41,7 @@
     display: inline-block;
     line-height: 1.5rem;
     padding: 10px;
+    color: $mainGreen;
 
     @mixin atSmallest {
       font-size: 1.1rem;
@@ -63,7 +61,8 @@
   & h2 {
     font-family: PoetsenOne;
     font-size: 1.1rem;
-    color: #fff;
+    color: $mainGreen;
+    opacity:.9;
     
     @mixin atSmallest {
       font-size: 1.3rem;
@@ -85,11 +84,11 @@
   display: inline-block;
   font-family: PoetsenOne;
   font-size: 1.1rem;
-  color: #fff;
+  color: $mainGreen;
   padding-bottom: .07em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: rgba(250,250,250,.3);
+  border-bottom-color: rgba($mainGreen,.3);
   @mixin atSmallest {
     font-size: 1.3rem;
   }
@@ -98,5 +97,9 @@
   }
   @mixin atMedium {
     font-size: 1.7rem;
+  }
+
+  &:hover{
+    opacity: 0.8;
   }
 }

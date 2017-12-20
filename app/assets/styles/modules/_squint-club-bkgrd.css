@@ -1,19 +1,14 @@
 div.youtube-video-wrap {
   margin: 0 auto;
   width: 100%; 
-  /*max-width: 640px;*/
-  /*border: 2px solid $mainGreen;*/
    &:hover {
-    /*box-shadow: $mainGreen 7px 7px 0; */
     opacity: .9;
    }
 }
 
 .video-content {
-
   position:relative;
   padding-bottom:56.25%;
-  /*padding-top:10px;*/
   height:0;
   overflow:hidden;
 
@@ -27,7 +22,6 @@ div.youtube-video-wrap {
 }
 
 .bkgrd-main-squint-club {
-  /*background: linear-gradient(to right, $mainPurple , $mainGreen);*/
   background-color: $mainPink;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,7 +42,6 @@ div.youtube-video-wrap {
     overflow: hidden;
     font-size: .9rem;
     font-weight: 500;
-/*    opacity: .8;*/
     height: auto;
 
     @mixin atSmall {
@@ -57,20 +50,17 @@ div.youtube-video-wrap {
 
     @mixin atMedium {
       font-size: 1.3rem;
-      /*padding: 5px 5px;*/
     }
 
     & p {
       margin: 0 auto;
       padding: 5px 5px;
     }
-
   }
 
   &-2{
     background-color: #fff;
     padding-top: 25px;
-    /*padding-bottom: 25px;*/
   }
 
   &-3 {
@@ -93,11 +83,9 @@ div.youtube-video-wrap {
   @mixin atLarge {
     background-size: auto;
   }
-
 }
 
   &__title a {
-    /*position: absolute;*/
     color: $mainPink !important;
     top: 130px;
     left: 0;
@@ -121,14 +109,11 @@ div.youtube-video-wrap {
     @mixin atMedium{
       font-size: 4rem;
     }       
-
   }
 
   &__text-content {
     overflow: hidden;
-    /*text-overflow: ellipsis;*/
   }
-
 }
 
 @-ms-keyframes wiggle {
@@ -159,4 +144,8 @@ a.wiggle-me:hover{
   animation:wiggle .4s infinite;
   text-decoration: none;
 
+}
+
+.title-looks a {
+  color: $mainGreen !important;
 }

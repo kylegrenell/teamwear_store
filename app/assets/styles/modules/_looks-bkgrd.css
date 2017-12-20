@@ -1,6 +1,5 @@
 .bkgrd-looks {
-  /*background: linear-gradient(to right, $mainPink, $mainPurple);*/
-  background-color: $mainPurple;
+  background-color: $mainGreen;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -42,8 +41,42 @@
     }
   }
 
+    &-2{
+      background-color: #fff;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      text-align: center;
+
+      @mixin atSmallest {
+        /*height:60vh;*/
+      }
+
+      @mixin atMedium {
+        /*height:80vh;*/
+      }
+
+      & p {
+        padding: 30px 0 30px 0;
+        margin: 0 auto;
+        width: 80%;
+        color: #fff;
+        font-family: PoetsenOne;
+        font-size: 1.1rem;
+
+        @mixin atMedium {
+        width: 70%;
+        padding: 30px 0 30px 0;
+        font-size: 1.2rem;
+
+        @mixin atLarge {
+        font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
 &__title-shop a {
-  color: $mainPink;
+  color: $mainPurple;
   font-size: 2rem;
   font-family: PoetsenOne;
 
@@ -68,7 +101,7 @@
 .collections {
   margin: 0 auto;
   width: 100%; 
-  max-width: 640px;
+  max-width: 800px;
   padding-bottom: 20px;
   padding-top: 20px;
 
@@ -76,12 +109,13 @@
     display: inline-block;
     margin-bottom: 15px;
     width: 100%;
-    border: 2px solid $mainGreen;
+    /*border: 2px solid $mainGreen;*/
   }
 
-  & img:hover {
-    box-shadow: $mainGreen 7px 7px 0; 
-    opacity: .8;
+  & img:hover, :focus {
+    cursor: url(http://www.clker.com/cliparts/r/p/2/k/3/f/pink-pointer-finger-md.png), pointer !important;
+    /*box-shadow: $mainGreen 7px 7px 0; */
+    /*opacity: .9;*/
   }
 
   & p {
@@ -125,4 +159,5 @@
 
 a.wiggle-me:hover{
   animation:wiggle .4s infinite;
+  text-decoration: none;
 }

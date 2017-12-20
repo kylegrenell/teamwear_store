@@ -1,5 +1,5 @@
 .bkgrd-sizing {
-   background: $mainPurple;
+   background: $mainPink;
   height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -14,11 +14,8 @@
 
   @mixin atLarge {
     background-position: center;
-    /*background-image: url(../../assets/images/TIE_1920.png);*/
     background-size: cover;
-    /*height: 600px; */
     background-attachment: scroll;
-    /*background-attachment: fixed;*/
   }
 }
 
@@ -27,13 +24,13 @@
   padding-bottom: 55px;
   height: auto;
   text-align: center;
-  background-color: $mainPink;
+  background: linear-gradient($mainPink,#fff);
   overflow: hidden;
 
   & h2 {
     font-family: PoetsenOne;
     font-size: 1.1rem;
-    color: #fff;
+    color: $mainGreen;
     
     @mixin atSmallest {
       font-size: 1.3rem;
@@ -55,6 +52,8 @@
     font-size: .9rem;
     width: 90%;
     display: inline-block;
+    color: $mainGreen;
+
     @mixin atSmallest {
       font-size: 1.1rem;
       width: 88%;

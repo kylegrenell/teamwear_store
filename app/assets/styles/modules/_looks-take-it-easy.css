@@ -41,16 +41,24 @@
   }
 
   &-2{
-    background-color: $mainGreen;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
 
-    @mixin atSmallest {
-
+    a {
+    color: $mainGreen;
+    font-family: PoetsenOne;
+    font-size: 25px;
+    padding-bottom: .07em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba($mainGreen,.3);
     }
 
-    @mixin atMedium {
-
+    a:hover, a:active {
+      color: $mainPink;
+      border-bottom-color: rgba($mainPink,.3);
     }
-    
   } 
 
 &__title-tie {
