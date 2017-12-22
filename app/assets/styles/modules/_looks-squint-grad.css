@@ -44,15 +44,16 @@
     height: 50px;
     text-align: center;
     padding-top: 20px;
+    margin-bottom: 15px;
 
     a {
-    color: $mainGreen;
+    color: #fff;
     font-family: PoetsenOne;
     font-size: 25px;
     padding-bottom: .07em;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: rgba($mainGreen,.3);
+    border-bottom-color: rgba(255,255,255,.3);
     }
 
     a:hover, a:active {

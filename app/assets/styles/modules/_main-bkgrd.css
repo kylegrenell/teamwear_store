@@ -111,7 +111,7 @@
     text-align: center;
     margin: 0;
     font-size: 4rem;
-    font-family: PoetsenOne, ArialItalicBold;
+    font-family: PoetsenOne, ArialItalicBold, sans-serif;
     z-index:2;
 
     @mixin atSmallest {

@@ -5,14 +5,14 @@
     @mixin atSmall {
     margin: 0 auto;
     display: grid;
-    grid-gap: 4px;
+    grid-gap: 7px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(24);
     }
 
     & img {
         width: 100%;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
 
         @mixin atSmall {
         padding-bottom: 0;

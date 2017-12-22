@@ -54,3 +54,13 @@ video {
     height: 650px;
   }
 }
+
+.text-redirect {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  padding-top: 25%;
+  & h1 {
+
+  }
+}

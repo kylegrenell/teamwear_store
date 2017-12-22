@@ -28,6 +28,10 @@
    background-image: url(../../assets/images/green-bkgrd.svg);
  }
 
+ &__soft-pink:before {
+  background-image: url(../../assets/images/soft-pink-bkgrd.svg);
+ }
+
  &__pink-long:before{
    background-image: url(../../assets/images/pink-bkgrd-long.svg);
  }

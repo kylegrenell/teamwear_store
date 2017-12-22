@@ -18,7 +18,9 @@
 }
 
 .footer {
-  margin: 10px 0 20px 0px;
+  @mixin atSmall {
+    margin: 10px 0 20px 0px;
+  }
 
   @mixin atMedium { 
     margin: 10px 0 10px 0px;
@@ -27,6 +29,9 @@
 
 .footer-left { 
   /*border: 2px solid $mainPink;*/
+  @mixin atSmall{
+
+  }
   line-height: 25px;
   padding: 0 0 5px 0;
   font-family: ArialItalic;
@@ -83,4 +88,32 @@ form {
 
 #social-media-icons {
   padding-bottom: 10px;
+  & ul {
+    margin: 3px;
+  }
+}
+
+.site-design-tag {
+  font-size: 0.7rem;
+  font-family: ArialItalic, sans-serif;
+  text-align: center;
+
+  & strong {
+    font-size: 0.8rem !important;
+  }
+
+  & a {
+    font-size: 0.8rem;
+    color: $mainGreen;
+    padding-bottom: .07em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba($mainPurple,.3);
+
+
+    &:hover, :focus {
+      opacity: .8;
+      cursor: pointer !important;
+    }
+  }
 }
