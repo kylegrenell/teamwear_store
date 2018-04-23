@@ -3164,35 +3164,33 @@ section{
 }
 
 .bkgrd-care-heading {
-
-    padding: 20% 5%;
+    padding: 15% 5% 5% 5%;
    }
 
-@media(min-width: 520px){
+@media(min-width: 850px){
 
 .bkgrd-care-heading {
-    position: absolute; 
-    display: inline-block;     
-    top: 25%;
-    left: 75%;
-    -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%)
+      position: absolute; 
+      display: inline-block;
+      top: 20%;     
+      left: 75%;
+      -webkit-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
+      text-align: left
    }
   }
 
 .bkgrd-care-heading h1 {
       text-align: center;
       font-size: 1.4em;
+      -webkit-transform: uppercase;
+              transform: uppercase;
     }
 
-@media(min-width: 520px){
+@media(min-width: 850px){
 
 .bkgrd-care-heading h1 {
-      text-align: left;
-
-      -webkit-transform: uppercase;
-
-              transform: uppercase;
+        text-align: left;
       font-weight: 300;  
       font-size: 2.5rem
     }
@@ -3208,10 +3206,18 @@ section{
 @media(min-width: 520px){
 
 .bkgrd-care-info {
-      margin: 10% 3% 7% 10%;
+      padding: 20% 2% 5% 2%
+
+  }
+  }
+
+@media(min-width: 850px){
+
+.bkgrd-care-info {
+      padding: 5% 2% 5% 2%;
+      margin: 10% 3% 10% 12%;
       display: inline-block;
-      width: 40%;
-      padding: 5% 2% 5% 2%
+      width: 37%
 
   }
   }
@@ -3223,7 +3229,8 @@ section{
 @media(min-width: 520px){
 
 .bkgrd-care h3 {
-      font-size: 1.6rem
+      font-size: 1.6rem;
+      padding-bottom: 5%
   }
   }
 
