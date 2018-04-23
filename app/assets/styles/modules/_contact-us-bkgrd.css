@@ -5,14 +5,16 @@
    background-size: cover;
    background-position: center; 
    background-attachment: fixed;
-   height: 100vh;
+   height: 70vh;
 
-  &-4 {
+   @mixin atSmall {
     height: 100vh;
-  }
+    background-size: cover;
+   }
 
   &-email {
-    position: absolute;
+    position: relative;
+    width: 100%;
     top:25%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -22,4 +24,52 @@
     }
   }
 
+}
+
+.custom-form {
+  padding: 7% 5% 7% 5%;
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+
+  @mixin atSmall {
+    max-width: 40vw;
+  }
+
+  & textarea {
+    height: 10.3em;
+  }
+
+  & form {
+    display: block;
+  }
+
+  & input, textarea {
+    margin-bottom: 0.5rem;
+    font-size: 0.8em;
+    font-family: 'proxima-nova-soft', sans-serif;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 0.9em;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    &:focus {
+      border-color: #2A735B;
+      outline: none;
+      box-shadow: 0 0 5px 1px #359173;
+    }
+  }
+
+  & button {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #359173;
+    color: #359173;
+    background: transparent;
+    line-height: 1em;
+    padding: 0.6em 0.9em;
+    transition: all 0.3s ease-in-out;
+  }
 }

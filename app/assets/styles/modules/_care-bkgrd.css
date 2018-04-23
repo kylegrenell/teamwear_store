@@ -20,29 +20,64 @@
   }
 
     & h1 {
+      text-align: center;
+      font-size: 1.4em;
+
+      @mixin atSmall {
+      text-align: left;
+
       transform: uppercase;
-      font-weight: 300;
+      font-weight: 300;  
+      font-size: 2.5rem;
+      }
     }
    }
 
   &-info {
     background: rgba($mainWhite,.7);
     padding: 5%;
+    margin: 3% 5% 3% 5%;
 
     @mixin atSmall {
       margin: 10% 3% 7% 10%;
       display: inline-block;
-      width: 45%;
+      width: 40%;
       padding: 5% 2% 5% 2%;
     }
 
   }
 
+  & h3 {
+    font-size: 1rem;
+    @mixin atSmall {
+      font-size: 1.6rem;
+    }
+  }
+
   & p {
-    font-weight: 500;
-    font-size: 1.2rem;
     color: #444;
-    line-height: 2;
+    line-height: 1.7rem;
+
+    &:before { 
+      content: ' '; 
+      clear: right;
+      display: block;
+      height: 2rem; 
+    }
+
+    @mixin atSmall {
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+
+
+    @mixin atLarge {
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+    }
+
   }
 
 }

@@ -38,6 +38,15 @@
 
 .gallery-image {
 
+    &-breadcrumbs {
+        grid-row: 2 / 3;
+
+        @mixin atSmall {
+        grid-column: 2 / 7;
+        }
+
+    }
+
 
     &-1 {
         border: 1px solid hsla(31,15%,50%,.1);
@@ -92,7 +101,6 @@
 }
 
 .custom-spacer {
-
     height: 5vh;
     width: 100%;
 }
@@ -113,4 +121,29 @@
     }
 }
 
+.breadcrumbs {
+    color: #000;
+    display: block;
+    float: left;
+    background-color: #fff;
+    text-align: left;
+}
+
+ul.breadcrumbs {
+    list-style: none;
+}
+ul.breadcrumbs li {
+    display: inline;
+    font-size: .9rem;
+}
+
+ul.breadcrumbs li a {
+    padding: 5px 0px;
+    color: #444;
+    text-decoration: none;
+}
+ul.breadcrumbs li a:hover {
+    color: #01447e;
+    text-decoration: none;
+}
 

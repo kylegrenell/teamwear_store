@@ -11556,6 +11556,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         scrollTop: (0, _jquery2.default)("#products").offset().top
     }, 1000);
 });
+
 (0, _jquery2.default)(".back-to-top").click(function () {
     (0, _jquery2.default)('html, body').animate({
         scrollTop: (0, _jquery2.default)("#top-nav").offset().top

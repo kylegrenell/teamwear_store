@@ -39,10 +39,20 @@
     </div>
   </div>
 
-  <div class="bkgrd-contact-us-email"><h1><a href="mailto:veusportsclub@email.com">Email us</a></h1></div>
-
   <div class="bkgrd-contact-us">
-    
+    <div class="btn-contact-us">
+      <a href="#custom-form"><button>Contact Us</button></a>
+    </div>
+  </div>
+
+  <div class="custom-form" id="custom-form">
+    <form method="POST" action="https://formspree.io/kyle.grenell@gmail.com">
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="hidden" name="_subject" value="New submission" />
+      <input type="email" name="email" placeholder="Your email">
+      <textarea name="message" placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
   </div>
 
   <div class="back-to-top"><a href="#top-nav"><img src="../../assets/images/to-top.png"></a></div>
@@ -68,6 +78,15 @@
     <script src="/temp/scripts/App.js"></script> 
     <!-- endbuild -->
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+  $("button").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#custom-form").offset().top
+      }, 1000);
+  });
+</script>
 
   </body>
   </html>

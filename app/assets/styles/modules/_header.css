@@ -9,6 +9,11 @@
   color: #FFF;
   z-index: 10;
 
+  & li {
+    padding: 5px 10px;
+
+  }
+
   @mixin atMedium {
     width: 100vw;
     padding: 5px 5px;
