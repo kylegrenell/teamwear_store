@@ -1,1 +1,1 @@
-# Squint
+# Teamwear Store
