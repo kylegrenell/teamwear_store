@@ -1,101 +1,30 @@
 .header {
   position: absolute;
   z-index: 100;
-  font-family: ArialItalic;
+  /*font-family: ArialItalic;*/
+  font-weight: 300;
+  /*letter-spacing: .5px;*/
   text-decoration: none;
-  width: 100%;
+  width: 100vw;
   color: #FFF;
   z-index: 10;
-  background-color: rgba($mainPurple, 0);
-
-  &__index {
-  background-color: rgba($mainPurple, .8);
-  }
 
   @mixin atMedium {
-    background-color: transparent;
-    width: 450px;
+    width: 100vw;
     padding: 5px 5px;
     top:20px;
   }
 
-  a:hover {  
-    color: $mainPink;
+  @mixin atXXLarge {
+    width: 100%;
   }
 
-  &__index a:hover{
-    color: $mainGreen !important;
+  a:hover {  
+    color: tomato;
   }
     
   a {
-    @mixin atMedium {
-    color: $mainPurple;
-    }
-  }
-
-  &__menu-content-looks a {
-    @mixin atSmall {
-      color: #FFF;
-    }
-  }
-
-  &__menu-content-squint-club a {
-    @mixin atSmall {
-      color: #FFF;
-    }
-  }
-
-  &__menu-content-sizing a {
-    @mixin atSmall {
-      color: #FFF;
-    }
-
-    &:hover {
-      color: $mainGreen;
-    }
-  }
-
-  &__menu-content-contact a {
-    @mixin atSmall {
-      color: $mainPurple;
-    }
-  }
-
-  &__menu-content-contact a {
-    @mixin atSmall {
-      color: #fff;
-    }
-
-    &:hover { 
-        color: $mainGreen;     
-    }  
-  }
-
-  &__menu-content-shipping a {
-    @mixin atSmall {
-      color: #fff;
-
-      &:hover { 
-          color: $mainGreen;     
-      }     
-    }
-  }
-
-  &__menu-content-returns a {
-    @mixin atSmall {
-      color: #FFF;
-    }
-    &:hover{
-      color: $mainGreen;
-    }
-  }
-
-  &__shop a {
-    color: #fff;
-  }
-
-  &__squint-club a:hover{
-    color: $mainGreen;
+    color: $mainWhite;
   }
 
   &__menu-icon {
@@ -140,16 +69,16 @@
       transition: transform .3s ease-out;
     }
 
-    &-green {
+    &-dark {
       
       &::before {
-        background-color: $mainGreen;
+        background-color: $mainDark;
       }
       &::after {
-        background-color: $mainGreen;
+        background-color: $mainDark;
       }
       &__middle {
-        background-color: $mainGreen;
+        background-color: $mainDark;
       }    
     }
 
@@ -175,17 +104,34 @@
 
   }
 
+  &__single a {
+    color: #000;
+    &:hover {
+      color: tomato;
+    }
+  }
+
+  &__white a {
+    color: #fff;
+    &:hover {
+      color: $mainDark;
+    }
+  }
+
   &__menu-content {
     display: none;
-    font-size: .9rem;
+    font-size: .8rem;
 
     @mixin atSmallest {
-      font-size: 1rem;
+      font-size: .9rem;
     }
 
     @mixin atMedium {
-      display: block;
-      
+      display: block;    
+    }
+
+    @mixin atXXLarge {
+      font-size: 1.6rem;
     }
 
     &--is-visible {

@@ -33,3 +33,27 @@
     @mixin-content;
   }
 }
+
+@define-mixin atXXLarge {
+  @media(min-width: 1600px){
+    @mixin-content;
+  }
+}
+
+@define-mixin atXXXLarge {
+  @media(min-width: 2000px){
+    @mixin-content;
+  }
+}
+
+@define-mixin atShrunkOne {
+  @media(min-width: 1025px) and (max-height: 520px){
+    @mixin-content;
+  }
+}
+
+@define-mixin atShrunkTwo {
+  @media(min-width: 1025px) and (max-height: 360px){
+    @mixin-content;
+  }
+}

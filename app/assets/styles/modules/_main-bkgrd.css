@@ -1,36 +1,13 @@
 .bkgrd-main {
 
-  background-image: url(../../assets/images/squintmain680.png);
-  height: 350px;
+  background: url(../../assets/images/football/abigail-keenan-17652-unsplash.jpg);
+  height: 70%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
 
-  @mixin atSmallest {
-    /*350*/
-    height: 400px;
-    background-image: url(../../assets/images/squintmain1024.png); 
-  }
-
   @mixin atSmall {
-    /*500*/
-    background-image: url(../../assets/images/squintmain1280.png);  
-    height: 450px;
-  }
-
-  @mixin atMedium {
-    /*680*/
-    height: 600px; 
-    background-image: url(../../assets/images/squintmain1920.png); 
-  }
-
-  @mixin atLarge {
-    /*1000*/
-    background-position: center;
-    background-size: cover;
-    height: 100vh; 
-    /*background-attachment: scroll;*/
-    background-attachment: fixed;
+    height: 100%;
   }
 
   &-text {
@@ -54,91 +31,155 @@
 
   }
 
-  &-2{
-    background-color: $mainPurple;
-    /*height: 100%;*/
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
-
-    @mixin atSmallest {
-      /*height:60vh;*/
-    }
-
-    @mixin atMedium {
-      /*height:80vh;*/
-    }
-
-    & p {
-      padding: 30px 0 30px 0;
-      margin: 0 auto;
-      width: 80%;
-      color: #fff;
-      font-family: PoetsenOne;
-      font-size: 1.1rem;
-
-      @mixin atMedium {
-      width: 70%;
-      padding: 30px 0 30px 0;
-      font-size: 1.2rem;
-
-      @mixin atLarge {
-      font-size: 1.3rem;
-      }
-    }
-  }
-}
-
-  &-3 {
-  overflow: hidden;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
-
-  & video {
-    transform: translate(-5%, -20%);
-  }
-
-}
-
   &__title {
     position: absolute;
-    top: 110px;
-    left: 0;
-    width: 100%;
-    color: $mainPink;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: floating 6s linear infinite;
+    color: #fafafa;
     text-align: center;
     margin: 0;
     font-size: 4rem;
-    font-family: PoetsenOne, ArialItalicBold, sans-serif;
+    font-family: sans-serif;
+    font-weight: 300;
     z-index:2;
 
+    @mixin atSmall {
+      top: 35%;
+    }
+
+    & img {
+      width: 200px;
+
+      @mixin atSmall {
+        width: 300px;
+        height: auto;        
+      }
+
+    }
+
     @mixin atSmallest {
-      top: 140px;
       font-size: 5rem;
     }
 
     @mixin atSmall {
-      top: 150px;
       font-size: 6rem;
     }
 
     @mixin atMedium{
-      top: 200px;
       font-size: 8rem;
     }    
  
     @mixin atLarge{
-      top: 220px;
       font-size: 10rem;
+    }  
+
+    @mixin atXXLarge{
+      top: 300px;
+      font-size: 12rem;
     }    
+
+    @mixin atXXXLarge{
+      font-size: 15rem;
+    } 
+
+    @mixin atShrunkOne {
+      font-size: 7rem;
+    }
+
+    @mixin atShrunkTwo {
+      font-size: 5rem;
+    }
 
   }
 
   &__text-content {
     overflow: hidden;
+    text-align: center;
     /*text-overflow: ellipsis;*/
   }
 
+}
+
+@keyframes floating 
+{
+  0% 
+  {
+    transform: translate(-50%,-50%);
+  }
+  50% 
+  {
+    transform: translate(-50%,-45%);
+  }
+  100% 
+  {
+    transform: translate(-50%,-50%);
+  }
+}
+
+section{
+  display:block;
+}
+
+.products {
+  padding-top: 1%;
+  margin: 3%;
+
+  & form {
+    text-align: center;
+  }
+
+  @mixin atSmall {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.product-card {
+  background-color: #FFF;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+  padding: 2%;
+  margin: 5%;
+
+  &-blank {
+    box-shadow: none;
+  }
+
+  @mixin atMedium {
+    display: flex;
+    flex-direction: column;
+    flex: 1 20%;
+    margin: 1%;
+  }
+
+  @mixin atXLarge {
+    display: flex;
+    flex-direction: column;
+    flex: 1 16%;
+    margin: 1%;
+  }
+}
+
+.product-image img {
+  width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media ( max-width: 920px ) { 
+  .product-card {
+    flex: 1 33%;
+  }
+
+}
+
+@media ( max-width: 600px ) {  
+  .product-card {
+    flex: 1 46%;
+  }  
 }

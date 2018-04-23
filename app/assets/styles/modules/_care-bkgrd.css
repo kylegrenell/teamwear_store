@@ -1,0 +1,48 @@
+.bkgrd-care {
+
+   background: url(../../assets/images/football/remi-jacquaint-519310-unsplash.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center bottom; 
+   background-attachment: contain;
+   height: auto;
+
+   &-heading {
+
+    padding: 20% 5%;
+
+  @mixin atSmall {
+    position: absolute; 
+    display: inline-block;     
+    top: 25%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+  }
+
+    & h1 {
+      transform: uppercase;
+      font-weight: 300;
+    }
+   }
+
+  &-info {
+    background: rgba($mainWhite,.7);
+    padding: 5%;
+
+    @mixin atSmall {
+      margin: 10% 3% 7% 10%;
+      display: inline-block;
+      width: 45%;
+      padding: 5% 2% 5% 2%;
+    }
+
+  }
+
+  & p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 2;
+  }
+
+}

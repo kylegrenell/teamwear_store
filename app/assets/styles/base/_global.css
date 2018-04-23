@@ -2,10 +2,9 @@ html, body {
   height: 100%;
   margin: 0;
   overflow: 0;
-  font-family: PoetsenOne, ArialItalicBold, sans-serif;
-  color: #9E8ABE;
+  font-family: sans-serif;
+  color: #444;
   font-weight: 400;
-  cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;
 }
 
 ul {
@@ -28,8 +27,8 @@ ul li {
 a {
   text-decoration: none;
   color: #FFF;
-  cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;
-}
+/*  cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;
+*/}
 
 a:hover {
   text-decoration: none;
@@ -37,4 +36,12 @@ a:hover {
 
 br.large-break {
   line-height: 200%;
+}
+
+button {
+/*  cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur265.cur), progress !important;
+*/}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444;
 }

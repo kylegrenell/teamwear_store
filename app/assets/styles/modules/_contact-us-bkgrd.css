@@ -1,0 +1,25 @@
+.bkgrd-contact-us {
+
+   background: url(../../assets/images/football/chuttersnap-453176-unsplash.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center; 
+   background-attachment: fixed;
+   height: 100vh;
+
+  &-4 {
+    height: 100vh;
+  }
+
+  &-email {
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    & a:hover {
+      color: $mainDark;
+    }
+  }
+
+}

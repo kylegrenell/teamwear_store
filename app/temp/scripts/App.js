@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10325,156 +10325,6 @@ return jQuery;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _MobileMenu = __webpack_require__(2);
-
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
-var _RevealOnScroll = __webpack_require__(3);
-
-var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _InstagramFeed = __webpack_require__(5);
-
-var _InstagramFeed2 = _interopRequireDefault(_InstagramFeed);
-
-var _LoadModal = __webpack_require__(6);
-
-var _LoadModal2 = _interopRequireDefault(_LoadModal);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var mobileMenu = new _MobileMenu2.default();
-
-new _RevealOnScroll2.default((0, _jquery2.default)(".footer-wrapper"), "85%");
-new _RevealOnScroll2.default((0, _jquery2.default)(".squint-logo-image"), "90%");
-
-console.log("%c Psst, if you're seeing this, check back from time to time for secret discounts... This is our 'Easter Egg' section :)", "background: #ffc6df; color: #9c8ac1");
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var MobileMenu = function () {
-  function MobileMenu() {
-    _classCallCheck(this, MobileMenu);
-
-    this.menuIcon = (0, _jquery2.default)(".header__menu-icon");
-    this.menuContent = (0, _jquery2.default)(".header__menu-content");
-    this.events();
-  }
-
-  _createClass(MobileMenu, [{
-    key: "events",
-    value: function events() {
-      this.menuIcon.click(this.toggleTheMenu.bind(this));
-    }
-  }, {
-    key: "toggleTheMenu",
-    value: function toggleTheMenu() {
-      this.menuContent.toggleClass("header__menu-content--is-visible");
-      this.menuIcon.toggleClass("header__menu-icon--close-x");
-    }
-  }]);
-
-  return MobileMenu;
-}();
-
-exports.default = MobileMenu;
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _noframework = __webpack_require__(4);
-
-var _noframework2 = _interopRequireDefault(_noframework);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var RevealOnScroll = function () {
-  function RevealOnScroll(element, offset) {
-    _classCallCheck(this, RevealOnScroll);
-
-    this.itemsToReveal = element;
-    this.offsetPercentage = offset;
-    this.hideInitially();
-    this.createWaypoints();
-  }
-
-  _createClass(RevealOnScroll, [{
-    key: 'hideInitially',
-    value: function hideInitially() {
-      this.itemsToReveal.addClass("reveal-item");
-    }
-  }, {
-    key: 'createWaypoints',
-    value: function createWaypoints() {
-      var that = this;
-      this.itemsToReveal.each(function () {
-
-        var currentItem = this;
-
-        new Waypoint({
-          // dom element watching for as scroll
-          element: currentItem,
-          // what want to happen when scrolled to
-          handler: function handler() {
-            (0, _jquery2.default)(currentItem).addClass("reveal-item--is-visible");
-          },
-          offset: that.offsetPercentage
-        });
-      });
-    }
-  }]);
-
-  return RevealOnScroll;
-}();
-
-exports.default = RevealOnScroll;
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports) {
 
 /*!
@@ -11237,7 +11087,243 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 ;
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _MobileMenu = __webpack_require__(3);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _RevealOnScroll = __webpack_require__(4);
+
+var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
+
+var _HideOnScroll = __webpack_require__(5);
+
+var _HideOnScroll2 = _interopRequireDefault(_HideOnScroll);
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _InstagramFeed = __webpack_require__(6);
+
+var _InstagramFeed2 = _interopRequireDefault(_InstagramFeed);
+
+var _LoadModal = __webpack_require__(7);
+
+var _LoadModal2 = _interopRequireDefault(_LoadModal);
+
+var _Year = __webpack_require__(8);
+
+var _Year2 = _interopRequireDefault(_Year);
+
+var _CustomTilt = __webpack_require__(9);
+
+var _CustomTilt2 = _interopRequireDefault(_CustomTilt);
+
+var _ConsoleMessages = __webpack_require__(11);
+
+var _ConsoleMessages2 = _interopRequireDefault(_ConsoleMessages);
+
+var _BackToTop = __webpack_require__(12);
+
+var _BackToTop2 = _interopRequireDefault(_BackToTop);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mobileMenu = new _MobileMenu2.default();
+
+// new RevealOnScroll($(".footer-wrapper"), "85%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".squint-logo-image"), "90%");
+new _HideOnScroll2.default((0, _jquery2.default)(".bkgrd-main__title"), "100%");
+new _HideOnScroll2.default((0, _jquery2.default)(".btn-shop-now"), "100%");
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MobileMenu = function () {
+  function MobileMenu() {
+    _classCallCheck(this, MobileMenu);
+
+    this.menuIcon = (0, _jquery2.default)(".header__menu-icon");
+    this.menuContent = (0, _jquery2.default)(".header__menu-content");
+    this.events();
+  }
+
+  _createClass(MobileMenu, [{
+    key: "events",
+    value: function events() {
+      this.menuIcon.click(this.toggleTheMenu.bind(this));
+    }
+  }, {
+    key: "toggleTheMenu",
+    value: function toggleTheMenu() {
+      this.menuContent.toggleClass("header__menu-content--is-visible");
+      this.menuIcon.toggleClass("header__menu-icon--close-x");
+    }
+  }]);
+
+  return MobileMenu;
+}();
+
+exports.default = MobileMenu;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _noframework = __webpack_require__(1);
+
+var _noframework2 = _interopRequireDefault(_noframework);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var RevealOnScroll = function () {
+  function RevealOnScroll(element, offset) {
+    _classCallCheck(this, RevealOnScroll);
+
+    this.itemsToReveal = element;
+    this.offsetPercentage = offset;
+    this.hideInitially();
+    this.createWaypoints();
+  }
+
+  _createClass(RevealOnScroll, [{
+    key: 'hideInitially',
+    value: function hideInitially() {
+      this.itemsToReveal.addClass("reveal-item");
+    }
+  }, {
+    key: 'createWaypoints',
+    value: function createWaypoints() {
+      var that = this;
+      this.itemsToReveal.each(function () {
+
+        var currentItem = this;
+
+        new Waypoint({
+          // dom element watching for as scroll
+          element: currentItem,
+          // what want to happen when scrolled to
+          handler: function handler() {
+            (0, _jquery2.default)(currentItem).addClass("reveal-item--is-visible");
+          },
+          offset: that.offsetPercentage
+        });
+      });
+    }
+  }]);
+
+  return RevealOnScroll;
+}();
+
+exports.default = RevealOnScroll;
+
+/***/ }),
 /* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _noframework = __webpack_require__(1);
+
+var _noframework2 = _interopRequireDefault(_noframework);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var RevealOnScroll = function () {
+  function RevealOnScroll(element, offset) {
+    _classCallCheck(this, RevealOnScroll);
+
+    this.itemsToReveal = element;
+    this.offsetPercentage = offset;
+    this.hideInitially();
+    this.createWaypoints();
+  }
+
+  _createClass(RevealOnScroll, [{
+    key: 'hideInitially',
+    value: function hideInitially() {
+      this.itemsToReveal.addClass("shrink-item--is-visible");
+    }
+  }, {
+    key: 'createWaypoints',
+    value: function createWaypoints() {
+      var that = this;
+      this.itemsToReveal.each(function () {
+
+        var currentItem = this;
+
+        new Waypoint({
+          // dom element watching for as scroll
+          element: currentItem,
+          // what want to happen when scrolled to
+          handler: function handler() {
+            (0, _jquery2.default)(currentItem).addClass("shrink-item");
+          },
+          offset: that.offsetPercentage
+        });
+      });
+    }
+  }]);
+
+  return RevealOnScroll;
+}();
+
+exports.default = RevealOnScroll;
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11251,19 +11337,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(document).ready(function () {
   var instafeed = (0, _jquery2.default)('#instafeed');
-
   _jquery2.default.ajax({
     url: 'https://api.instagram.com/v1/users/3322396718/media/recent/?access_token=3322396718.a817486.ad1ad8469ed0449393089995d0fa2cb8',
     method: 'GET',
     success: function success(e) {
-      // console.log(e);
-      instafeed.html('<div class="bkgrd-main__text-content"><p class="instagram-follow">Follow: <a href="https://www.instagram.com/squintclothing" target="_blank">@squintclothing</a></p></div><div class="instafeed-wrapper"><img src="' + e.data[0].images.standard_resolution.url + '" />' + '<img src="' + e.data[1].images.standard_resolution.url + '" />' + '<img src="' + e.data[2].images.standard_resolution.url + '" />' + '<img src="' + e.data[3].images.standard_resolution.url + '" />' + '<img src="' + e.data[4].images.standard_resolution.url + '" />' + '<img src="' + e.data[5].images.standard_resolution.url + '" /></div>');
+      (0, _jquery2.default)(instafeed).append("<div class='bkgrd-main__text-content'><p class='instagram-follow'>Follow: <a href='https://www.instagram.com/squintclothing' target='_blank'>@squintclothing</a></p></div><div class='instafeed-wrapper'></div>");
+      for (var i = 0; i <= 5; i++) {
+        (0, _jquery2.default)('.instafeed-wrapper').append("<img src='" + e.data[i].images.standard_resolution.url + "'</img>");
+      }
     }
   });
 });
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11308,6 +11395,172 @@ function loadModal() {
 window.onload = function () {
   loadModal();
 };
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var year = new Date();
+(0, _jquery2.default)("#spanDate").append(year.getFullYear());
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _tiltJqueryMin = __webpack_require__(10);
+
+var _tiltJqueryMin2 = _interopRequireDefault(_tiltJqueryMin);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery2.default)('.js-tilt-contact').tilt({
+  scale: 1.15,
+  maxTilt: 20,
+  perspective: 350
+});
+
+(0, _jquery2.default)('.js-tilt-collections').tilt({
+  scale: 1,
+  maxTilt: 7,
+  glare: true,
+  maxGlare: .5
+});
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
+
+var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _typeof = "function" == typeof Symbol && "symbol" == _typeof2(Symbol.iterator) ? function (t) {
+  return typeof t === "undefined" ? "undefined" : _typeof2(t);
+} : function (t) {
+  return t && "function" == typeof Symbol && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t === "undefined" ? "undefined" : _typeof2(t);
+};!function (t) {
+   true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(0)], __WEBPACK_AMD_DEFINE_FACTORY__ = (t),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : "object" === ("undefined" == typeof module ? "undefined" : _typeof(module)) && module.exports ? module.exports = function (i, s) {
+    return void 0 === s && (s = "undefined" != typeof window ? require("jquery") : require("jquery")(i)), t(s), s;
+  } : t(jQuery);
+}(function (t) {
+  return t.fn.tilt = function (i) {
+    var s = function s() {
+      this.ticking || (requestAnimationFrame(g.bind(this)), this.ticking = !0);
+    },
+        e = function e() {
+      var i = this;t(this).on("mousemove", o), t(this).on("mouseenter", a), this.settings.reset && t(this).on("mouseleave", l), this.settings.glare && t(window).on("resize", d.bind(i));
+    },
+        n = function n() {
+      var i = this;void 0 !== this.timeout && clearTimeout(this.timeout), t(this).css({ transition: this.settings.speed + "ms " + this.settings.easing }), this.settings.glare && this.glareElement.css({ transition: "opacity " + this.settings.speed + "ms " + this.settings.easing }), this.timeout = setTimeout(function () {
+        t(i).css({ transition: "" }), i.settings.glare && i.glareElement.css({ transition: "" });
+      }, this.settings.speed);
+    },
+        a = function a(i) {
+      this.ticking = !1, t(this).css({ "will-change": "transform" }), n.call(this), t(this).trigger("tilt.mouseEnter");
+    },
+        r = function r(i) {
+      return "undefined" == typeof i && (i = { pageX: t(this).offset().left + t(this).outerWidth() / 2, pageY: t(this).offset().top + t(this).outerHeight() / 2 }), { x: i.pageX, y: i.pageY };
+    },
+        o = function o(t) {
+      this.mousePositions = r(t), s.call(this);
+    },
+        l = function l() {
+      n.call(this), this.reset = !0, s.call(this), t(this).trigger("tilt.mouseLeave");
+    },
+        h = function h() {
+      var i = t(this).outerWidth(),
+          s = t(this).outerHeight(),
+          e = t(this).offset().left,
+          n = t(this).offset().top,
+          a = (this.mousePositions.x - e) / i,
+          r = (this.mousePositions.y - n) / s,
+          o = (this.settings.maxTilt / 2 - a * this.settings.maxTilt).toFixed(2),
+          l = (r * this.settings.maxTilt - this.settings.maxTilt / 2).toFixed(2),
+          h = Math.atan2(this.mousePositions.x - (e + i / 2), -(this.mousePositions.y - (n + s / 2))) * (180 / Math.PI);return { tiltX: o, tiltY: l, percentageX: 100 * a, percentageY: 100 * r, angle: h };
+    },
+        g = function g() {
+      return this.transforms = h.call(this), this.reset ? (this.reset = !1, t(this).css("transform", "perspective(" + this.settings.perspective + "px) rotateX(0deg) rotateY(0deg)"), void (this.settings.glare && (this.glareElement.css("transform", "rotate(180deg) translate(-50%, -50%)"), this.glareElement.css("opacity", "0")))) : (t(this).css("transform", "perspective(" + this.settings.perspective + "px) rotateX(" + ("x" === this.settings.disableAxis ? 0 : this.transforms.tiltY) + "deg) rotateY(" + ("y" === this.settings.disableAxis ? 0 : this.transforms.tiltX) + "deg) scale3d(" + this.settings.scale + "," + this.settings.scale + "," + this.settings.scale + ")"), this.settings.glare && (this.glareElement.css("transform", "rotate(" + this.transforms.angle + "deg) translate(-50%, -50%)"), this.glareElement.css("opacity", "" + this.transforms.percentageY * this.settings.maxGlare / 100)), t(this).trigger("change", [this.transforms]), void (this.ticking = !1));
+    },
+        c = function c() {
+      var i = this.settings.glarePrerender;if (i || t(this).append('<div class="js-tilt-glare"><div class="js-tilt-glare-inner"></div></div>'), this.glareElementWrapper = t(this).find(".js-tilt-glare"), this.glareElement = t(this).find(".js-tilt-glare-inner"), !i) {
+        var s = { position: "absolute", top: "0", left: "0", width: "100%", height: "100%" };this.glareElementWrapper.css(s).css({ overflow: "hidden", "pointer-events": "none" }), this.glareElement.css({ position: "absolute", top: "50%", left: "50%", "background-image": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)", width: "" + 2 * t(this).outerWidth(), height: "" + 2 * t(this).outerWidth(), transform: "rotate(180deg) translate(-50%, -50%)", "transform-origin": "0% 0%", opacity: "0" });
+      }
+    },
+        d = function d() {
+      this.glareElement.css({ width: "" + 2 * t(this).outerWidth(), height: "" + 2 * t(this).outerWidth() });
+    };return t.fn.tilt.destroy = function () {
+      t(this).each(function () {
+        t(this).find(".js-tilt-glare").remove(), t(this).css({ "will-change": "", transform: "" }), t(this).off("mousemove mouseenter mouseleave");
+      });
+    }, t.fn.tilt.getValues = function () {
+      var i = [];return t(this).each(function () {
+        this.mousePositions = r.call(this), i.push(h.call(this));
+      }), i;
+    }, t.fn.tilt.reset = function () {
+      t(this).each(function () {
+        var i = this;this.mousePositions = r.call(this), this.settings = t(this).data("settings"), l.call(this), setTimeout(function () {
+          i.reset = !1;
+        }, this.settings.transition);
+      });
+    }, this.each(function () {
+      var s = this;this.settings = t.extend({ maxTilt: t(this).is("[data-tilt-max]") ? t(this).data("tilt-max") : 20, perspective: t(this).is("[data-tilt-perspective]") ? t(this).data("tilt-perspective") : 300, easing: t(this).is("[data-tilt-easing]") ? t(this).data("tilt-easing") : "cubic-bezier(.03,.98,.52,.99)", scale: t(this).is("[data-tilt-scale]") ? t(this).data("tilt-scale") : "1", speed: t(this).is("[data-tilt-speed]") ? t(this).data("tilt-speed") : "400", transition: !t(this).is("[data-tilt-transition]") || t(this).data("tilt-transition"), disableAxis: t(this).is("[data-tilt-disable-axis]") ? t(this).data("tilt-disable-axis") : null, axis: t(this).is("[data-tilt-axis]") ? t(this).data("tilt-axis") : null, reset: !t(this).is("[data-tilt-reset]") || t(this).data("tilt-reset"), glare: !!t(this).is("[data-tilt-glare]") && t(this).data("tilt-glare"), maxGlare: t(this).is("[data-tilt-maxglare]") ? t(this).data("tilt-maxglare") : 1 }, i), null !== this.settings.axis && (console.warn("Tilt.js: the axis setting has been renamed to disableAxis. See https://github.com/gijsroge/tilt.js/pull/26 for more information"), this.settings.disableAxis = this.settings.axis), this.init = function () {
+        t(s).data("settings", s.settings), s.settings.glare && c.call(s), e.call(s);
+      }, this.init();
+    });
+  }, t("[data-tilt]").tilt(), !0;
+});
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// console.log("%c Psst, if you're seeing this, check back from time to time for secret discounts... This is our 'Easter Egg' section :)", "background: #ffc6df; color: #9c8ac1");
+
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery2.default)("button").click(function () {
+    (0, _jquery2.default)('html, body').animate({
+        scrollTop: (0, _jquery2.default)("#products").offset().top
+    }, 1000);
+});
+(0, _jquery2.default)(".back-to-top").click(function () {
+    (0, _jquery2.default)('html, body').animate({
+        scrollTop: (0, _jquery2.default)("#top-nav").offset().top
+    }, 1000);
+});
 
 /***/ })
 /******/ ]);

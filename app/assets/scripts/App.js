@@ -1,12 +1,17 @@
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
+import HideOnScroll from './modules/HideOnScroll';
 import $ from 'jquery';
 import Instagram from './modules/InstagramFeed';
 import LoadModal from './modules/LoadModal';
+import Year from './modules/Year';
+import CustomTilt from './modules/CustomTilt';
+import ConsoleMessages from './modules/ConsoleMessages';
+import BackToTop from './modules/BackToTop';
 
 var mobileMenu = new MobileMenu();
 
-new RevealOnScroll($(".footer-wrapper"), "85%");
+// new RevealOnScroll($(".footer-wrapper"), "85%");
 new RevealOnScroll($(".squint-logo-image"), "90%");
-
-console.log("%c Psst, if you're seeing this, check back from time to time for secret discounts... This is our 'Easter Egg' section :)", "background: #ffc6df; color: #9c8ac1");
+new HideOnScroll($(".bkgrd-main__title"), "100%");
+new HideOnScroll($(".btn-shop-now"), "100%");

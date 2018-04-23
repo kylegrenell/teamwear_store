@@ -1,93 +1,21 @@
 .footer-wrapper {
-  min-height: 250px;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  padding: 3% 0;
 
-  @mixin atSmall {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-}
-.footer-wrapper > div {
-
-  @mixin atSmall {
-    display: flex; 
-    flex-basis: calc(50% - 5px);  
-    justify-content: center;
-    flex-direction: column;
-  }  
-}
-
-.footer {
-  @mixin atSmall {
-    margin: 10px 0 20px 0px;
-  }
-
-  @mixin atMedium { 
-    margin: 10px 0 10px 0px;
+  & p {
+    margin-bottom: 0;
   }
 }
 
-.footer-left { 
-  /*border: 2px solid $mainPink;*/
-  @mixin atSmall{
+.social-icons__no-footer {
+  position: relative;
+  /*top: 9vh;*/
+  /*left: 0;*/
+  /*transform: translate(-50%,-50%);*/
 
-  }
-  line-height: 25px;
-  padding: 0 0 5px 0;
-  font-family: ArialItalic;
-
-  a {
-    color: $mainPurple;
-  } 
-  li {
-    /*padding-left: 40px;*/
-    display: list-item;
-    list-style: none;
-    text-decoration: none;
-    color: pink;
-    text-align: center;
-  }
-}
-
-.footer-right { 
-  /*border: 2px solid $mainPink;*/
-  padding: 15px 0 10px 0;
-}
-
-#footer-info {
-  font-weight: 700;
-  padding-top: 15px;
-}
-
-form {
-  /*width: 100%;*/
-  input[type=email] { 
-    /*min-width: 250px !important;*/
-    margin: 0 auto !important; /*centers the button*/
-    margin-bottom: 10px !important;
-    }
-}
-
-#mc_embed_signup_scroll {
-  text-align: center;
-}
-
-#mc_embed_signup form {
-  padding: 0 !important;
-}
-
-form {
-  /*width: 100%;*/
-  /*padding: 0 0 10px 3%;*/
-
-  input[name=subscribe] { 
-      background-color: $mainPurple !important;
-      margin: 0 auto !important; /*centers the button*/
-    }
-}
-
-#social-media-icons {
-  padding-bottom: 10px;
   & ul {
     margin: 3px;
   }
@@ -97,13 +25,31 @@ form {
   font-size: 0.7rem;
   font-family: ArialItalic, sans-serif;
   text-align: center;
+  padding: 1% 0 2% 0;
+
+  &__no-footer {
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-family: ArialItalic, sans-serif;
+    text-align: center;
+
+
+    & a {
+      font-size: 0.7rem;
+      color: #fff;
+      padding-bottom: .07em;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: rgba($mainPurple,.3);
+    }
+  }
 
   & strong {
     font-size: 0.8rem !important;
   }
 
   & a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: $mainGreen;
     padding-bottom: .07em;
     border-bottom-width: 1px;
@@ -115,5 +61,39 @@ form {
       opacity: .8;
       cursor: pointer !important;
     }
+  }
+}
+
+.back-to-top {
+  height: auto;
+  width: 100%;
+  background: #000;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3% 0 0 0;
+  
+  & img {
+    opacity: 0.9;
+    width: 30px;
+  }
+}
+
+.custom-badge {
+  height: auto;
+  width: 100%;
+  background: #000;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3% 0 0 0;
+  
+  & img {
+    opacity: 0.9;
+    width: 100px;
+
+    @mixin atSmall {
+      width: 170px;
+      height: auto;        
+    }
+
   }
 }

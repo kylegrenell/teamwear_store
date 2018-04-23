@@ -1,13 +1,4 @@
 @font-face {
-    font-family: 'PoetsenOne';
-    src: url('../../assets/fonts/PoetsenOne/poetsenone-regular-webfont.woff2') format('woff2'),
-         url('../../assets/fonts/PoetsenOne/poetsenone-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
 font-family: ArialItalicBold;
 src: url(../../assets/fonts/ARIALBI0.TTF);
 }

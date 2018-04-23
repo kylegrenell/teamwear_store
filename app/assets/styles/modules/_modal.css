@@ -91,3 +91,12 @@
   color: $mainPurple;
   cursor: pointer;
 }
+
+.mc_embed_popup {
+  padding-left: 10px;
+  padding-right: 10px;
+  @mixin atSmall {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

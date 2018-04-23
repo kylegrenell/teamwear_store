@@ -1,6 +1,7 @@
 button {
   margin:auto;
   display:block;
+  outline-width: 0;
 }
 
 button {
@@ -8,9 +9,9 @@ button {
   font-size:12px;
   font-weight:500;
   color:#fff;
-  background-color: $mainPurple;
-  border:0;
-  border-radius:5px;
+  background-color: transparent;
+  border:1px solid #fff;
+  border-radius:0px;
 
   @mixin atSmall {
     padding:16px 22px;
@@ -19,41 +20,58 @@ button {
 
   @mixin atMedium {
     padding:16px 32px;
-    font-size:16px;
+    font-size:1em;
+  }
+
+  @mixin atXXLarge {
+    padding:16px 32px;
+    font-size:1.2em;
+  }
+
+  @mixin atXXXLarge {
+    padding:16px 32px;
+    font-size:1.6em;
   }
 
   & a:hover {
     color: rgba($mainPink, 1);
-  }    
+  }  
+
+  @mixin atShrunkOne {
+    padding:16px 22px;
+    font-size:14px;
+  }  
 
 }
 
 button:hover{
-  background-color: rgba($mainPurple, 0.85);
+  background-color: #fff;
+  color:rgb(44,59,56);
 }
 
 .btn-shop-now {
-  font-family: ArialItalicBold;
+  font-family: sans-serif;
   text-decoration: none;
-  padding-top: 200px;
   display: block;
   text-align: center;
-
-  @mixin atSmallest {
-    padding-top: 260px;
-  }
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 
   @mixin atSmall {
-    padding-top: 290px;
+    top: 60%;
   }
 
-  @mixin atMedium {
-    padding-top: 380px;
+  @mixin atShrunkTwo {
+    opacity: 0;
+    transition: visibility 0s .5s, opacity .5s linear;
   }
 
-  @mixin atLarge {
-    padding-top: 450px;
+  & button {
+    outline-width: 0;
   }
+
 }
 
 .dropdown {
@@ -114,4 +132,80 @@ button:hover{
 
 .dropbtn {
   color: $mainPurple;
+}
+
+.btn-event {
+  font-family: ArialItalic;
+  text-decoration: none;
+  /*padding-top: 200px;*/
+  display: block;
+  text-align: center;
+  padding-top: 210px;
+  z-index: 0;
+
+  @mixin atSmallest {
+    padding-top: 260px;
+  }
+
+  @mixin atSmall {
+    padding-top: 290px;
+  }
+
+  @mixin atMedium {
+    padding-top: 380px;
+  }
+
+  @mixin atLarge {
+    padding-top: 450px;
+  }
+
+  @mixin atXXLarge {
+    padding-top: 600px;
+  }
+
+  @mixin atXXXLarge {
+    padding-top: 750px;
+  }
+
+  @mixin atShrunkOne {
+    padding-top: 300px;
+  }
+
+  @mixin atShrunkTwo {
+    opacity: 0;
+    transition: visibility 0s .5s, opacity .5s linear;
+  }
+
+}
+
+.product-select {
+    background-color: #000;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: #444;
+      color: #fff;
+    }
+
+    &-single {
+      margin-top: 2%;
+      display: inline-block;
+      text-align: left;
+      background-color: #000;
+      padding: 10px 20px;
+
+      &-cart {
+        margin-top: 2%;
+        background-color: #444;
+      }
+
+      &:hover {
+        background-color: #444;
+        color: #fff;
+      }
+
+      &-cart:hover {
+        background-color: #666;
+      }
+    }
 }
