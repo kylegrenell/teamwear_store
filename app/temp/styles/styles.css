@@ -3577,9 +3577,9 @@ button:hover{
 #gallery-wrapper {
     /*max-width: 1100px;*/
     padding: 10% 0 5% 5% !important;
+    /*background: $softPink;*/
+    overflow: hidden;
 }
-
-/*background: $softPink;*/
 
 @media(min-width: 520px){
 
@@ -3593,9 +3593,14 @@ button:hover{
   }
 
 #gallery-wrapper img {
+        z-index: 25;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        max-width: 100%;
         height: auto;
         width: 90%;
         padding-bottom: 10px;
+
 
     }
 
@@ -3605,6 +3610,7 @@ button:hover{
         padding-bottom: 0;
         width: 270px
 
+
     }
   }
 
@@ -3612,6 +3618,7 @@ button:hover{
 
 #gallery-wrapper img {
         width: 300px
+
 
     }
   }
@@ -3621,6 +3628,7 @@ button:hover{
 #gallery-wrapper img {
             width: 500px
 
+
     }
   }
 
@@ -3629,8 +3637,14 @@ button:hover{
 #gallery-wrapper img {
             width: 600px
 
+
     }
   }
+
+#gallery-wrapper img:hover {
+            -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+        }
 
 .gallery-image-breadcrumbs {
         grid-row: 2 / 3;
